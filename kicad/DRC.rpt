@@ -1,0 +1,898 @@
+** Drc report for injet-racing-prodv3.kicad_pcb **
+** Created on 2026-08-06T02:36:10 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 233 DRC violations **
+[shorting_items]: Itens encurtando duas redes (redes +3V3 e )
+    Local override; error
+    @(128.0000 mm, 92.0000 mm): Track [+3V3] on B.Cu, length 59.4643 mm
+    @(152.0000 mm, 119.8400 mm): PTH pad R5 [<no net>] of U1
+[clearance]: Violação do isolamento ( isolamento 0,3000 mm; atual 0,1700 mm)
+    Local override; error
+    @(42.7300 mm, 112.0000 mm): PTH pad S [GND] of Q22
+    @(44.0000 mm, 14.0000 mm): Track [CLT] on F.Cu, length 102.0000 mm
+[shorting_items]: Itens encurtando duas redes (redes GND e DAC_VM)
+    Local override; error
+    @(172.0000 mm, 49.6200 mm): PTH pad 4 [GND] of U4
+    @(172.0000 mm, 52.0000 mm): Track [DAC_VM] on B.Cu, length 7.4600 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(66.8000 mm, 40.0000 mm): Track [INJ1] on B.Cu, length 5.2000 mm
+    @(69.4600 mm, 52.0000 mm): Track [GINJ1] on B.Cu, length 12.0000 mm
+[shorting_items]: Itens encurtando duas redes (redes  e RI_PULSE)
+    Local override; error
+    @(184.0000 mm, 104.0000 mm): PTH pad A [<no net>] of R52
+    @(152.0000 mm, 104.6000 mm): Track [RI_PULSE] on F.Cu, length 36.0000 mm
+[shorting_items]: Itens encurtando duas redes (redes  e CLT)
+    Local override; error
+    @(168.0000 mm, 116.0000 mm): PTH pad A [<no net>] of R41
+    @(44.0000 mm, 116.0000 mm): Track [CLT] on F.Cu, length 132.0000 mm
+[shorting_items]: Itens encurtando duas redes (redes UN e CANL)
+    Local override; error
+    @(104.0000 mm, 80.0000 mm): Track [UN] on B.Cu, length 48.0000 mm
+    @(152.0000 mm, 80.0000 mm): Via [CANL] on F.Cu - B.Cu
+[shorting_items]: Itens encurtando duas redes (redes DAC_VM e GND)
+    Local override; error
+    @(172.0000 mm, 114.7600 mm): Track [DAC_VM] on B.Cu, length 70.2200 mm
+    @(172.0000 mm, 49.6200 mm): PTH pad 4 [GND] of U4
+[shorting_items]: Itens encurtando duas redes (redes +3V3 e VBAT)
+    Local override; error
+    @(100.0000 mm, 130.0000 mm): PTH pad B [+3V3] of R74
+    @(100.0000 mm, 130.0000 mm): Track [VBAT] on B.Cu, length 4.0000 mm
+[shorting_items]: Itens encurtando duas redes (redes VM e DAC_VM)
+    Local override; error
+    @(172.0000 mm, 42.0000 mm): Track [VM] on F.Cu, length 72.0000 mm
+    @(172.0000 mm, 42.0000 mm): PTH pad 1 [DAC_VM] of U4
+[shorting_items]: Itens encurtando duas redes (redes +12V_PROT e VBAT)
+    Local override; error
+    @(24.5400 mm, 148.0000 mm): PTH pad S [+12V_PROT] of Q1
+    @(24.5400 mm, 130.0000 mm): Track [VBAT] on B.Cu, length 18.0000 mm
+[shorting_items]: Itens encurtando duas redes (redes  e VBAT)
+    Local override; error
+    @(100.0000 mm, 124.9200 mm): PTH pad L3 [<no net>] of U1
+    @(100.0000 mm, 126.0000 mm): Track [VBAT] on B.Cu, length 8.0000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(128.0000 mm, 80.0000 mm): Track [SWCLK] on B.Cu, length 28.0092 mm
+    @(104.0000 mm, 80.0000 mm): Track [UN] on B.Cu, length 48.0000 mm
+[shorting_items]: Itens encurtando duas redes (redes RI_PULSE e UN)
+    Local override; error
+    @(152.0000 mm, 104.6000 mm): PTH pad R11 [RI_PULSE] of U1
+    @(152.0000 mm, 80.0000 mm): Track [UN] on B.Cu, length 27.1400 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(128.0000 mm, 80.0000 mm): Track [SWDIO] on B.Cu, length 29.3993 mm
+    @(152.0000 mm, 80.0000 mm): Track [UN] on B.Cu, length 27.1400 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(168.0000 mm, 104.0000 mm): Track [+3V3] on F.Cu, length 41.7612 mm
+    @(52.0000 mm, 92.0000 mm): Track [TPS] on F.Cu, length 132.0000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(128.0000 mm, 80.0000 mm): Track [SWCLK] on B.Cu, length 28.0092 mm
+    @(128.0000 mm, 80.0000 mm): Track [SWDIO] on B.Cu, length 29.3993 mm
+[shorting_items]: Itens encurtando duas redes (redes SWDIO e SWCLK)
+    Local override; error
+    @(118.5400 mm, 70.0000 mm): Track [SWDIO] on F.Cu, length 13.7656 mm
+    @(128.0000 mm, 80.0000 mm): Via [SWCLK] on F.Cu - B.Cu
+[shorting_items]: Itens encurtando duas redes (redes SWCLK e SWDIO)
+    Local override; error
+    @(128.0000 mm, 80.0000 mm): Track [SWCLK] on B.Cu, length 28.0092 mm
+    @(128.0000 mm, 80.0000 mm): Via [SWDIO] on F.Cu - B.Cu
+[shorting_items]: Itens encurtando duas redes (redes SWDIO e SWCLK)
+    Local override; error
+    @(128.0000 mm, 80.0000 mm): Track [SWDIO] on B.Cu, length 29.3993 mm
+    @(128.0000 mm, 80.0000 mm): Via [SWCLK] on F.Cu - B.Cu
+[shorting_items]: Itens encurtando duas redes (redes RI_PULSE e MAP)
+    Local override; error
+    @(152.0000 mm, 104.6000 mm): Track [RI_PULSE] on F.Cu, length 36.0000 mm
+    @(48.0000 mm, 104.0000 mm): Track [MAP] on F.Cu, length 128.0000 mm
+[shorting_items]: Itens encurtando duas redes (redes  e IP)
+    Local override; error
+    @(179.6200 mm, 44.5400 mm): PTH pad 13 [<no net>] of U4
+    @(200.0000 mm, 60.0000 mm): Track [IP] on F.Cu, length 45.6070 mm
+[shorting_items]: Itens encurtando duas redes (redes INJ1 e GINJ1)
+    Local override; error
+    @(66.8000 mm, 40.0000 mm): Track [INJ1] on B.Cu, length 5.2000 mm
+    @(69.4600 mm, 40.0000 mm): PTH pad G [GINJ1] of Q10
+[shorting_items]: Itens encurtando duas redes (redes GHEAT e H-)
+    Local override; error
+    @(149.4600 mm, 40.0000 mm): PTH pad G [GHEAT] of Q30
+    @(146.8000 mm, 40.0000 mm): Track [H-] on B.Cu, length 5.2000 mm
+[shorting_items]: Itens encurtando duas redes (redes H- e GND)
+    Local override; error
+    @(155.2000 mm, 40.0000 mm): Track [H-] on B.Cu, length 18.0000 mm
+    @(154.5400 mm, 40.0000 mm): PTH pad S [GND] of Q30
+[shorting_items]: Itens encurtando duas redes (redes IAT e )
+    Local override; error
+    @(40.0000 mm, 128.0000 mm): Track [IAT] on F.Cu, length 136.0000 mm
+    @(168.0000 mm, 128.0000 mm): PTH pad A [<no net>] of R40
+[clearance]: Violação do isolamento ( isolamento 0,3000 mm; atual 0,2200 mm)
+    Local override; error
+    @(45.2700 mm, 112.0000 mm): PTH pad D [RL3] of Q22
+    @(44.0000 mm, 104.0000 mm): Track [GRL3] on B.Cu, length 9.8000 mm
+[shorting_items]: Itens encurtando duas redes (redes H- e GND)
+    Local override; error
+    @(152.0000 mm, 40.0000 mm): Track [H-] on B.Cu, length 3.2000 mm
+    @(154.5400 mm, 40.0000 mm): PTH pad S [GND] of Q30
+[clearance]: Violação do isolamento ( isolamento 0,3000 mm; atual 0,2200 mm)
+    Local override; error
+    @(30.0000 mm, 104.0000 mm): Track [GRL2] on B.Cu, length 9.8000 mm
+    @(28.7300 mm, 112.0000 mm): PTH pad S [GND] of Q21
+[clearance]: Violação do isolamento ( isolamento 0,3000 mm; atual 0,2200 mm)
+    Local override; error
+    @(16.0000 mm, 104.0000 mm): Track [GRL1] on B.Cu, length 9.8000 mm
+    @(17.2700 mm, 112.0000 mm): PTH pad D [RL1] of Q20
+[shorting_items]: Itens encurtando duas redes (redes GINJ2 e )
+    Local override; error
+    @(87.4600 mm, 62.0000 mm): Track [GINJ2] on B.Cu, length 22.0000 mm
+    @(87.4600 mm, 60.0000 mm): PTH pad B [<no net>] of R11
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(66.8000 mm, 40.0000 mm): Track [INJ1] on B.Cu, length 5.2000 mm
+    @(69.4600 mm, 62.0000 mm): Track [GINJ1] on B.Cu, length 22.0000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(149.4600 mm, 62.0000 mm): Track [GHEAT] on B.Cu, length 22.0000 mm
+    @(146.8000 mm, 40.0000 mm): Track [H-] on B.Cu, length 5.2000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(149.4600 mm, 52.0000 mm): Track [GHEAT] on B.Cu, length 12.0000 mm
+    @(146.8000 mm, 40.0000 mm): Track [H-] on B.Cu, length 5.2000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(152.0000 mm, 40.0000 mm): Track [H-] on B.Cu, length 3.2000 mm
+    @(152.0000 mm, 80.0000 mm): Track [CANL] on B.Cu, length 74.5000 mm
+[clearance]: Violação do isolamento ( isolamento 0,3000 mm; atual 0,0900 mm)
+    Local override; error
+    @(168.0000 mm, 116.0000 mm): PTH pad A [<no net>] of R41
+    @(152.0000 mm, 114.7600 mm): Track [DAC_VM] on B.Cu, length 20.0000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(168.0000 mm, 104.0000 mm): Track [+3V3] on F.Cu, length 41.7612 mm
+    @(48.0000 mm, 104.0000 mm): Track [MAP] on F.Cu, length 128.0000 mm
+[shorting_items]: Itens encurtando duas redes (redes +3V3 e TPS)
+    Local override; error
+    @(128.0000 mm, 92.0000 mm): Via [+3V3] on F.Cu - B.Cu
+    @(52.0000 mm, 92.0000 mm): Track [TPS] on F.Cu, length 132.0000 mm
+[clearance]: Violação do isolamento ( isolamento 0,3000 mm; atual 0,0309 mm)
+    Local override; error
+    @(164.0000 mm, 50.0000 mm): Track [+5V] on F.Cu, length 13.4164 mm
+    @(172.0000 mm, 44.5400 mm): PTH pad 2 [DAC_VM] of U4
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(24.5400 mm, 155.0000 mm): Track [+12V_PROT] on B.Cu, length 7.0000 mm
+    @(24.5400 mm, 130.0000 mm): Track [VBAT] on B.Cu, length 18.0000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(24.5400 mm, 148.0000 mm): Track [+12V_PROT] on B.Cu, length 7.4600 mm
+    @(24.5400 mm, 130.0000 mm): Track [VBAT] on B.Cu, length 18.0000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(24.5400 mm, 148.0000 mm): Track [+12V_PROT] on B.Cu, length 9.0000 mm
+    @(24.5400 mm, 130.0000 mm): Track [VBAT] on B.Cu, length 18.0000 mm
+[clearance]: Violação do isolamento ( isolamento 0,3000 mm; atual 0,0000 mm)
+    Local override; error
+    @(50.0000 mm, 86.0000 mm): PTH pad A [<no net>] of R60
+    @(50.0000 mm, 86.0000 mm): PTH pad B [<no net>] of R61
+[clearance]: Violação do isolamento ( isolamento 0,3000 mm; atual 0,0000 mm)
+    Local override; error
+    @(50.0000 mm, 86.0000 mm): PTH pad A [<no net>] of R60
+    @(50.0000 mm, 86.0000 mm): PTH pad B [<no net>] of R61
+[clearance]: Violação do isolamento ( isolamento 0,3000 mm; atual 0,0000 mm)
+    Local override; error
+    @(172.0000 mm, 48.0000 mm): PTH pad B [<no net>] of R77
+    @(172.0000 mm, 47.0800 mm): PTH pad 3 [<no net>] of U4
+[clearance]: Violação do isolamento ( isolamento 0,3000 mm; atual 0,0700 mm)
+    Local override; error
+    @(172.0000 mm, 48.0000 mm): PTH pad B [<no net>] of R77
+    @(172.0000 mm, 49.6200 mm): PTH pad 4 [GND] of U4
+[clearance]: Violação do isolamento ( isolamento 0,3000 mm; atual 0,0700 mm)
+    Local override; error
+    @(172.0000 mm, 48.0000 mm): PTH pad B [<no net>] of R77
+    @(172.0000 mm, 49.6200 mm): PTH pad 4 [GND] of U4
+[clearance]: Violação do isolamento ( isolamento 0,3000 mm; atual 0,0000 mm)
+    Local override; error
+    @(172.0000 mm, 48.0000 mm): PTH pad B [<no net>] of R77
+    @(172.0000 mm, 47.0800 mm): PTH pad 3 [<no net>] of U4
+[clearance]: Violação do isolamento ( isolamento 0,3000 mm; atual 0,1200 mm)
+    Local override; error
+    @(202.0000 mm, 45.2700 mm): Pad 2 [<no net>] of U5 on B.Cu
+    @(202.0000 mm, 44.0000 mm): Pad 1 [<no net>] of U5 on B.Cu
+[clearance]: Violação do isolamento ( isolamento 0,3000 mm; atual 0,1200 mm)
+    Local override; error
+    @(202.0000 mm, 46.5400 mm): Pad 3 [VM] of U5 on B.Cu
+    @(202.0000 mm, 45.2700 mm): Pad 2 [<no net>] of U5 on B.Cu
+[clearance]: Violação do isolamento ( isolamento 0,3000 mm; atual 0,1200 mm)
+    Local override; error
+    @(202.0000 mm, 46.5400 mm): Pad 3 [VM] of U5 on B.Cu
+    @(202.0000 mm, 47.8100 mm): Pad 4 [GND] of U5 on B.Cu
+[shorting_items]: Itens encurtando duas redes (redes VBAT e GND)
+    Local override; error
+    @(100.0000 mm, 126.0000 mm): PTH pad B [VBAT] of R75
+    @(100.0000 mm, 127.4600 mm): PTH pad L2 [GND] of U1
+[clearance]: Violação do isolamento ( isolamento 0,3000 mm; atual 0,0000 mm)
+    Local override; error
+    @(100.0000 mm, 126.0000 mm): PTH pad B [VBAT] of R75
+    @(100.0000 mm, 124.9200 mm): PTH pad L3 [<no net>] of U1
+[shorting_items]: Itens encurtando duas redes (redes VBAT e GND)
+    Local override; error
+    @(100.0000 mm, 126.0000 mm): PTH pad B [VBAT] of R75
+    @(100.0000 mm, 127.4600 mm): PTH pad L2 [GND] of U1
+[clearance]: Violação do isolamento ( isolamento 0,3000 mm; atual 0,0000 mm)
+    Local override; error
+    @(100.0000 mm, 126.0000 mm): PTH pad B [VBAT] of R75
+    @(100.0000 mm, 124.9200 mm): PTH pad L3 [<no net>] of U1
+[clearance]: Violação do isolamento ( isolamento 0,3000 mm; atual 0,1200 mm)
+    Local override; error
+    @(207.4000 mm, 46.5400 mm): Pad 6 [<no net>] of U5 on B.Cu
+    @(207.4000 mm, 47.8100 mm): Pad 5 [<no net>] of U5 on B.Cu
+[clearance]: Violação do isolamento ( isolamento 0,3000 mm; atual 0,1200 mm)
+    Local override; error
+    @(207.4000 mm, 46.5400 mm): Pad 6 [<no net>] of U5 on B.Cu
+    @(207.4000 mm, 45.2700 mm): Pad 7 [<no net>] of U5 on B.Cu
+[clearance]: Violação do isolamento ( isolamento 0,3000 mm; atual 0,1200 mm)
+    Local override; error
+    @(207.4000 mm, 44.0000 mm): Pad 8 [<no net>] of U5 on B.Cu
+    @(207.4000 mm, 45.2700 mm): Pad 7 [<no net>] of U5 on B.Cu
+[copper_edge_clearance]: Violação do isolamento da borda da placa (configuração das restrições da borda isolamento 0,5000 mm; atual 0,3000 mm)
+    Rule: configuração das restrições da borda; error
+    @(0.5000 mm, 0.5000 mm): Segment on Edge.Cuts
+    @(236.0000 mm, 4.0000 mm): NPTH pad of H
+[copper_edge_clearance]: Violação do isolamento da borda da placa (configuração das restrições da borda isolamento 0,5000 mm; atual 0,3000 mm)
+    Rule: configuração das restrições da borda; error
+    @(239.5000 mm, 0.5000 mm): Segment on Edge.Cuts
+    @(236.0000 mm, 156.0000 mm): NPTH pad of H
+[copper_edge_clearance]: Violação do isolamento da borda da placa (configuração das restrições da borda isolamento 0,5000 mm; atual 0,3000 mm)
+    Rule: configuração das restrições da borda; error
+    @(0.5000 mm, 159.5000 mm): Segment on Edge.Cuts
+    @(4.0000 mm, 156.0000 mm): NPTH pad of H
+[copper_edge_clearance]: Violação do isolamento da borda da placa (configuração das restrições da borda isolamento 0,5000 mm; atual 0,3000 mm)
+    Rule: configuração das restrições da borda; error
+    @(0.5000 mm, 0.5000 mm): Segment on Edge.Cuts
+    @(4.0000 mm, 4.0000 mm): NPTH pad of H
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(100.0000 mm, 96.9800 mm): Track [<no net>] on B.Cu, length 13.4800 mm
+    @(100.0000 mm, 96.9800 mm): PTH pad L14 [<no net>] of U1
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(52.0000 mm, 92.0000 mm): Track [TPS] on F.Cu, length 132.0000 mm
+    @(180.0000 mm, 92.0000 mm): PTH pad A [<no net>] of C13
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(164.0000 mm, 50.0000 mm): Track [+5V] on F.Cu, length 13.4164 mm
+    @(172.0000 mm, 47.0800 mm): PTH pad 3 [<no net>] of U4
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(52.0000 mm, 92.0000 mm): Track [TPS] on F.Cu, length 132.0000 mm
+    @(100.0000 mm, 91.9000 mm): PTH pad L16 [GINJ4] of U1
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(48.0000 mm, 104.0000 mm): Track [MAP] on F.Cu, length 128.0000 mm
+    @(168.0000 mm, 104.0000 mm): PTH pad A [+3V3] of R42
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(52.0000 mm, 92.0000 mm): Track [TPS] on F.Cu, length 132.0000 mm
+    @(152.0000 mm, 91.9000 mm): PTH pad R16 [<no net>] of U1
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(152.0000 mm, 40.0000 mm): Track [H-] on B.Cu, length 3.2000 mm
+    @(154.5400 mm, 40.0000 mm): PTH pad S [GND] of Q30
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(48.0000 mm, 104.0000 mm): Track [MAP] on F.Cu, length 128.0000 mm
+    @(100.0000 mm, 104.6000 mm): PTH pad L11 [CAN_RX] of U1
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(152.0000 mm, 80.0000 mm): Track [CANL] on B.Cu, length 74.5000 mm
+    @(152.0000 mm, 40.0000 mm): PTH pad D [H-] of Q30
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(164.0000 mm, 50.0000 mm): Track [+5V] on F.Cu, length 13.4164 mm
+    @(168.0000 mm, 48.0000 mm): PTH pad A [<no net>] of R77
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(48.0000 mm, 104.0000 mm): Track [MAP] on F.Cu, length 128.0000 mm
+    @(152.0000 mm, 104.6000 mm): PTH pad R11 [RI_PULSE] of U1
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(155.2000 mm, 40.0000 mm): Track [H-] on B.Cu, length 18.0000 mm
+    @(154.5400 mm, 40.0000 mm): PTH pad S [GND] of Q30
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(100.0000 mm, 127.4600 mm): PTH pad L2 [GND] of U1
+    @(100.0000 mm, 126.0000 mm): PTH pad B [VBAT] of R75
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(152.0000 mm, 80.0000 mm): Track [UN] on B.Cu, length 27.1400 mm
+    @(152.0000 mm, 104.6000 mm): PTH pad R11 [RI_PULSE] of U1
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(146.8000 mm, 40.0000 mm): Track [H-] on B.Cu, length 5.2000 mm
+    @(149.4600 mm, 40.0000 mm): PTH pad G [GHEAT] of Q30
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(152.0000 mm, 104.6000 mm): Track [RI_PULSE] on F.Cu, length 36.0000 mm
+    @(168.0000 mm, 104.0000 mm): PTH pad A [+3V3] of R42
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(152.0000 mm, 80.0000 mm): Track [UN] on B.Cu, length 27.1400 mm
+    @(152.0000 mm, 102.0600 mm): PTH pad R12 [<no net>] of U1
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(100.0000 mm, 127.4600 mm): PTH pad L2 [GND] of U1
+    @(100.0000 mm, 126.0000 mm): PTH pad B [VBAT] of R75
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(44.0000 mm, 14.0000 mm): Track [CLT] on F.Cu, length 102.0000 mm
+    @(44.0000 mm, 113.8000 mm): PTH pad G [GRL3] of Q22
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(172.0000 mm, 48.0000 mm): PTH pad B [<no net>] of R77
+    @(172.0000 mm, 47.0800 mm): PTH pad 3 [<no net>] of U4
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(152.0000 mm, 104.6000 mm): Track [RI_PULSE] on F.Cu, length 36.0000 mm
+    @(176.0000 mm, 104.0000 mm): PTH pad B [MAP] of R42
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(152.0000 mm, 80.0000 mm): Track [UN] on B.Cu, length 27.1400 mm
+    @(152.0000 mm, 99.5200 mm): PTH pad R13 [<no net>] of U1
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(40.0000 mm, 128.0000 mm): Track [IAT] on F.Cu, length 136.0000 mm
+    @(100.0000 mm, 127.4600 mm): PTH pad L2 [GND] of U1
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(100.0000 mm, 124.9200 mm): PTH pad L3 [<no net>] of U1
+    @(100.0000 mm, 126.0000 mm): PTH pad B [VBAT] of R75
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(44.0000 mm, 14.0000 mm): Track [CLT] on F.Cu, length 102.0000 mm
+    @(44.0000 mm, 104.0000 mm): PTH pad A [GRL3] of R32
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(152.0000 mm, 104.6000 mm): Track [RI_PULSE] on F.Cu, length 36.0000 mm
+    @(180.0000 mm, 104.0000 mm): PTH pad A [<no net>] of C12
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(172.0000 mm, 48.0000 mm): PTH pad B [<no net>] of R77
+    @(172.0000 mm, 47.0800 mm): PTH pad 3 [<no net>] of U4
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(152.0000 mm, 80.0000 mm): Track [UN] on B.Cu, length 27.1400 mm
+    @(152.0000 mm, 96.9800 mm): PTH pad R14 [SWDIO] of U1
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(168.0000 mm, 104.0000 mm): Track [+3V3] on F.Cu, length 41.7612 mm
+    @(152.0000 mm, 99.5200 mm): PTH pad R13 [<no net>] of U1
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(40.0000 mm, 128.0000 mm): Track [IAT] on F.Cu, length 136.0000 mm
+    @(168.0000 mm, 128.0000 mm): PTH pad A [<no net>] of R40
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(44.0000 mm, 14.0000 mm): Track [CLT] on F.Cu, length 102.0000 mm
+    @(44.0000 mm, 96.0000 mm): PTH pad B [<no net>] of R32
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(152.0000 mm, 104.6000 mm): Track [RI_PULSE] on F.Cu, length 36.0000 mm
+    @(184.0000 mm, 104.0000 mm): PTH pad A [<no net>] of R52
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(100.0000 mm, 124.9200 mm): PTH pad L3 [<no net>] of U1
+    @(100.0000 mm, 126.0000 mm): PTH pad B [VBAT] of R75
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(152.0000 mm, 80.0000 mm): Track [UN] on B.Cu, length 27.1400 mm
+    @(152.0000 mm, 94.4400 mm): PTH pad R15 [SWCLK] of U1
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(152.0000 mm, 104.6000 mm): Track [RI_PULSE] on F.Cu, length 36.0000 mm
+    @(176.0000 mm, 104.0000 mm): PTH pad A [MAP] of R43
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(40.0000 mm, 128.0000 mm): Track [IAT] on F.Cu, length 136.0000 mm
+    @(152.0000 mm, 127.4600 mm): PTH pad R2 [GND] of U1
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(44.0000 mm, 116.0000 mm): Track [CLT] on F.Cu, length 132.0000 mm
+    @(168.0000 mm, 116.0000 mm): PTH pad A [<no net>] of R41
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(152.0000 mm, 80.0000 mm): Track [UN] on B.Cu, length 27.1400 mm
+    @(152.0000 mm, 91.9000 mm): PTH pad R16 [<no net>] of U1
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(172.0000 mm, 114.7600 mm): Track [DAC_VM] on B.Cu, length 70.2200 mm
+    @(172.0000 mm, 47.0800 mm): PTH pad 3 [<no net>] of U4
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(66.8000 mm, 40.0000 mm): Track [INJ1] on B.Cu, length 5.2000 mm
+    @(69.4600 mm, 40.0000 mm): PTH pad G [GINJ1] of Q10
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(152.0000 mm, 80.0000 mm): Track [UN] on B.Cu, length 27.1400 mm
+    @(152.0000 mm, 89.3600 mm): PTH pad R17 [<no net>] of U1
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(172.0000 mm, 114.7600 mm): Track [DAC_VM] on B.Cu, length 70.2200 mm
+    @(172.0000 mm, 48.0000 mm): PTH pad B [<no net>] of R77
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(128.0000 mm, 92.0000 mm): Track [+3V3] on B.Cu, length 59.4643 mm
+    @(152.0000 mm, 119.8400 mm): PTH pad R5 [<no net>] of U1
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(172.0000 mm, 114.7600 mm): Track [DAC_VM] on B.Cu, length 70.2200 mm
+    @(172.0000 mm, 57.2400 mm): PTH pad 7 [<no net>] of U4
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(152.0000 mm, 80.0000 mm): Track [UN] on B.Cu, length 27.1400 mm
+    @(152.0000 mm, 86.8200 mm): PTH pad R18 [<no net>] of U1
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(128.0000 mm, 92.0000 mm): Track [+3V3] on B.Cu, length 59.4643 mm
+    @(152.0000 mm, 117.3000 mm): PTH pad R6 [<no net>] of U1
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(152.0000 mm, 80.0000 mm): Track [UN] on B.Cu, length 27.1400 mm
+    @(152.0000 mm, 84.2800 mm): PTH pad R19 [<no net>] of U1
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(172.0000 mm, 114.7600 mm): Track [DAC_VM] on B.Cu, length 70.2200 mm
+    @(172.0000 mm, 49.6200 mm): PTH pad 4 [GND] of U4
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(152.0000 mm, 80.0000 mm): Track [UN] on B.Cu, length 27.1400 mm
+    @(152.0000 mm, 81.7400 mm): PTH pad R20 [<no net>] of U1
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(172.0000 mm, 114.7600 mm): Track [DAC_VM] on B.Cu, length 70.2200 mm
+    @(172.0000 mm, 54.7000 mm): PTH pad 6 [<no net>] of U4
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(172.0000 mm, 52.0000 mm): Track [DAC_VM] on B.Cu, length 7.4600 mm
+    @(172.0000 mm, 47.0800 mm): PTH pad 3 [<no net>] of U4
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(100.0000 mm, 126.0000 mm): Track [VBAT] on B.Cu, length 8.0000 mm
+    @(104.0000 mm, 126.0000 mm): PTH pad B [<no net>] of C33
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(172.0000 mm, 52.0000 mm): Track [DAC_VM] on B.Cu, length 7.4600 mm
+    @(172.0000 mm, 48.0000 mm): PTH pad B [<no net>] of R77
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(100.0000 mm, 126.0000 mm): Track [VBAT] on B.Cu, length 8.0000 mm
+    @(100.0000 mm, 124.9200 mm): PTH pad L3 [<no net>] of U1
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(200.0000 mm, 60.0000 mm): Track [IP] on F.Cu, length 45.6070 mm
+    @(179.6200 mm, 44.5400 mm): PTH pad 13 [<no net>] of U4
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(172.0000 mm, 52.0000 mm): Track [DAC_VM] on B.Cu, length 7.4600 mm
+    @(172.0000 mm, 49.6200 mm): PTH pad 4 [GND] of U4
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(24.5400 mm, 130.0000 mm): Track [VBAT] on B.Cu, length 18.0000 mm
+    @(24.5400 mm, 148.0000 mm): PTH pad S [+12V_PROT] of Q1
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(100.0000 mm, 130.0000 mm): Track [VBAT] on B.Cu, length 4.0000 mm
+    @(100.0000 mm, 130.0000 mm): PTH pad B [+3V3] of R74
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(87.4600 mm, 62.0000 mm): Track [GINJ2] on B.Cu, length 22.0000 mm
+    @(87.4600 mm, 60.0000 mm): PTH pad B [<no net>] of R11
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(100.0000 mm, 130.0000 mm): Track [VBAT] on B.Cu, length 4.0000 mm
+    @(100.0000 mm, 130.0000 mm): PTH pad A [+3V3] of R75
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(100.0000 mm, 130.0000 mm): Track [VBAT] on B.Cu, length 4.0000 mm
+    @(100.0000 mm, 130.0000 mm): PTH pad L1 [+3V3] of U1
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(172.0000 mm, 42.0000 mm): Track [VM] on F.Cu, length 72.0000 mm
+    @(172.0000 mm, 42.0000 mm): PTH pad 1 [DAC_VM] of U4
+[solder_mask_bridge]: A abertura da máscara de solda da frente conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(50.0000 mm, 86.0000 mm): PTH pad B [<no net>] of R61
+    @(50.0000 mm, 86.0000 mm): PTH pad A [<no net>] of R60
+[solder_mask_bridge]: A abertura da máscara de solda de trás conecta itens com redes diferentes
+    Rule: configuração da placa, largura mínima da máscara de solda; error
+    @(50.0000 mm, 86.0000 mm): PTH pad B [<no net>] of R61
+    @(50.0000 mm, 86.0000 mm): PTH pad A [<no net>] of R60
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(86.0000 mm, 96.4600 mm): Track [<no net>] on B.Cu, length 31.4600 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(200.0000 mm, 28.0000 mm): Track [+12V_PROT] on F.Cu, length 38.0000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(70.0000 mm, 157.0000 mm): Track [+12V_PROT] on B.Cu, length 130.0000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(238.0000 mm, 90.0000 mm): Track [+3V3] on F.Cu, length 58.0000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(100.0000 mm, 148.0000 mm): Track [+3V3] on F.Cu, length 0.0000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(238.0000 mm, 148.0000 mm): Track [+3V3] on F.Cu, length 122.0000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(128.0000 mm, 92.0000 mm): Track [+3V3] on B.Cu, length 59.4643 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(130.0000 mm, 78.9200 mm): Track [SWCLK] on F.Cu, length 0.0800 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(202.0000 mm, 46.5400 mm): Track [VM] on F.Cu, length 38.5400 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(96.8707 mm, 142.0000 mm): Track [VREF] on B.Cu, length 12.8707 mm
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(128.0000 mm, 80.0000 mm): Via [SWDIO] on F.Cu - B.Cu
+    @(128.0000 mm, 80.0000 mm): Via [SWCLK] on F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(50.0000 mm, 86.0000 mm): PTH pad A [<no net>] of R60
+    @(50.0000 mm, 86.0000 mm): PTH pad B [<no net>] of R61
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 130.0000 mm): PTH pad A [+3V3] of R75
+    @(100.0000 mm, 130.0000 mm): PTH pad B [+3V3] of R74
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 130.0000 mm): PTH pad L1 [+3V3] of U1
+    @(100.0000 mm, 130.0000 mm): PTH pad B [+3V3] of R74
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(176.0000 mm, 104.0000 mm): PTH pad A [MAP] of R43
+    @(176.0000 mm, 104.0000 mm): PTH pad B [MAP] of R42
+[hole_to_hole]: Furo feito muito próximo de outro furo (configuração das restrições da placa mín 0,2495 mm; atual 0,0700 mm)
+    Rule: configuração das restrições da placa; warning
+    @(172.0000 mm, 47.0800 mm): PTH pad 3 [<no net>] of U4
+    @(172.0000 mm, 48.0000 mm): PTH pad B [<no net>] of R77
+[hole_to_hole]: Furo feito muito próximo de outro furo (configuração das restrições da placa mín 0,2495 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; warning
+    @(172.0000 mm, 52.0000 mm): PTH pad B [DAC_VM] of R76
+    @(172.0000 mm, 52.1600 mm): PTH pad 5 [DAC_VM] of U4
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 130.0000 mm): PTH pad A [+3V3] of R75
+    @(100.0000 mm, 130.0000 mm): PTH pad L1 [+3V3] of U1
+[hole_to_hole]: Furo feito muito próximo de outro furo (configuração das restrições da placa mín 0,2495 mm; atual 0,2050 mm)
+    Rule: configuração das restrições da placa; warning
+    @(100.0000 mm, 124.9200 mm): PTH pad L3 [<no net>] of U1
+    @(100.0000 mm, 126.0000 mm): PTH pad B [VBAT] of R75
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(184.0000 mm, 92.0000 mm): Footprint R53
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(87.4600 mm, 62.0000 mm): Footprint R21
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(34.0000 mm, 150.0000 mm): Footprint C1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(184.0000 mm, 128.0000 mm): Footprint R50
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(19.4600 mm, 148.0000 mm): Footprint Q1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(54.0000 mm, 74.0000 mm): Footprint D30
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(50.0000 mm, 86.0000 mm): Footprint R60
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(84.0000 mm, 150.0000 mm): Footprint C3
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(94.0000 mm, 130.0000 mm): Footprint R74
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(34.0000 mm, 144.0000 mm): Footprint C2
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(18.0000 mm, 134.0000 mm): Footprint D2
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(180.0000 mm, 88.5000 mm): Footprint C13
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(88.0000 mm, 138.0000 mm): Footprint U8
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(69.4600 mm, 40.0000 mm): Footprint Q10
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(16.0000 mm, 96.0000 mm): Footprint R30
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(123.4600 mm, 40.0000 mm): Footprint Q13
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(14.0000 mm, 134.0000 mm): Footprint R1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(168.0000 mm, 104.0000 mm): Footprint R42
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(12.0000 mm, 8.0000 mm): Footprint CN1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(172.0000 mm, 42.0000 mm): Footprint U4
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(168.0000 mm, 48.0000 mm): Footprint R77
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(168.0000 mm, 128.0000 mm): Footprint R40
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(72.0000 mm, 142.0000 mm): Footprint U3
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(102.8000 mm, 32.0000 mm): Footprint D12
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(146.8000 mm, 32.0000 mm): Footprint D14
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(116.0000 mm, 84.0000 mm): Footprint U6
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(70.0000 mm, 84.0000 mm): Footprint R62
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(34.0000 mm, 104.0000 mm): Footprint D21
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(192.0000 mm, 60.0000 mm): Footprint R70
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(184.0000 mm, 116.0000 mm): Footprint R51
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(149.4600 mm, 40.0000 mm): Footprint Q30
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(120.8000 mm, 32.0000 mm): Footprint D13
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(84.0000 mm, 144.0000 mm): Footprint C4
+[lib_footprint_mismatch]: O footprint 'MountingHole_3.2mm_M3' não corresponde à cópia na biblioteca 'MountingHole'
+    Local override; warning
+    @(236.0000 mm, 4.0000 mm): Footprint H
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(48.0000 mm, 144.0000 mm): Footprint D1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(123.4600 mm, 52.0000 mm): Footprint R13
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(192.0000 mm, 66.0000 mm): Footprint R71
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(164.0000 mm, 44.0000 mm): Footprint C32
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(180.0000 mm, 100.5000 mm): Footprint C12
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(200.0000 mm, 8.0000 mm): Footprint CN2
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(105.4600 mm, 62.0000 mm): Footprint R22
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(48.0000 mm, 104.0000 mm): Footprint D22
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(104.0000 mm, 126.0000 mm): Footprint C33
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(20.0000 mm, 104.0000 mm): Footprint D20
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(206.0000 mm, 54.0000 mm): Footprint C30
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(69.4600 mm, 62.0000 mm): Footprint R20
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(100.0000 mm, 126.0000 mm): Footprint R75
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(105.4600 mm, 40.0000 mm): Footprint Q12
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(66.8000 mm, 32.0000 mm): Footprint D10
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(87.4600 mm, 40.0000 mm): Footprint Q11
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(84.8000 mm, 32.0000 mm): Footprint D11
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(204.0000 mm, 48.0000 mm): Footprint R78
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(184.0000 mm, 104.0000 mm): Footprint R52
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(210.0000 mm, 60.0000 mm): Footprint C31
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(202.0000 mm, 44.0000 mm): Footprint U5
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(123.4600 mm, 62.0000 mm): Footprint R23
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(100.0000 mm, 81.7400 mm): Footprint U1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(58.0000 mm, 142.0000 mm): Footprint U2
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(116.0000 mm, 70.0000 mm): Footprint J1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(69.4600 mm, 52.0000 mm): Footprint R10
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(176.0000 mm, 100.0000 mm): Footprint R43
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(14.7300 mm, 112.0000 mm): Footprint Q20
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(149.4600 mm, 62.0000 mm): Footprint R25
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(60.0000 mm, 80.0000 mm): Footprint U7
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(42.0000 mm, 86.0000 mm): Footprint R61
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(42.7300 mm, 112.0000 mm): Footprint Q22
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(30.0000 mm, 96.0000 mm): Footprint R31
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(168.0000 mm, 52.0000 mm): Footprint R76
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(180.0000 mm, 124.5000 mm): Footprint C10
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(74.0000 mm, 78.0000 mm): Footprint C20
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(105.4600 mm, 52.0000 mm): Footprint R12
+[lib_footprint_mismatch]: O footprint 'MountingHole_3.2mm_M3' não corresponde à cópia na biblioteca 'MountingHole'
+    Local override; warning
+    @(236.0000 mm, 156.0000 mm): Footprint H
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(149.4600 mm, 52.0000 mm): Footprint R15
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(87.4600 mm, 52.0000 mm): Footprint R11
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(28.7300 mm, 112.0000 mm): Footprint Q21
+[lib_footprint_mismatch]: O footprint 'MountingHole_3.2mm_M3' não corresponde à cópia na biblioteca 'MountingHole'
+    Local override; warning
+    @(4.0000 mm, 156.0000 mm): Footprint H
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(180.0000 mm, 112.5000 mm): Footprint C11
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(168.0000 mm, 116.0000 mm): Footprint R41
+[lib_footprint_mismatch]: O footprint 'MountingHole_3.2mm_M3' não corresponde à cópia na biblioteca 'MountingHole'
+    Local override; warning
+    @(4.0000 mm, 4.0000 mm): Footprint H
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(44.0000 mm, 96.0000 mm): Footprint R32
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(149.4600 mm, 59.0000 mm): Reference field of R25
+    @(149.4600 mm, 60.0000 mm): PTH pad B [GHEAT] of R15
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(168.0000 mm, 49.0000 mm): Reference field of R76
+    @(168.0000 mm, 48.0000 mm): PTH pad A [<no net>] of R77
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(87.4600 mm, 59.0000 mm): Reference field of R21
+    @(87.4600 mm, 60.0000 mm): PTH pad B [<no net>] of R11
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(105.4600 mm, 59.0000 mm): Reference field of R22
+    @(105.4600 mm, 60.0000 mm): PTH pad B [GINJ3] of R12
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(123.4600 mm, 59.0000 mm): Reference field of R23
+    @(123.4600 mm, 60.0000 mm): PTH pad B [GINJ4] of R13
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(100.0000 mm, 123.0000 mm): Reference field of R75
+    @(100.0000 mm, 122.3800 mm): PTH pad L4 [<no net>] of U1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(69.4600 mm, 59.0000 mm): Reference field of R20
+    @(69.4600 mm, 60.0000 mm): PTH pad B [GINJ1] of R10
+[copper_sliver]: Fita de cobre (F.Cu)
+    Local override; warning
+
+** Found 10 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(70.0000 mm, 157.0000 mm): Track [+12V_PROT] on B.Cu, length 130.0000 mm
+    @(200.0000 mm, 14.0000 mm): Track [+12V_PROT] on F.Cu, length 14.0000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(56.0000 mm, 14.0000 mm): PTH pad 12 [RPM_IN] of CN1
+    @(54.0000 mm, 74.0000 mm): Track [RPM_IN] on B.Cu, length 6.0000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(94.0000 mm, 130.0000 mm): Track [VBAT] on B.Cu, length 69.4600 mm
+    @(100.0000 mm, 130.0000 mm): Track [VBAT] on B.Cu, length 4.0000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(100.0000 mm, 130.0000 mm): Track [VBAT] on B.Cu, length 4.0000 mm
+    @(100.0000 mm, 126.0000 mm): Track [VBAT] on B.Cu, length 8.0000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(116.0000 mm, 70.0000 mm): Track [+3V3] on F.Cu, length 2.0000 mm
+    @(168.0000 mm, 104.0000 mm): Track [+3V3] on F.Cu, length 41.7612 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(164.0000 mm, 50.0000 mm): Track [+5V] on F.Cu, length 13.4164 mm
+    @(32.0000 mm, 14.0000 mm): PTH pad 6 [+5V] of CN1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(200.0000 mm, 60.0000 mm): Track [IP] on F.Cu, length 45.6070 mm
+    @(208.0000 mm, 14.0000 mm): PTH pad 3 [IP] of CN2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(192.0000 mm, 66.0000 mm): Track [UN] on F.Cu, length 88.0000 mm
+    @(204.0000 mm, 8.0000 mm): PTH pad 5 [UN] of CN2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(202.0000 mm, 46.5400 mm): Pad 3 [VM] of U5 on B.Cu
+    @(202.0000 mm, 46.5400 mm): Track [VM] on F.Cu, length 38.5400 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(128.0000 mm, 80.0000 mm): Track [SWCLK] on B.Cu, length 28.0092 mm
+    @(130.0000 mm, 78.9200 mm): Track [SWCLK] on F.Cu, length 0.0800 mm
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

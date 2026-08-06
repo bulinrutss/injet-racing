@@ -1,0 +1,577 @@
+(kicad_sch
+	(version 20250114)
+	(generator "injet-racing-gen")
+	(generator_version "1.3")
+	(uuid "e5b1a114-d449-4203-892e-65212eefb0b4")
+	(paper "A3")
+	(title_block
+		(title "INJET RACING ECU — Fase 1 (TBI batch-fire)")
+		(date "2026-08-05")
+		(rev "Fase1")
+		(company "INJET RACING")
+		(comment 1 "1")
+	)
+	(lib_symbols)
+	(text "Esquematico hierarquico — ver modulo/esquema-eletrico.md"
+		(at 20 15 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "c9348cb1-bdf5-413c-984d-408a89836e5d")
+	)
+	(sheet
+		(at 30 40)
+		(size 40 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "49afc792-5924-416c-a5db-bb77f7d65ee8")
+		(property "Sheetname" "Alimentação"
+			(at 30 69.2884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheets/power.kicad_sch"
+			(at 30 70.7116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+12V_BAT" input
+			(at 70 48 0)
+			(uuid "952103f4-45c4-4ad1-8dcf-9e0d70d21ffa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+5V" output
+			(at 70 54 0)
+			(uuid "3e53c716-4828-4870-8efe-460baae5f086")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+12V_PROT" output
+			(at 70 60 0)
+			(uuid "ef69988f-8fa8-4363-913e-5193ecb58294")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GND" passive
+			(at 70 66 0)
+			(uuid "ccbd4f93-e9bf-440a-ab58-ea410c46bb2c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "injet-racing-ecu"
+				(path "/e5b1a114-d449-4203-892e-65212eefb0b4"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 90 40)
+		(size 40 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "276da528-c8fe-41b9-ae2a-7e79488d414d")
+		(property "Sheetname" "MCU Black Board"
+			(at 90 69.2884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheets/mcu.kicad_sch"
+			(at 90 70.7116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 130 48 0)
+			(uuid "4a3b00e5-b4ac-4269-9757-5605e6134ee6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+3V3" output
+			(at 130 54 0)
+			(uuid "76119b98-e697-401b-aafa-847f1d670e4b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GND" passive
+			(at 130 60 0)
+			(uuid "527dcf46-d50f-465e-be02-0f6a7fa6785f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "injet-racing-ecu"
+				(path "/e5b1a114-d449-4203-892e-65212eefb0b4"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 150 40)
+		(size 40 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "69bbc2b9-b4b8-4087-819b-3d55ff44e928")
+		(property "Sheetname" "Sensores"
+			(at 150 69.2884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheets/sensors.kicad_sch"
+			(at 150 70.7116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+3V3" passive
+			(at 190 48 0)
+			(uuid "6c12869f-cfa5-49c6-bc13-4b75629dc160")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+5V" passive
+			(at 190 54 0)
+			(uuid "14bc04db-6067-4f63-83bf-a29716bfc8a8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+12V_PROT" passive
+			(at 190 60 0)
+			(uuid "93d31304-bed9-41d0-9e16-fd217e792080")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "injet-racing-ecu"
+				(path "/e5b1a114-d449-4203-892e-65212eefb0b4"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 210 40)
+		(size 40 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3549985a-88d3-4c56-9458-523e270f439f")
+		(property "Sheetname" "RPM"
+			(at 210 69.2884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheets/rpm.kicad_sch"
+			(at 210 70.7116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "PB0" bidirectional
+			(at 250 48 0)
+			(uuid "188a0152-1213-46c8-90f8-7db511a6d829")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+3V3" passive
+			(at 250 54 0)
+			(uuid "2cfb0bcf-5d88-487b-8c30-8e2d5bb7ff5a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "injet-racing-ecu"
+				(path "/e5b1a114-d449-4203-892e-65212eefb0b4"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30 85)
+		(size 40 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a7d5718d-7f33-49f9-80c9-d13612f8e44b")
+		(property "Sheetname" "Injetores"
+			(at 30 114.2884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheets/injectors.kicad_sch"
+			(at 30 115.7116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+12V_PROT" passive
+			(at 70 93 0)
+			(uuid "39cad997-29c7-4198-8c1d-e6c6eb36d0bf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GND" passive
+			(at 70 99 0)
+			(uuid "85c52f75-9ef0-4faa-a778-9e510ca0f56c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "injet-racing-ecu"
+				(path "/e5b1a114-d449-4203-892e-65212eefb0b4"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 90 85)
+		(size 40 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "633c3766-2c67-4c3f-814b-1658b696c523")
+		(property "Sheetname" "Relés"
+			(at 90 114.2884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheets/relays.kicad_sch"
+			(at 90 115.7116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+12V_PROT" passive
+			(at 130 93 0)
+			(uuid "089a0efd-965e-4bfd-8a11-f0534709fed8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GND" passive
+			(at 130 99 0)
+			(uuid "4fa6e570-c7e3-4e2e-894a-e0dffe6be09c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "injet-racing-ecu"
+				(path "/e5b1a114-d449-4203-892e-65212eefb0b4"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 150 85)
+		(size 40 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bd60f718-6f16-4425-9d0d-78bf734937e7")
+		(property "Sheetname" "Lambda"
+			(at 150 114.2884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheets/lambda.kicad_sch"
+			(at 150 115.7116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" passive
+			(at 190 93 0)
+			(uuid "45f5af5e-6408-42e1-b7d6-e7f07723a51f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+12V_PROT" passive
+			(at 190 99 0)
+			(uuid "abe8c79d-efce-4d34-b494-332e65c4904f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GND" passive
+			(at 190 105 0)
+			(uuid "a37e42b7-d15b-4363-8579-cd1b722fbf6c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "injet-racing-ecu"
+				(path "/e5b1a114-d449-4203-892e-65212eefb0b4"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 210 85)
+		(size 40 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3d5e0219-452a-4c35-9516-4fbd4bef45a9")
+		(property "Sheetname" "CAN"
+			(at 210 114.2884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheets/can.kicad_sch"
+			(at 210 115.7116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+3V3" passive
+			(at 250 93 0)
+			(uuid "4ad14795-0680-47a5-8f72-a59fb25b7e5d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GND" passive
+			(at 250 99 0)
+			(uuid "dff4e171-1028-40f7-8100-56ba541a29e5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "injet-racing-ecu"
+				(path "/e5b1a114-d449-4203-892e-65212eefb0b4"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
+

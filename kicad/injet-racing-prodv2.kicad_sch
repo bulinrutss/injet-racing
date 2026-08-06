@@ -1,0 +1,11903 @@
+(kicad_sch
+	(version 20250114)
+	(generator "injet-racing-gen")
+	(generator_version "1.0-prodv2")
+	(uuid "63279769-d7b6-4284-9db0-ad794a15320d")
+	(paper "A0")
+	(title_block
+		(title "INJET RACING ECU — Produção (CN1 ATX-24 + CN2 PCIe-6)")
+		(date "2026-08-05")
+		(rev "ProdV2-1L")
+		(company "INJET RACING")
+		(comment 1 "1")
+	)
+	(lib_symbols
+		(symbol "Device:R"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Resistor_THT:R_AXIAL-0.4W"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 2.54)
+					(end 1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:C"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "C"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(rectangle
+					(start -2.032 0.762)
+					(end 2.032 -0.762)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:D"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_THT:D_DO-41"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27) (xy 1.27 0) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:Fuse"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fuse"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Fuse:Fuse_BelFuse-0ZRN_OptiFuse_OptiReset"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fuse_0_1"
+				(rectangle
+					(start -3.81 1.27)
+					(end 3.81 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:Q_PMOS"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Q_PMOS"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Q_PMOS_0_1"
+				(circle
+					(center 0 0)
+					(radius 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Q_PMOS_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:Q_NMOS"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Q_NMOS"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Q_NMOS_0_1"
+				(circle
+					(center 0 0)
+					(radius 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Q_NMOS_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "GND"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+12V"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "V12"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+12V"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+12V_0_1"
+				(text "V12"
+					(at 0 1.905 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "+12V_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 2.54)
+					(name "+12V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+5V"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "V5"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_0_1"
+				(text "V5"
+					(at 0 1.905 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 2.54)
+					(name "+5V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+3V3"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "V3"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(text "V3"
+					(at 0 1.905 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 2.54)
+					(name "+3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Injet:MP1584"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MP1584"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Converter_DCDC:Converter_DCDC_MP1584"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MP1584_0_1"
+				(rectangle
+					(start -12.7 10.16)
+					(end 12.7 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "MP1584_1_1"
+				(pin power_in line
+					(at -12.7 5.08 0)
+					(length 2.54)
+					(name "VIN+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -12.7 0 0)
+					(length 2.54)
+					(name "VIN-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 12.7 5.08 180)
+					(length 2.54)
+					(name "VOUT+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 12.7 0 180)
+					(length 2.54)
+					(name "VOUT-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Injet:BLACK_BOARD"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U1"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BLACK_BOARD"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BLACK_BOARD_0_1"
+				(rectangle
+					(start -20.32 27.94)
+					(end 20.32 -27.94)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "BLACK_BOARD_1_1"
+				(pin power_in line
+					(at -20.32 15.24 0)
+					(length 2.54)
+					(name "5V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at -20.32 10.16 0)
+					(length 2.54)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -20.32 5.08 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -20.32 0 0)
+					(length 2.54)
+					(name "VREF+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 15.24 180)
+					(length 2.54)
+					(name "PA0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 12.7 180)
+					(length 2.54)
+					(name "PA1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 10.16 180)
+					(length 2.54)
+					(name "PA2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 7.62 180)
+					(length 2.54)
+					(name "PA3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 5.08 180)
+					(length 2.54)
+					(name "PA4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 2.54 180)
+					(length 2.54)
+					(name "PA5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 0.0000 180)
+					(length 2.54)
+					(name "PA6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -2.54 180)
+					(length 2.54)
+					(name "PC0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -5.08 180)
+					(length 2.54)
+					(name "PC1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -7.62 180)
+					(length 2.54)
+					(name "PB0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -10.16 180)
+					(length 2.54)
+					(name "PB8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -12.7 180)
+					(length 2.54)
+					(name "PB9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -15.24 180)
+					(length 2.54)
+					(name "PE9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -17.78 180)
+					(length 2.54)
+					(name "PE11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -20.32 180)
+					(length 2.54)
+					(name "PE13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -22.86 180)
+					(length 2.54)
+					(name "PE14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -25.4 180)
+					(length 2.54)
+					(name "PD8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -27.94 180)
+					(length 2.54)
+					(name "PD9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -30.48 180)
+					(length 2.54)
+					(name "PD10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -33.02 180)
+					(length 2.54)
+					(name "PD12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Injet:MCP6004"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MCP6004"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MCP6004_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "MCP6004_1_1"
+				(pin power_in line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Injet:AD8628"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AD8628"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AD8628_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "AD8628_1_1"
+				(pin power_in line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "IN-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "IN+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Injet:REF3033"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "REF3033"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "REF3033_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "REF3033_1_1"
+				(pin power_in line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Injet:PC817"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PC817"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_DIP:DIP-4_W7.62mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PC817_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "PC817_1_1"
+				(pin passive line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Injet:SN65HVD230"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SN65HVD230"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SN65HVD230_0_1"
+				(rectangle
+					(start -10.16 7.62)
+					(end 10.16 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "SN65HVD230_1_1"
+				(pin power_in line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "TXD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name "RXD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "CANH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 -5.08 180)
+					(length 2.54)
+					(name "CANL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Injet:Relay"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RL"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Relay"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Relay_0_1"
+				(rectangle
+					(start -7.62 7.62)
+					(end 7.62 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "Relay_1_1"
+				(pin passive line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "COIL+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "COIL-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "COM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "NO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Injet:CN_ATX24"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "CN1"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "CN_ATX24"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x12_P2.54mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CN_ATX24_0_1"
+				(rectangle
+					(start -5.08 30.48)
+					(end 5.08 -30.48)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "CN_ATX24_1_1"
+				(pin passive line
+					(at -5.08 27.94 0)
+					(length 2.54)
+					(name "P1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 25.4 0)
+					(length 2.54)
+					(name "P2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 22.86 0)
+					(length 2.54)
+					(name "P3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 20.32 0)
+					(length 2.54)
+					(name "P4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 17.78 0)
+					(length 2.54)
+					(name "P5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 15.24 0)
+					(length 2.54)
+					(name "P6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 12.7 0)
+					(length 2.54)
+					(name "P7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 10.16 0)
+					(length 2.54)
+					(name "P8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 7.62 0)
+					(length 2.54)
+					(name "P9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 2.54)
+					(name "P10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "P11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0.0000 0)
+					(length 2.54)
+					(name "P12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "P13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 2.54)
+					(name "P14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 2.54)
+					(name "P15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -10.16 0)
+					(length 2.54)
+					(name "P16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -12.7 0)
+					(length 2.54)
+					(name "P17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -15.24 0)
+					(length 2.54)
+					(name "P18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -17.78 0)
+					(length 2.54)
+					(name "P19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -20.32 0)
+					(length 2.54)
+					(name "P20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -22.86 0)
+					(length 2.54)
+					(name "P21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -25.4 0)
+					(length 2.54)
+					(name "P22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -27.94 0)
+					(length 2.54)
+					(name "P23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -30.48 0)
+					(length 2.54)
+					(name "P24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Injet:CN_PCIE6"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "CN2"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "CN_PCIE6"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CN_PCIE6_0_1"
+				(rectangle
+					(start -5.08 7.62)
+					(end 5.08 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "CN_PCIE6_1_1"
+				(pin passive line
+					(at 5.08 5.08 180)
+					(length 2.54)
+					(name "P1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "P2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0.0000 180)
+					(length 2.54)
+					(name "P3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "P4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 2.54)
+					(name "P5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -7.62 180)
+					(length 2.54)
+					(name "P6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(text "Circuito completo Fase 1 · CN1=chicote ATX-24 · CN2=lambda PCIe-6 · PCB 200×100 mm 1-layer\nBlack Board STM32F407 · buck MP1584 · +3V3 da Black Board (sem LDO extra) · LSU 4.2 DIY"
+		(at 15 8 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "ec93e3eb-1e91-4e1c-bcab-6ad6b00a7f3d")
+	)
+	(symbol
+		(lib_id "Injet:CN_ATX24")
+		(at 45 145 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "44c3cc2a-1de2-47a9-b942-f1561dee619b")
+		(property "Reference" "CN1"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ATX-24 chicote"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x12_P2.54mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "627e1da3-a492-462b-b324-53e3267e44aa")
+		)
+		(pin "2"
+			(uuid "604e1edc-a854-4c05-a438-0dcd22b5f819")
+		)
+		(pin "3"
+			(uuid "6579d4cd-b787-4e15-bcd1-1ec009c76d25")
+		)
+		(pin "4"
+			(uuid "9baccc28-3466-4ed2-a225-ab5e653282a2")
+		)
+		(pin "5"
+			(uuid "9c89ac3e-520a-4a40-bb16-c162e327f136")
+		)
+		(pin "6"
+			(uuid "b02ca51a-8c37-49ea-a8f8-e184e2d3033f")
+		)
+		(pin "7"
+			(uuid "be441d29-49e0-4ba6-ab19-1af0698d9702")
+		)
+		(pin "8"
+			(uuid "ee6f89d5-8776-45f2-81be-a89e05f8d5fe")
+		)
+		(pin "9"
+			(uuid "b6684f24-3047-4761-970d-a8d770bb4f8f")
+		)
+		(pin "10"
+			(uuid "fc0f7440-01f4-4879-8959-1796c8de4899")
+		)
+		(pin "11"
+			(uuid "5ba2705b-3782-4153-9474-c4ab2b3906dc")
+		)
+		(pin "12"
+			(uuid "5fa10387-e8a1-46d4-88b7-06fce5349b71")
+		)
+		(pin "13"
+			(uuid "244448eb-77dc-4098-a902-e0f5de68dfa3")
+		)
+		(pin "14"
+			(uuid "7e545360-54e0-405a-94f2-14d984a856f0")
+		)
+		(pin "15"
+			(uuid "477ce5de-6b24-47c9-aa4d-39c3dd617767")
+		)
+		(pin "16"
+			(uuid "1f1702dd-390d-46a5-8f30-2ffa51788703")
+		)
+		(pin "17"
+			(uuid "a23c3e56-fbdd-43dc-b606-17ae39dbda00")
+		)
+		(pin "18"
+			(uuid "d88aa45c-3de6-45c4-940f-4c6aab0d9b99")
+		)
+		(pin "19"
+			(uuid "4bef83d3-09c8-403a-a2c1-f19cd65d14f5")
+		)
+		(pin "20"
+			(uuid "f34ae9f2-0f1a-4868-810c-7c47d3f789a3")
+		)
+		(pin "21"
+			(uuid "f514629e-86e2-4687-a88d-e61e05966318")
+		)
+		(pin "22"
+			(uuid "a9593681-8728-4783-8939-083d4243ec74")
+		)
+		(pin "23"
+			(uuid "9c1b5022-e8dc-44b7-84c8-014381bd4999")
+		)
+		(pin "24"
+			(uuid "617e82ed-262c-4a1e-9e38-7baf4cb14db7")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "CN1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "CN1 — conector placa-mãe PC (2×12 passo 4,2 mm)"
+		(at 40 183 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+			)
+		)
+		(uuid "c086ee33-b17c-4331-931d-797d41ef1c51")
+	)
+	(wire
+		(pts
+			(xy 39.92 175.48) (xy 78 175.48)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "1fd8b21f-bb5c-4846-a829-cd3a5691426a")
+	)
+	(label "+12V_IGN"
+		(at 79.27 175.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b015b97a-49be-4f0c-89a2-0d14d6ae8ca6")
+	)
+	(wire
+		(pts
+			(xy 39.92 172.94) (xy 78 172.94)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "8290de72-65f8-45b7-8295-ab6ba1b100f5")
+	)
+	(label "+12V_BAT"
+		(at 79.27 172.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9896f942-a6db-4bf9-ac9f-7756d68ab389")
+	)
+	(wire
+		(pts
+			(xy 39.92 170.4) (xy 78 170.4)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "f38a4e19-3114-428f-802c-99e3517dabd5")
+	)
+	(label "GND"
+		(at 79.27 170.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "920a11d8-6c66-46ef-a8e6-4dbcbb359721")
+	)
+	(wire
+		(pts
+			(xy 39.92 167.86) (xy 78 167.86)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "46b8e005-1882-4029-8bc3-9e6145ffb8ed")
+	)
+	(label "GND"
+		(at 79.27 167.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4df89bea-523a-48d6-ae29-a1bcfa830146")
+	)
+	(wire
+		(pts
+			(xy 39.92 165.32) (xy 78 165.32)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "b4978e6a-ea5b-4d10-b2c3-799e8d096aec")
+	)
+	(label "GND_SIG"
+		(at 79.27 165.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7169d408-aba7-4853-a516-66355f1215ac")
+	)
+	(wire
+		(pts
+			(xy 39.92 162.78) (xy 78 162.78)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "87e23bfc-8143-4320-8695-fc9c9b0b1a91")
+	)
+	(label "+5V"
+		(at 79.27 162.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "493e0e1e-b627-40c5-a18f-02411d87db90")
+	)
+	(wire
+		(pts
+			(xy 39.92 160.24) (xy 78 160.24)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "13c12ed2-6736-4bd0-adb8-f84fdc7daade")
+	)
+	(label "+3V3"
+		(at 79.27 160.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "76fc3776-bb63-4ee2-955a-bd353a51dffc")
+	)
+	(wire
+		(pts
+			(xy 39.92 157.7) (xy 78 157.7)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "571e0d1b-9c51-4c8b-979e-2ec0008d205f")
+	)
+	(label "IAT"
+		(at 79.27 157.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d822ce8e-0aee-4baf-82f2-0ece66e31e38")
+	)
+	(wire
+		(pts
+			(xy 39.92 155.16) (xy 78 155.16)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "f32db0de-e05e-49d5-89c5-895e373bef4b")
+	)
+	(label "CLT"
+		(at 79.27 155.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f4d83089-68c0-4dba-b8db-b9d1fb709cf8")
+	)
+	(wire
+		(pts
+			(xy 39.92 152.62) (xy 78 152.62)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "52986eb9-a62a-4c63-bd07-bec9c80a710a")
+	)
+	(label "MAP"
+		(at 79.27 152.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b435b1c0-4db0-45e6-b035-48044d6f42f0")
+	)
+	(wire
+		(pts
+			(xy 39.92 150.08) (xy 78 150.08)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "4f354c49-3268-4c57-a842-87b6c286fb73")
+	)
+	(label "TPS"
+		(at 79.27 150.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "498ed470-3997-4306-b762-0b5732b9df16")
+	)
+	(wire
+		(pts
+			(xy 39.92 147.54) (xy 78 147.54)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "b5aa1c95-518a-413f-aa13-e5eb666fe192")
+	)
+	(label "RPM_IN"
+		(at 79.27 147.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "06cdacf3-5b20-4043-8c77-bbf7c64b0a1d")
+	)
+	(wire
+		(pts
+			(xy 39.92 145) (xy 78 145)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "ec614d73-6212-4228-bea9-ee701e34a9c0")
+	)
+	(label "INJ1"
+		(at 79.27 145 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7eec0105-f62e-43e6-8d2f-8e685a49d805")
+	)
+	(wire
+		(pts
+			(xy 39.92 142.46) (xy 78 142.46)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "518b72ec-387c-414a-adc4-f2e73547844f")
+	)
+	(label "INJ2"
+		(at 79.27 142.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9df731dd-8a3b-41da-aa56-f3e7325d54bb")
+	)
+	(wire
+		(pts
+			(xy 39.92 139.92) (xy 78 139.92)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "48c4f56f-1dc1-4bd4-8933-e5b5b632b5c0")
+	)
+	(label "INJ3"
+		(at 79.27 139.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "21547450-f198-401f-b952-9fb93d43e8e7")
+	)
+	(wire
+		(pts
+			(xy 39.92 137.38) (xy 78 137.38)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "e96d35fd-5579-4c41-87d0-de2a1e305727")
+	)
+	(label "INJ4"
+		(at 79.27 137.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "de8115e7-8d24-4d8f-beb6-f877e280514b")
+	)
+	(wire
+		(pts
+			(xy 39.92 134.84) (xy 78 134.84)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "e6169af4-fc80-48e8-8440-ee10acf11997")
+	)
+	(label "RL_PUMP"
+		(at 79.27 134.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e80673f6-b3ec-4384-8b7e-0e74a9739e83")
+	)
+	(wire
+		(pts
+			(xy 39.92 132.3) (xy 78 132.3)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "60fdf208-d83b-45ae-9578-9a860dc3a654")
+	)
+	(label "RL_MAIN"
+		(at 79.27 132.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "70261cba-d520-4a12-ab67-b3751576d0a8")
+	)
+	(wire
+		(pts
+			(xy 39.92 129.76) (xy 78 129.76)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "3576b519-0da7-4a69-88b7-9dfe3d5fb1e6")
+	)
+	(label "RL_IAC"
+		(at 79.27 129.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "eb7d27e9-6842-44a0-bc5d-d2e1af355471")
+	)
+	(wire
+		(pts
+			(xy 39.92 127.22) (xy 78 127.22)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "25508072-2ef0-44e9-95ee-75fd0e3cb098")
+	)
+	(label "CANH"
+		(at 79.27 127.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "332bd3b8-89bf-46ae-a395-c5cfcdcb6e44")
+	)
+	(wire
+		(pts
+			(xy 39.92 124.68) (xy 78 124.68)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "59f448e4-c80d-4908-afa2-a206deb6b8b7")
+	)
+	(label "CANL"
+		(at 79.27 124.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2cd7f9ae-425f-4ddf-aa17-5694808c10af")
+	)
+	(wire
+		(pts
+			(xy 39.92 122.14) (xy 78 122.14)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "69bd0190-c0a5-4d17-afce-c0926e4c08f4")
+	)
+	(no_connect
+		(at 78 122.14)
+		(uuid "fa480a1f-31c6-45f4-bac8-af17f59ed772")
+	)
+	(label "P22:TACHO"
+		(at 80 122.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3d3d848b-8f8b-499a-a0cb-077f557d1824")
+	)
+	(wire
+		(pts
+			(xy 39.92 119.6) (xy 78 119.6)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "8e903ca6-3ea7-4373-bc8b-b8082885ba72")
+	)
+	(no_connect
+		(at 78 119.6)
+		(uuid "e45b6f35-3baf-4b6e-98fe-66306bb0f7be")
+	)
+	(label "P23:START"
+		(at 80 119.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "df90290a-1e20-4d40-9c14-8aea976f1140")
+	)
+	(wire
+		(pts
+			(xy 39.92 117.06) (xy 78 117.06)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "d7924f94-6ea9-40ba-b125-ac2f1405222c")
+	)
+	(label "GND"
+		(at 79.27 117.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "71fd6581-8175-45d3-b484-1893f09d345f")
+	)
+	(wire
+		(pts
+			(xy 95 40) (xy 95 320)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "28d023a6-0cca-4a32-98b8-96bc008f8344")
+	)
+	(global_label "+12V_BAT"
+		(shape input)
+		(at 95 45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "55a21736-e34b-400c-8137-5bbc32493cf1")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 95 45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+12V_IGN"
+		(shape input)
+		(at 95 55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1d9e6df2-ea0f-472b-ab6d-6520d76fe2ee")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 95 55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+12V_PROT"
+		(shape output)
+		(at 95 200 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fbd196e9-b9c1-4e19-ac1d-67e39b6fa386")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 95 200 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+5V"
+		(shape output)
+		(at 95 260 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5b302d8a-cf62-4ba2-b2bd-bf0df0eaf804")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 95 260 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+3V3"
+		(shape output)
+		(at 95 280 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "42dfc037-1d24-4263-8e13-52af51e35c9b")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 95 280 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 95 300 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3b4a7f49-36e8-4a5e-976e-b794bcb71235")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 95 300 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND_SIG"
+		(shape passive)
+		(at 95 310 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9d3a20b9-619b-42fa-9bdb-c2bd315eccd2")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 95 310 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(label "+12V_BAT"
+		(at 78 172.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "cc213242-f622-4d4f-ab7f-c237285536ef")
+	)
+	(wire
+		(pts
+			(xy 78 172.94) (xy 110 172.94)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "f5f77795-8eb6-4e9e-a568-5ccd25793f10")
+	)
+	(wire
+		(pts
+			(xy 110 50) (xy 110 50)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "62559d07-80f6-4e37-9ffa-e2195b12c3ef")
+	)
+	(wire
+		(pts
+			(xy 110 50) (xy 112.5 50)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "00e80f17-7c99-49d7-b526-60de6230fb31")
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 120 50 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bd8f7651-55c8-474f-9377-4e8e83f69ada")
+		(property "Reference" "F1"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5A"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f9b3d64a-e1bb-41e6-81b8-4ba0fbbeeb86")
+		)
+		(pin "2"
+			(uuid "0cc87f6d-a68d-4ca5-884b-7bac5135d45b")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 112.5 50) (xy 127.5 50)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "d49d065a-d4ef-4547-b738-8fcf7a0ff387")
+	)
+	(wire
+		(pts
+			(xy 127.5 50) (xy 140 50)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "56abf7ec-9ef4-424c-ac91-8f66fad477e6")
+	)
+	(symbol
+		(lib_id "Device:Q_PMOS")
+		(at 150 50 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "deb023ef-e7bc-4b42-b774-00afd97c30e1")
+		(property "Reference" "Q1"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IRF9540"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0a667589-a8fc-43f8-b89f-eaaad64e9c50")
+		)
+		(pin "2"
+			(uuid "8ef47c5d-54e9-4ad3-a910-003ad4a40dbd")
+		)
+		(pin "3"
+			(uuid "8a1a5b4a-4c32-4ccf-9527-5672b3ff1126")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 140 50) (xy 142.5 50)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "b88d70e8-42eb-4d77-be0b-2ab7faaf7202")
+	)
+	(wire
+		(pts
+			(xy 157.5 50) (xy 175 50)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "b1bb65d4-244d-478b-ab92-0b9de0a51ce4")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 150 65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "969c5471-d915-496d-8fcf-34ee1d8aab0c")
+		(property "Reference" "R1"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9fbe514f-be32-4104-9811-dc6cbebe4cd4")
+		)
+		(pin "2"
+			(uuid "7ee99d35-d5ab-40ab-a7b1-a2126d7ebb4a")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 160 65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bd009095-466b-47bd-8c58-52ed88ebae11")
+		(property "Reference" "D1"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "15V Zener"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38951151-cfce-480e-9df5-2d02e65d64ac")
+		)
+		(pin "2"
+			(uuid "658ab9ee-7152-4a28-8b67-53b0ae3439f4")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 150 57.5) (xy 150 62.5)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "ac812079-c168-40c2-8a8e-a3ab9858d118")
+	)
+	(wire
+		(pts
+			(xy 150 67.5) (xy 160 67.5)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "4d8c0ef4-7bcc-48ca-82f2-726d1dfb9236")
+	)
+	(wire
+		(pts
+			(xy 160 62.5) (xy 160 67.5)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "6f6f802d-5b88-4314-858a-f72b99146336")
+	)
+	(wire
+		(pts
+			(xy 160 67.5) (xy 175 67.5)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "a4d56c1b-4e4e-4f7e-9c8e-44379898e74f")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 175 70.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f631dca2-4ac2-40c8-8da8-c9ceeb0fd521")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2cf1582e-54d0-4af6-a981-fde4dc74a323")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "+12V_PROT"
+		(shape output)
+		(at 178 50 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8abd9e41-c294-46aa-90f1-ca2338b9487b")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 178 50 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 175 50) (xy 185 50)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "01db326a-5650-4dd2-be8f-cb322d04a136")
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 195 60 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "553703c5-97c4-4188-b55a-36053f46ea56")
+		(property "Reference" "D2"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TVS 33V"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8ed706d5-aea2-46bc-bcdd-9294526df554")
+		)
+		(pin "2"
+			(uuid "2a07a7e9-1415-4c34-921c-cce42df0e863")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 195 45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d4ec0df1-6bb7-47b2-9081-f0bf758d5cfa")
+		(property "Reference" "C1"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220uF"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d894556-e8f7-4494-a68e-8761929d80c8")
+		)
+		(pin "2"
+			(uuid "745c3e49-54b1-47fc-aaf2-9ada5cdc0f87")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 210 45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab07d1e4-08d6-45d9-8174-c8908a26532f")
+		(property "Reference" "C2"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f3972324-631b-47ba-982e-bab09e0a0903")
+		)
+		(pin "2"
+			(uuid "67b75955-bd79-4a15-a715-669ccb01dae3")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 185 50) (xy 192.5 50)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "dde0b90a-eef0-46ae-8355-3a9fcd61bb7e")
+	)
+	(wire
+		(pts
+			(xy 195 50) (xy 195 42.5)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "7b23ff5e-fb2f-4c45-89c0-683984e629dc")
+	)
+	(wire
+		(pts
+			(xy 195 57.5) (xy 195 60)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "9792b314-4a6f-4617-873a-f278f82f3311")
+	)
+	(wire
+		(pts
+			(xy 185 50) (xy 215 50)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "b3de2039-4c26-484a-a16b-1de4c1c98131")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 195 62.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a40724a-6664-4ca8-98fa-197a5b40020a")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "46b6bcf1-6c73-4157-924b-796d9cd22223")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 210 47.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ea2c8fa1-4caa-4f38-9063-3f076743083b")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1048715d-8d5b-4323-92ed-a731868df470")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Injet:MP1584")
+		(at 235 50 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4d035214-26fd-419a-bcfb-a8b6f828135f")
+		(property "Reference" "U2"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MP1584"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1cbb4303-c6f3-49c4-b0fb-44d1da213129")
+		)
+		(pin "2"
+			(uuid "20c60ffc-3a3d-489e-be7e-535c55ebdcad")
+		)
+		(pin "3"
+			(uuid "1516e7fc-6de8-4488-984d-8d144e4b9194")
+		)
+		(pin "4"
+			(uuid "36d55599-f28f-447b-88b3-059f312fdbf4")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 215 50) (xy 222.5 50)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "abd772a1-d9ca-49d7-83f5-47191fd269c6")
+	)
+	(wire
+		(pts
+			(xy 215 38) (xy 222.5 38)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "6cb1d537-014c-4377-b6ff-20d4b42cd61d")
+	)
+	(wire
+		(pts
+			(xy 247.5 38) (xy 265 38)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "9b111dcd-5057-496d-b97d-c1e198f2d393")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 225 38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a3ee89fc-7c05-4404-b49c-45874b2d4ecd")
+		(property "Reference" "C3"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100uF"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "29361645-fd9a-408a-8d52-b3233810e969")
+		)
+		(pin "2"
+			(uuid "00f1ff12-5a8f-4171-98c5-7d7f267fd0bb")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 240 38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c30ba9f5-83ff-411a-a419-ff9ba6589bb1")
+		(property "Reference" "C4"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1bb1592-107b-4439-a04b-355235388be2")
+		)
+		(pin "2"
+			(uuid "ca17b4d4-d60f-49f2-9fc2-f3630039278d")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 255 38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9af6726-1fb8-4369-bdbf-7507a470bc49")
+		(property "Reference" "C5"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220uF"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73c7c12e-08bc-4f4d-b8f0-5aba5cb1fb55")
+		)
+		(pin "2"
+			(uuid "5d76f15d-aade-4257-8d02-11da6cbb8c7a")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 270 38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "34c8940e-125c-45de-b10b-ea82d31a1edd")
+		(property "Reference" "C6"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a1f77e97-c08d-4a43-be1e-4e985198b4c6")
+		)
+		(pin "2"
+			(uuid "aeb5101a-0760-41ce-bc98-63eeff2c9837")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 235 42.5) (xy 235 38)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "30b667db-1439-4efc-a1b4-829f0b345bc2")
+	)
+	(wire
+		(pts
+			(xy 225 38) (xy 275 38)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "0eef38d1-87b7-46a5-8b8d-8e708328fdce")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 250 40.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e52ad323-2701-483a-ab0d-0443f205077b")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4126a762-b946-4edc-b177-44626e8a71e5")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "+5V"
+		(shape output)
+		(at 268 38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "81e06213-6980-40e6-8fac-00868622c4ea")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 268 38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 265 38) (xy 275 38)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "d518e766-6b70-49fd-afaa-d0243d2bc5a8")
+	)
+	(text "+12V_IGN (CN1-1) acorda ECU — ligar à mesma barra +12V_BAT ou relé ignição"
+		(at 120 78 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+		)
+		(uuid "eee524b4-a72f-45ca-bd33-128ccc75e886")
+	)
+	(symbol
+		(lib_id "Injet:BLACK_BOARD")
+		(at 210 90 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8000f630-c9dd-4708-b046-57174102b629")
+		(property "Reference" "U1"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STM32F407 Black Board"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5c4a536e-5f9f-4f97-9e62-7184fb136b59")
+		)
+		(pin "2"
+			(uuid "7f4ed1ad-429b-438f-801c-4d3a35a4416a")
+		)
+		(pin "3"
+			(uuid "36cd4c75-1ea9-401d-9a53-4f3c6c4b453e")
+		)
+		(pin "4"
+			(uuid "b0b6e52a-2f22-49d9-8608-441b38a8646f")
+		)
+		(pin "5"
+			(uuid "be5853a6-4826-4950-99ce-1f381191c468")
+		)
+		(pin "6"
+			(uuid "5937a56b-26b7-4646-8108-0905b6ac63d6")
+		)
+		(pin "7"
+			(uuid "228c16c4-a75f-4222-990e-eafc6788065e")
+		)
+		(pin "8"
+			(uuid "7ea8d8fa-0794-491d-bf40-d9bf5565a5e1")
+		)
+		(pin "9"
+			(uuid "e4ee185c-df45-4738-9f0f-13f2d1740380")
+		)
+		(pin "10"
+			(uuid "0934456e-0850-4fed-976f-dfb57762739b")
+		)
+		(pin "11"
+			(uuid "38361acb-b89f-4ac7-aaa8-5d3e31014e17")
+		)
+		(pin "12"
+			(uuid "26ddd799-a2eb-496d-b710-98ef6999bb99")
+		)
+		(pin "13"
+			(uuid "e7672f8b-5cf7-43f7-832e-1cfe10c0e457")
+		)
+		(pin "14"
+			(uuid "08196ee5-e691-4de5-89e2-90c83340b257")
+		)
+		(pin "15"
+			(uuid "dd40a820-242f-47e6-b701-1cf680f5a2ab")
+		)
+		(pin "16"
+			(uuid "3d000b86-42ed-4226-a429-6f154ac424cc")
+		)
+		(pin "17"
+			(uuid "6b7a5be3-c932-464a-9c69-01254ff8f038")
+		)
+		(pin "18"
+			(uuid "66158113-8857-4eee-9aca-2b4b3df49e29")
+		)
+		(pin "19"
+			(uuid "f34e61c7-5309-4455-8480-52163cab854d")
+		)
+		(pin "20"
+			(uuid "9f41f83f-ea23-48a4-ad8f-f9d35d491c6d")
+		)
+		(pin "21"
+			(uuid "0b7de118-23b8-4949-a7a0-1b6bc214485e")
+		)
+		(pin "22"
+			(uuid "39aed7f3-975a-4853-8f7e-14ff89c1a870")
+		)
+		(pin "23"
+			(uuid "6694dbd1-dffb-4f0a-a56b-33322598a9e9")
+		)
+		(pin "24"
+			(uuid "4e755101-8d7d-4a20-85ed-69b394c82337")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 275 38) (xy 190 38)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "dc8433dc-0ee7-4dfd-9466-a4808af1d649")
+	)
+	(wire
+		(pts
+			(xy 190 38) (xy 190 105)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "866b9803-57fe-44ff-9e20-123c85be84e7")
+	)
+	(wire
+		(pts
+			(xy 190 105) (xy 197.5 105)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "558450d9-a243-43f2-aa00-f401424d10ca")
+	)
+	(wire
+		(pts
+			(xy 190 85) (xy 197.5 85)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "7d4fc943-33aa-47da-a5e5-f1c822a4546c")
+	)
+	(wire
+		(pts
+			(xy 190 85) (xy 190 80)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "f4e8af9f-9365-439f-b784-3d76035b8991")
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 185 102.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a1be2c97-b692-4e7e-94a3-502e68c755fc")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f98a3be5-cbd2-427f-aec4-4a8c820565b6")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 185 82.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c0cd77af-27ef-474b-aab6-aca0c606eb68")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "901228fa-4567-463a-b181-efb9305d546a")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Injet:REF3033")
+		(at 210 55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "75ea447c-57af-420d-8b5a-c1b1a1c80b40")
+		(property "Reference" "U8"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "REF3033"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "56800ed0-03f1-4b85-98f7-aee73da0dc05")
+		)
+		(pin "2"
+			(uuid "18b08fc2-12e6-4ebe-8945-bab94818ec40")
+		)
+		(pin "3"
+			(uuid "82c6db34-abda-4d07-a756-314f5f3b4826")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 195 55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe9d1be0-fb64-4c51-9ef7-decadfb9fb55")
+		(property "Reference" "C10"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "97cfb91d-9607-48d9-aada-54b02208df06")
+		)
+		(pin "2"
+			(uuid "574bb959-a831-4c08-8bd6-37ba0edbfcbc")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 225 55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eae63bda-f460-4813-a231-5a3bb54395ab")
+		(property "Reference" "C11"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uF"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "34bad278-83b0-4c87-905a-65942f1b2329")
+		)
+		(pin "2"
+			(uuid "f5da3214-4212-4e6a-905e-04278e56f5e6")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 190 55) (xy 202.5 55)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "abf27912-f2a2-45d9-b3f4-7700b1bc94f2")
+	)
+	(wire
+		(pts
+			(xy 202.5 55) (xy 217.5 55)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "b1c64add-8cf1-477a-a14b-62da84af03cc")
+	)
+	(wire
+		(pts
+			(xy 217.5 55) (xy 235 55)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "8eb00793-7d49-4244-af67-e08a25d55511")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 210 64.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "409de4a3-088a-43c8-8322-1b775bcb287f")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dca38af7-51aa-459f-8646-600fe58e82cf")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "VREF+"
+		(at 238 55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "490b422a-bda4-4f4f-95ed-a79aad05d2df")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 245 95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e80d3a9-e522-43e4-a644-c8130e92fcad")
+		(property "Reference" "C12"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uF"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e2734c0f-19b0-41de-b2ad-e5b070b2e849")
+		)
+		(pin "2"
+			(uuid "47359ed6-269a-404f-ba46-370cfd01d50e")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 260 95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a175800-b06b-46af-a431-92f40b5f1d1e")
+		(property "Reference" "C13"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b80ca92c-c8d1-4cac-b3e4-cf9ca8b15834")
+		)
+		(pin "2"
+			(uuid "d1df51a9-53de-4451-b76f-c70de5f93287")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 230 105) (xy 242.5 105)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "0ed23ce5-aa5f-46a1-b38d-134e81a3c58c")
+	)
+	(wire
+		(pts
+			(xy 242.5 95) (xy 265 95)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "47622e45-9f46-46f5-a59f-b8db74d8d831")
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 245 92.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "06d52341-e1dc-4197-b272-661732c72382")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "00d67581-f0c4-48dc-b317-0bae52b71fc3")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "+3V3"
+		(shape output)
+		(at 268 95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f2fc18ed-3f35-4f13-8fc0-0b46c62104f3")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 268 95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 265 95) (xy 275 95)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "c87db1f5-a3ff-40a6-aec9-d2efe49e6c8a")
+	)
+	(wire
+		(pts
+			(xy 230 105.24) (xy 255 105.24)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "3d0a259e-7819-45b3-ac3e-111be08a8290")
+	)
+	(label "IAT"
+		(at 257 115 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f178b12a-de10-46d3-9ab1-c96b3dd2455e")
+	)
+	(wire
+		(pts
+			(xy 230 102.7) (xy 255 102.7)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "a18892b6-7955-4b4d-90fc-231a1bd500b3")
+	)
+	(label "CLT"
+		(at 257 110.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "38486def-5c8a-4081-95ad-908ee7fd718d")
+	)
+	(wire
+		(pts
+			(xy 230 100.16) (xy 255 100.16)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "dc2b18af-c7c3-49be-9e32-19eebb0dfff0")
+	)
+	(label "MAP"
+		(at 257 106 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "95c62f1a-c1cb-4caa-83e1-cb7c2fe1ba57")
+	)
+	(wire
+		(pts
+			(xy 230 97.62) (xy 255 97.62)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "9981f4ac-0a27-4912-b8e5-df6405749b68")
+	)
+	(label "TPS"
+		(at 257 101.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0e07450c-62b9-4e64-9034-c579d6b0c507")
+	)
+	(wire
+		(pts
+			(xy 230 95.08) (xy 255 95.08)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "29c7dd40-eb62-4855-a23b-a42527bef896")
+	)
+	(label "VM"
+		(at 257 97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1b7df5fc-bd55-4b95-9b9d-35f7d6ed549c")
+	)
+	(wire
+		(pts
+			(xy 230 92.54) (xy 255 92.54)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "f445f50e-ff8e-4d27-8975-8a9d90024744")
+	)
+	(label "IP"
+		(at 257 92.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0908f338-ce95-474c-a6c8-2042cb600e5c")
+	)
+	(wire
+		(pts
+			(xy 230 90) (xy 255 90)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "04e23228-16b9-4119-89e5-576b3390d463")
+	)
+	(label "UN"
+		(at 257 88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "41c320b2-bf7f-4ecd-9427-8584b000f1c0")
+	)
+	(wire
+		(pts
+			(xy 230 87.46) (xy 255 87.46)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "bb620e3b-fc10-47c5-87aa-25cab2e18487")
+	)
+	(label "RI_PULSE"
+		(at 257 83.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "cdca4885-3f2e-4fc2-b139-c950ab6bab90")
+	)
+	(wire
+		(pts
+			(xy 230 84.92) (xy 255 84.92)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "a0d3e0fd-eac0-409e-90eb-a3991bddaa29")
+	)
+	(label "VBAT"
+		(at 257 79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4a817b63-ce01-4a43-80f2-cff330c1297b")
+	)
+	(wire
+		(pts
+			(xy 230 82.38) (xy 255 82.38)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "248afef5-0180-4213-9ccf-65f340dd70ef")
+	)
+	(label "RPM_OUT"
+		(at 257 74.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e951d00c-2757-498a-ad74-9146dfb3c951")
+	)
+	(wire
+		(pts
+			(xy 230 79.84) (xy 255 79.84)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "cbb8f471-5e55-46f9-864d-230d51a8a8d6")
+	)
+	(label "CAN_RX"
+		(at 257 70 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3ac62928-b5d2-4097-86b2-22ba12a560ad")
+	)
+	(wire
+		(pts
+			(xy 230 77.3) (xy 255 77.3)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "49b92d54-2789-45d9-a44d-b29792f824a1")
+	)
+	(label "CAN_TX"
+		(at 257 65.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7b9c1b7b-5db4-4033-8645-db2444809252")
+	)
+	(wire
+		(pts
+			(xy 230 74.76) (xy 255 74.76)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "1a5eb7d3-0eac-41a2-a2da-95ede6ebfc2b")
+	)
+	(label "GINJ1"
+		(at 257 61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2d43f2e1-0251-49ea-805f-5936c61983ba")
+	)
+	(wire
+		(pts
+			(xy 230 72.22) (xy 255 72.22)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "188a1a2b-e206-4a45-b752-3949bffc0463")
+	)
+	(label "GINJ2"
+		(at 257 56.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "304e38c2-27c0-4495-8f30-1368a2c6f052")
+	)
+	(wire
+		(pts
+			(xy 230 69.68) (xy 255 69.68)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "c1a8fee2-50f4-4a26-9364-0f7432f4b291")
+	)
+	(label "GINJ3"
+		(at 257 52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e6c76d66-19af-4b07-b6c5-6f9f726e0a70")
+	)
+	(wire
+		(pts
+			(xy 230 67.14) (xy 255 67.14)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "f8431961-a5a0-453f-8da4-2ea80716e276")
+	)
+	(label "GINJ4"
+		(at 257 47.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "bf4e4a26-a356-4930-a4a7-f7a91f1190cc")
+	)
+	(wire
+		(pts
+			(xy 230 64.6) (xy 255 64.6)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "ef371ef1-d643-42e8-83e3-66ba5cb04ba8")
+	)
+	(label "GRL1"
+		(at 257 43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "87ec4f71-655b-456f-80b7-9ce71252b3dd")
+	)
+	(wire
+		(pts
+			(xy 230 62.06) (xy 255 62.06)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "3facd8a6-da63-4ba6-bb65-2a1be128d9f3")
+	)
+	(label "GRL2"
+		(at 257 38.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "086812cd-a0dd-435a-84e8-795f77354437")
+	)
+	(wire
+		(pts
+			(xy 230 59.52) (xy 255 59.52)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "b3ba4383-6ade-4296-865e-7ead3ee4bdd9")
+	)
+	(label "GRL3"
+		(at 257 34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "90d891be-520d-4e71-bd54-65f2eef9f2af")
+	)
+	(wire
+		(pts
+			(xy 230 56.98) (xy 255 56.98)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "3ab0a248-9e27-4957-b5da-040241562ffb")
+	)
+	(label "GHEAT"
+		(at 257 29.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "456b6d4a-08ec-475c-bdad-91667f19f808")
+	)
+	(text "CN3 SWD (interno gravação)"
+		(at 215 27 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+		)
+		(uuid "ae0a3ba0-8030-4b72-9e90-5df83cca358a")
+	)
+	(label "+3V3"
+		(at 220 35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "72458757-25dd-4449-a58a-8d254f3df304")
+	)
+	(label "SWDIO"
+		(at 228 35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4a7bda0f-b7ef-47d3-b06f-6929e4fa70e5")
+	)
+	(label "SWCLK"
+		(at 236 35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8ee3d67e-ba17-4cef-95e6-4eb4376a2687")
+	)
+	(label "GND"
+		(at 244 35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "21f40c0b-c5d5-49e5-a544-5fb6dd90f89b")
+	)
+	(text "Condicionamento sensores → CN1 p6/p7/p8-11"
+		(at 320 55 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+			)
+		)
+		(uuid "98a1f102-b864-4931-83b4-18c026a1d310")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 320 70 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5427bb39-a25b-42c9-a2b3-0fbb418836db")
+		(property "Reference" "R10"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.26k"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6b06f8f7-c4df-4d1c-bac4-1ea246686089")
+		)
+		(pin "2"
+			(uuid "cc4a6321-fbee-4227-a8a1-1e08a18d7682")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 345 70 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1516a07e-954b-4aed-b0f9-f1ee1ef8abe3")
+		(property "Reference" "C20"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "492cae3a-952e-4147-849a-c36a8a9e3b78")
+		)
+		(pin "2"
+			(uuid "2e577d14-5cd5-4a16-9d6b-0f5a41f484b2")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "C20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 365 70 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d2760fd4-d8c2-40f0-adaf-c2af365ce387")
+		(property "Reference" "R18"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2f5f4193-4ad8-4340-8f39-7a6a25445ce3")
+		)
+		(pin "2"
+			(uuid "c40a85ed-5054-42f2-93cd-418f64136e61")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "+3V3"
+		(shape passive)
+		(at 312 70 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b02ee88e-73af-4b6b-836c-6d32abbebaa7")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 312 70 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 312 70) (xy 316.5 70)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "be7059fc-dc20-4f0e-b221-d1e4718732ac")
+	)
+	(wire
+		(pts
+			(xy 316.5 70) (xy 322.5 70)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "57e4f80b-b931-4e9b-a7b9-ea5be720becf")
+	)
+	(wire
+		(pts
+			(xy 322.5 70) (xy 342.5 70)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "91ee88f3-ee2f-4109-8828-7cdce9b3745a")
+	)
+	(wire
+		(pts
+			(xy 347.5 70) (xy 362.5 70)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "e5cda684-65b6-4552-a495-f4540a06e003")
+	)
+	(wire
+		(pts
+			(xy 367.5 70) (xy 380 70)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "024401e9-66d6-4e70-a663-2a1d78ce55f8")
+	)
+	(label "IAT"
+		(at 382 70 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3bef1a85-f4f8-46ee-b813-060edba9653b")
+	)
+	(label "IAT"
+		(at 382 74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4099244f-eb28-486e-8825-960bc2bc6d53")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 345 72.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eb43106d-7063-4ebe-998f-39fb8fb10f9d")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9ce29213-f01d-411d-a9a0-67a122f1c1a1")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 320 88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a0ed17d-185d-439f-912e-3af87d2bacc7")
+		(property "Reference" "R11"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.26k"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ff1500fe-1660-44e9-a62c-c71cc550617a")
+		)
+		(pin "2"
+			(uuid "ed4cd48d-ce19-438b-840c-ec3ab4d9a8a6")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 345 88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "998a39c4-d87a-43be-99b3-be7a2f584338")
+		(property "Reference" "C21"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6f501fd-5ae3-4c73-accb-119126ca534d")
+		)
+		(pin "2"
+			(uuid "ac2584e7-0df8-48cc-a734-e9f4eace6880")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 365 88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f829bcf-ecc8-4780-a465-79c307826cff")
+		(property "Reference" "R19"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e0da2555-6460-4ea0-a65c-40d045c028e5")
+		)
+		(pin "2"
+			(uuid "400a1b92-e48d-497d-85fa-7207486af7fe")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "+3V3"
+		(shape passive)
+		(at 312 88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c741f2c8-5369-4ab6-9d0b-e6e7b50baf5f")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 312 88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 312 88) (xy 316.5 88)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "bad34942-fe89-4d8e-95be-ad19588ddee5")
+	)
+	(wire
+		(pts
+			(xy 316.5 88) (xy 322.5 88)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "207a5507-5f86-428e-a2bf-f0442f2b76fc")
+	)
+	(wire
+		(pts
+			(xy 322.5 88) (xy 342.5 88)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "b91a00cb-6b52-4a98-b34b-cecde0ac81b1")
+	)
+	(wire
+		(pts
+			(xy 347.5 88) (xy 362.5 88)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "b033ddd5-8fd5-4bb4-b3cf-c044effb6b60")
+	)
+	(wire
+		(pts
+			(xy 367.5 88) (xy 380 88)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "c5881b23-9ff5-42f2-bbe6-194ce1c475f3")
+	)
+	(label "CLT"
+		(at 382 88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "064d778f-c663-46a7-93d6-309f63c2aa9d")
+	)
+	(label "CLT"
+		(at 382 92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ba150229-94ec-475e-8e6c-93c19b61c60e")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 345 90.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "39a09c9a-759c-4d1a-8471-43a59b00b1cd")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a9a73bb4-3bb3-4274-b5cb-acab1f92e9fa")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 320 106 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c103da1d-52ed-4eda-b4b4-8bc923e45916")
+		(property "Reference" "R12"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "99bf1584-eba3-4f79-a00d-04c20ca7155f")
+		)
+		(pin "2"
+			(uuid "6fd0d151-743c-46c1-b0dc-cf54c20d39c8")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 335 114 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05f7a829-619b-4190-be38-5e6cd5164988")
+		(property "Reference" "R13"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "18k"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "27a494cf-76ae-4d53-ad7e-03d9311c264f")
+		)
+		(pin "2"
+			(uuid "b2464feb-0456-434e-8eb0-35a80c063127")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 345 106 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "85b2e46c-aa0f-47c9-9711-cf4ed3b32f91")
+		(property "Reference" "C22"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "836783d0-b09c-4b9d-9bdb-4cf83ffdf8c8")
+		)
+		(pin "2"
+			(uuid "59f722d7-5c65-4748-b5d6-000a53e5b12c")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 365 106 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aec710d7-046d-439c-86fb-eb1a79b8e6c4")
+		(property "Reference" "R16"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "547bff74-0b7b-44bb-8037-7afd4f5518e5")
+		)
+		(pin "2"
+			(uuid "dae3d1d6-776d-4d3a-8e46-fc3d6bca3bc5")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "+5V"
+		(shape passive)
+		(at 312 106 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a8326e08-86d1-4eb2-bbca-1b15ea661da0")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 312 106 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 312 106) (xy 316.5 106)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "0ef5361e-e50f-4377-8714-8b4e7d4194b3")
+	)
+	(wire
+		(pts
+			(xy 316.5 106) (xy 322.5 106)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "2f45b0be-2e07-44d7-96bf-c7a0a4d7788b")
+	)
+	(wire
+		(pts
+			(xy 335 106) (xy 335 111.5)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "1eb1f041-aafb-45dd-b20b-fd87a704dfb7")
+	)
+	(wire
+		(pts
+			(xy 335 114) (xy 335 114)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "a3e2263e-0148-41f3-9534-4c5b22b238b2")
+	)
+	(wire
+		(pts
+			(xy 322.5 106) (xy 367.5 106)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "1a4a5998-255f-4cf6-8ab7-96f361e1703c")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 335 116.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fa4e3799-12f2-48a6-8e84-02811afa7ff1")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "33525753-064b-43cf-bd74-97d8d644d897")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "MAP"
+		(at 382 106 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "465febe2-eb2b-414b-884d-7ec54f12921d")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 345 124 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d999dc58-0df5-48b3-b2cd-dc5223d0c510")
+		(property "Reference" "C23"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5fe176c7-89b6-404f-a7d7-7bdcee738d5b")
+		)
+		(pin "2"
+			(uuid "3e178045-57ef-4f97-af5e-fb654e0a1431")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 365 124 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "260343a0-be7c-4707-81ad-2cba501be998")
+		(property "Reference" "R17"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "259c7a4f-f66c-4e58-b4be-ea90ee3087ac")
+		)
+		(pin "2"
+			(uuid "ba133b24-6927-4860-bfa5-0e7ae4cd7d47")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "+3V3"
+		(shape passive)
+		(at 312 124 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "94154c24-d199-4dea-a35e-9d05e059be77")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 312 124 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 312 124) (xy 362.5 124)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "cf1c021a-0963-4a13-bb4b-142692dc2b5e")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 330 134.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6d0aac9a-3808-4dd6-a0c2-66b2d6832dd7")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f0c44880-a72b-4ff8-88e4-b4d4e05182c5")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "TPS"
+		(at 382 124 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0cf26e8d-ea2b-4a09-8a06-37798bf9df24")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 320 142 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "68774ce8-a06b-4eba-a528-4af191ff3fd0")
+		(property "Reference" "R14"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k 1%"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6cb4a52a-1b43-4ce6-bae9-ee7c5a8094c9")
+		)
+		(pin "2"
+			(uuid "fc816206-7d1f-400e-ae04-1d1306ff9596")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 335 150 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "732b1692-c750-4fcb-86f6-195ebde7da70")
+		(property "Reference" "R15"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k 1%"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "058e38b4-82c2-49cd-863d-26052c20e320")
+		)
+		(pin "2"
+			(uuid "afa75f13-f81d-4f07-91ab-98ca29e26ea2")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 345 142 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "932e8d2f-ddb2-4dd4-a89b-1d27799f648e")
+		(property "Reference" "C24"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3188f318-4a38-4719-9080-6afddc18ae91")
+		)
+		(pin "2"
+			(uuid "36ac0ef7-b235-41cb-b31a-5f83ec1d2c87")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "+12V_PROT"
+		(shape passive)
+		(at 312 142 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b91a9c74-fbf3-4e21-874f-0d1f230db5ac")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 312 142 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 312 142) (xy 316.5 142)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "8e54c3de-5573-4c90-b9c1-b52a7baf89e8")
+	)
+	(wire
+		(pts
+			(xy 316.5 142) (xy 322.5 142)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "e600f671-6fa2-40eb-a3c8-a807e3cd8d7c")
+	)
+	(wire
+		(pts
+			(xy 335 142) (xy 335 147.5)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "6bd023b4-c40c-4424-af5f-cb85cfca7a24")
+	)
+	(wire
+		(pts
+			(xy 335 150) (xy 335 150)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "18a66934-8aa4-4fab-b00d-f9c7ae9d2ad9")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 335 152.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "56ac5dee-00dd-430d-a7c0-dfe32c563c08")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "78acd353-5ca8-4b5b-85fc-8eb3752db1bb")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "VBAT"
+		(at 382 142 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "000f4350-55ee-4af7-8a9a-c334a0548d14")
+	)
+	(symbol
+		(lib_id "Injet:PC817")
+		(at 320 175 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a07d4e7-9076-4be4-b015-34eabeaedd02")
+		(property "Reference" "U7"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PC817"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "91528e04-b2df-43db-87fe-7b516001b046")
+		)
+		(pin "2"
+			(uuid "a572a641-2aaf-49b5-a4ce-0fc1a98398ac")
+		)
+		(pin "3"
+			(uuid "301b1a83-5695-41bd-abd0-d57b7adb5469")
+		)
+		(pin "4"
+			(uuid "7a657580-1bc6-45ba-aa07-ce2cd4004ac1")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 295 185 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3f14a477-5f29-45a6-80e5-c14736d56a66")
+		(property "Reference" "R20"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k 2W"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "288d1dde-7b09-4719-97c8-d8c99ed762ee")
+		)
+		(pin "2"
+			(uuid "eee46a19-5650-41a8-b7bd-1a5a0655f12a")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 305 185 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "25aa11ac-3f33-48ea-8181-b380a2f735d0")
+		(property "Reference" "R21"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k 2W"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aac34e58-a5ab-43db-9ba7-fd8497be2bb5")
+		)
+		(pin "2"
+			(uuid "2d45397a-1a34-45ba-9d1e-404e902bcae6")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 345 180 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e9d1315-c03e-43e8-bd71-c1f1650d8262")
+		(property "Reference" "R22"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4k7"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "059b6e32-f426-42ff-9589-bb56700de35a")
+		)
+		(pin "2"
+			(uuid "b14367c0-3e76-4826-8667-e50ac3680b1a")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 315 170 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a35c8443-7ab9-4fb3-81dc-df2356422c39")
+		(property "Reference" "D3"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d6ebf5cb-263e-4672-8097-4482a0d0ee38")
+		)
+		(pin "2"
+			(uuid "4ee98bb0-5171-401f-8a36-612255b751b4")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 355 175 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74cf50ee-39cc-4d17-b866-3905fdbc7392")
+		(property "Reference" "C25"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1nF"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "242f5f6a-fff9-4991-b993-99ba7c5edbb9")
+		)
+		(pin "2"
+			(uuid "d8004a22-d7d6-4a4a-8294-5788cac76228")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "C25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "RPM_IN"
+		(shape input)
+		(at 285 185 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "784db0d7-cc20-4126-9463-093088fc1706")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 285 185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 285 185) (xy 292.5 185)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "b79642f1-90c0-4a2f-9de9-d26563ebbcda")
+	)
+	(wire
+		(pts
+			(xy 307.5 185) (xy 312.5 185)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "0a7b8c94-c0dd-421d-8ae3-2233c3644e7b")
+	)
+	(wire
+		(pts
+			(xy 312.5 170) (xy 315 170)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "e9692f0d-d3d5-4190-be99-b7662a732b80")
+	)
+	(wire
+		(pts
+			(xy 327.5 180) (xy 350 180)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "e07c68de-355b-4ab8-a4c7-04d2a3a07827")
+	)
+	(global_label "RPM_OUT"
+		(shape output)
+		(at 362 175 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1214f712-c3e3-466c-b460-2d5344cb310b")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 362 175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 357.5 175) (xy 362 175)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "2a8364c3-e069-4c39-b051-691ebce097fa")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 315 172.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d63893f8-9f55-4b83-b870-b7ccdda93546")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd8ff4ae-1a8f-432c-9009-212a06b717b4")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 285 192.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b74406b1-67e2-48f8-b8e1-d50dcf31d3b5")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2abe5ed0-5a04-4e73-9832-a943c315a067")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 285 172.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1e721c6b-29c1-4ea6-b99f-52c0d77bf7dc")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "17fc839d-e956-497e-bc55-162963ba7fa1")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "GINJ1"
+		(shape input)
+		(at 105 175 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "10c3c2a3-c222-4763-9b99-8de322de858c")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 105 175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 105 175) (xy 115 175)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "7a7421d2-4b4f-4edd-81f8-de573f47a213")
+	)
+	(symbol
+		(lib_id "Device:Q_NMOS")
+		(at 130 175 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "972a7166-7ec5-4252-86ee-f99a16a15f43")
+		(property "Reference" "Q10"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IRLZ44N"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06e2ab19-7b08-44a4-b4e5-dd34a27f252e")
+		)
+		(pin "2"
+			(uuid "69736613-72cc-440a-a8e6-25c27dfaba4e")
+		)
+		(pin "3"
+			(uuid "7bb6c304-5ff5-44c5-a7f2-e6cfa1f34178")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "Q10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 115 175 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1cec9695-7b4a-44b2-ac8b-825104b760c7")
+		(property "Reference" "R30"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100R"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "27c112bd-c5e1-4829-8b02-05ea7260f599")
+		)
+		(pin "2"
+			(uuid "14847fef-b277-4749-aff7-ea9fccd67c5a")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 130 187 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8b0faf14-5cfc-40b7-be93-b123a63de8f5")
+		(property "Reference" "R40"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "69c69372-8af3-42c9-bef0-587f707063d9")
+		)
+		(pin "2"
+			(uuid "77b1593d-26bf-4cf9-8c75-1a8e46f53f88")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 145 167 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "56a1586c-a1f7-4b60-817a-9ae17802275c")
+		(property "Reference" "D10"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4007"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "788f6dc0-62ab-46a2-b306-2997e2246b39")
+		)
+		(pin "2"
+			(uuid "89a6a2e3-8c1c-48b0-b88f-19939389d81e")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 117.5 175) (xy 127.5 175)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "55effaf5-b6dd-4272-bb3e-9a6ca682b36a")
+	)
+	(wire
+		(pts
+			(xy 130 182.5) (xy 130 184.5)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "9fdb0ede-b0ee-47e4-b0df-b88555678af2")
+	)
+	(wire
+		(pts
+			(xy 130 187) (xy 130 187)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "dd9b3c37-f67d-4865-b6c7-f00be2106134")
+	)
+	(wire
+		(pts
+			(xy 145 167) (xy 150 167)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "fd44a932-08ac-4246-90f8-f8e414da4ba8")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 130 189.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "49f49fdd-9544-4025-abb6-6bb9ae491a0d")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "170f9c4f-a5ec-4c26-911e-e9eb8bd14741")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "INJ1"
+		(shape output)
+		(at 152 175 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ace3f16f-2d0d-4106-9c38-aa23f50fab06")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 152 175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 132.5 175) (xy 160 175)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "feb17c7b-9c40-4350-b894-c92b9f45f00f")
+	)
+	(global_label "+12V_PROT"
+		(shape passive)
+		(at 152 180 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1080c094-414d-44f2-b2ab-6c756bea04bf")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 152 180 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 150 180) (xy 160 180)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "ac0a000e-daf5-428e-acbc-49618b96f2a4")
+	)
+	(wire
+		(pts
+			(xy 150 167) (xy 150 180)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "37e00d20-31f5-4eef-9ea7-469937e0a71d")
+	)
+	(global_label "GINJ2"
+		(shape input)
+		(at 105 153 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "efafc8cc-7e06-47ed-bc4d-1bb7a01a7faa")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 105 153 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 105 153) (xy 115 153)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "04ed977c-c1b2-40eb-9dd9-3f3f5c674901")
+	)
+	(symbol
+		(lib_id "Device:Q_NMOS")
+		(at 130 153 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d5e1e1bd-1be2-4f90-8278-8ae925a3dc2d")
+		(property "Reference" "Q11"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IRLZ44N"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a7cb170-4247-4f00-9d81-375df2c666fb")
+		)
+		(pin "2"
+			(uuid "3adc42d7-5b4e-4480-86c5-661c955dc2f6")
+		)
+		(pin "3"
+			(uuid "d7fe2659-9f1c-43df-acdd-460f6fbdb3df")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "Q11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 115 153 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "43d3c484-5ba2-42c8-b033-008429570ecc")
+		(property "Reference" "R31"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100R"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ddff2a05-c295-4007-825b-fcaf689c184b")
+		)
+		(pin "2"
+			(uuid "4f4742ad-f1b3-4138-b76e-19bbf73da017")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 130 165 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "47011086-7332-4c42-893c-1f2d611cee81")
+		(property "Reference" "R41"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ba35e95-9d6e-44a5-9ab7-eeb7fdcccad6")
+		)
+		(pin "2"
+			(uuid "144a419e-96f4-48fc-a035-e12f6bf533d9")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 145 145 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aafe9f2d-281a-44b1-b926-bcec6bb988f2")
+		(property "Reference" "D11"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4007"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4533e71e-e8a4-4f9c-ab9b-2306cbf287d9")
+		)
+		(pin "2"
+			(uuid "7b4cb00b-871b-4466-aa72-f176f75ecbc3")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 117.5 153) (xy 127.5 153)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "728def24-e015-4fd8-8807-7c160f8b6da1")
+	)
+	(wire
+		(pts
+			(xy 130 160.5) (xy 130 162.5)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "3cc4554e-37b2-465d-975d-07d7adea783c")
+	)
+	(wire
+		(pts
+			(xy 130 165) (xy 130 165)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "0b4cd83a-557a-4f6d-88f3-9d9c2bcb5922")
+	)
+	(wire
+		(pts
+			(xy 145 145) (xy 150 145)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "5cdbd31d-ce36-4beb-b797-2395f88c77dc")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 130 167.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d9dff11-3b86-41d0-beb7-6e4870c8bab9")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ccc02ba5-4458-4afb-86be-7559553fde08")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "INJ2"
+		(shape output)
+		(at 152 153 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "39a9f270-9822-4d74-8135-d73879ae03ea")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 152 153 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 132.5 153) (xy 160 153)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "0cf6b7bc-7a2a-4e04-bd51-75e7f4f8de34")
+	)
+	(global_label "+12V_PROT"
+		(shape passive)
+		(at 152 158 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "74511144-e31c-40c7-a30d-420c697caaae")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 152 158 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 150 158) (xy 160 158)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "d74c7996-2a67-460d-947d-13238b839fd3")
+	)
+	(wire
+		(pts
+			(xy 150 145) (xy 150 158)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "53c9c9d7-2b03-4953-81a8-b62c11a4b79a")
+	)
+	(global_label "GINJ3"
+		(shape input)
+		(at 105 131 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0c412f1e-5786-4836-9701-21cd48e92c8f")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 105 131 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 105 131) (xy 115 131)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "fca1a20e-434e-4bc7-a806-2163f9ad2f2f")
+	)
+	(symbol
+		(lib_id "Device:Q_NMOS")
+		(at 130 131 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "948dc38a-75bd-4686-ae21-fce5004d265e")
+		(property "Reference" "Q12"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IRLZ44N"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2623c2af-c3de-4aee-99e5-1dbdb546e9bb")
+		)
+		(pin "2"
+			(uuid "f13f98ef-0b86-4392-b2d4-8478f73f3c17")
+		)
+		(pin "3"
+			(uuid "cfdd1aa3-7f91-4f90-8ff1-5daf2d47b25e")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "Q12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 115 131 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ef387ee-52f2-46de-92ac-0eb130cfa0c9")
+		(property "Reference" "R32"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100R"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bbe17f01-a680-4e28-a845-0bd49af7c66a")
+		)
+		(pin "2"
+			(uuid "3bd89dcd-9704-45f9-86ad-abea6a7cb3cc")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 130 143 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "78bb2ad7-c951-4751-8e3b-ab3916c67e60")
+		(property "Reference" "R42"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a18c7b15-d217-48f0-972d-4074b0f90e03")
+		)
+		(pin "2"
+			(uuid "6bc8824a-1de5-42bb-be01-e5e88c812a06")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 145 123 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "867e519c-29d6-4a6d-89e5-d54af6d9b316")
+		(property "Reference" "D12"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4007"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "faa4fff2-fb28-46bf-9085-aebd9880d474")
+		)
+		(pin "2"
+			(uuid "e99d8252-49d3-4aad-a962-ea49f429959e")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 117.5 131) (xy 127.5 131)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "67fc897c-68f5-4842-86c5-4c521c46e27c")
+	)
+	(wire
+		(pts
+			(xy 130 138.5) (xy 130 140.5)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "24185607-f114-48e2-bd8c-66f4955a09a1")
+	)
+	(wire
+		(pts
+			(xy 130 143) (xy 130 143)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "83190a3a-96e4-4e1e-a142-8eb9df7b7178")
+	)
+	(wire
+		(pts
+			(xy 145 123) (xy 150 123)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "be43392c-937d-46b2-b21f-555ebdc63549")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 130 145.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f37c29fe-279a-4f1e-8728-6c7fffcfd326")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a1b4f343-d3ec-4585-a6f5-375de6eb3dc7")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "INJ3"
+		(shape output)
+		(at 152 131 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "31ace862-6661-4c17-9c4e-a53360952c4e")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 152 131 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 132.5 131) (xy 160 131)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "14b4935b-b938-469c-a585-22ad5a97662a")
+	)
+	(global_label "+12V_PROT"
+		(shape passive)
+		(at 152 136 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "652d5198-a8ff-45fb-8440-4522ed60e6e9")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 152 136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 150 136) (xy 160 136)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "1bf54a5f-6735-4b37-b5c0-9c424c867383")
+	)
+	(wire
+		(pts
+			(xy 150 123) (xy 150 136)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "f6049eb6-c993-4bc0-bc7f-13688d200090")
+	)
+	(global_label "GINJ4"
+		(shape input)
+		(at 105 109 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "21772b8e-a12c-44ef-8429-29de81cf212a")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 105 109 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 105 109) (xy 115 109)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "6fc39be4-37c8-4d05-9c23-719953677919")
+	)
+	(symbol
+		(lib_id "Device:Q_NMOS")
+		(at 130 109 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1e996606-4dec-4a8b-adfb-75400d9ee322")
+		(property "Reference" "Q13"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IRLZ44N"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7cef2e54-6417-4f8a-a0de-5f6ff551325b")
+		)
+		(pin "2"
+			(uuid "7167a4eb-4560-4ec1-a557-b4e7ad50a18c")
+		)
+		(pin "3"
+			(uuid "a1922a65-bc65-4412-aa85-42b65e2280ca")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "Q13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 115 109 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0952551c-a666-4e5e-bec0-074e7e55f36b")
+		(property "Reference" "R33"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100R"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "67367b9d-12f9-4b1c-a20e-852d277b5fab")
+		)
+		(pin "2"
+			(uuid "d826751f-bbaf-49d3-917a-fb83dc8126b5")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 130 121 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "16fda416-e533-4bf2-800c-9807a9370d87")
+		(property "Reference" "R43"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3095c69b-39c9-4da0-8f7e-099c79e68e30")
+		)
+		(pin "2"
+			(uuid "a2295030-4a1e-4959-a491-92c490ec58e4")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 145 101 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da43021a-e3a2-4b28-b563-ebb581af4cee")
+		(property "Reference" "D13"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4007"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f37178ea-ba1a-4d7e-bbdb-a14f91d9bd7c")
+		)
+		(pin "2"
+			(uuid "8ca12edd-15e6-4ca6-9950-aba434658e3b")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 117.5 109) (xy 127.5 109)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "857dd25d-9305-4831-a7d9-886fadf0c18e")
+	)
+	(wire
+		(pts
+			(xy 130 116.5) (xy 130 118.5)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "7c676372-4419-4d27-b128-d67e8e37020e")
+	)
+	(wire
+		(pts
+			(xy 130 121) (xy 130 121)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "6a808a0b-b2c2-45ae-8fcb-6532ef757924")
+	)
+	(wire
+		(pts
+			(xy 145 101) (xy 150 101)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "b975f64a-e9ac-4fb6-9291-611539524e4a")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 130 123.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e5157b5-6947-458b-9e2f-e86644eedce0")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "697bf4b4-cfaa-4bf1-888a-0ff57eef3ee3")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "INJ4"
+		(shape output)
+		(at 152 109 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "940c5af8-7b82-4599-b33f-2ad7c9499a6a")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 152 109 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 132.5 109) (xy 160 109)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "191c0141-9d66-4557-9d2b-29f3095968e8")
+	)
+	(global_label "+12V_PROT"
+		(shape passive)
+		(at 152 114 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e4d6fed1-0de6-409e-8908-0f8a7bc73e88")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 152 114 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 150 114) (xy 160 114)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "bd4e1f73-7b36-4e5d-98ee-e84bb56cff6f")
+	)
+	(wire
+		(pts
+			(xy 150 101) (xy 150 114)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "11994c09-6aa2-4e75-ac41-c3d6a96c4524")
+	)
+	(global_label "GRL1"
+		(shape input)
+		(at 195 175 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "74f81804-6f2b-494c-84b6-98ab5815eae2")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 195 175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 195 175) (xy 205 175)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "57d8923a-c24d-4e7f-96f8-72566f443159")
+	)
+	(symbol
+		(lib_id "Device:Q_NMOS")
+		(at 220 175 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1b5fe9bd-3944-4ca8-96df-c593a133db7d")
+		(property "Reference" "Q20"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2N7000"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4465a5be-50f1-463d-8476-f767c24e12b0")
+		)
+		(pin "2"
+			(uuid "8ba02144-b207-42be-ba0b-67a86a2baff0")
+		)
+		(pin "3"
+			(uuid "4de4b82b-6fdb-4bb0-9079-892a1f9b281e")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "Q20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Injet:Relay")
+		(at 245 175 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2283a36f-f664-421a-a827-618ba166e05f")
+		(property "Reference" "RL1"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "12V 30A"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f81b8620-028f-4ccd-ac00-689e599ee1ae")
+		)
+		(pin "2"
+			(uuid "27684d61-1f11-4d9f-8561-3bf9faaaf76a")
+		)
+		(pin "3"
+			(uuid "00372c1e-0dd5-46e8-8380-2292e1c9ee33")
+		)
+		(pin "4"
+			(uuid "4a280a3c-bbf5-41e7-9af7-e30400dca0f9")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "RL1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 205 175 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9fb59519-c46c-4b56-bc61-1f919ec248d7")
+		(property "Reference" "R50"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2899bb87-f8ab-4b73-8dce-649b597b9d89")
+		)
+		(pin "2"
+			(uuid "523445e1-d354-43ee-99ad-f73dc9174b59")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 220 187 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c520d040-f61d-4df9-a85d-dcfd8aa45963")
+		(property "Reference" "R55"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3bf64eba-0144-4473-975a-282d355ae10a")
+		)
+		(pin "2"
+			(uuid "9b9e09a8-581f-4e3b-bfec-8f05b44e8c69")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 232 169 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "87e9891a-4f21-4d56-a358-f618cd6e8d48")
+		(property "Reference" "D20"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4007"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "56ddea21-dca3-41fd-bff6-891c9462f858")
+		)
+		(pin "2"
+			(uuid "b6bb93c3-c0dc-4e5c-8767-f91a917e0492")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "D20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 207.5 175) (xy 217.5 175)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "73402370-a0fa-463f-808f-2fb7783d8d11")
+	)
+	(wire
+		(pts
+			(xy 222.5 175) (xy 240 175)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "73e390ad-1daf-44df-822b-99bb9b8a0e45")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 220 189.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ff68cb9f-aa0f-40bd-a7d9-3759fb9923c5")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "886b58f2-2a7a-4f04-abd1-7380fae78d6f")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "RL_MAIN"
+		(shape output)
+		(at 258 175 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9551a81e-cbb8-492b-af4b-9d3a01cb5b53")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 258 175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 252.5 175) (xy 265 175)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "4ef8632d-f436-4e5f-9662-46c5dbf61947")
+	)
+	(global_label "GRL2"
+		(shape input)
+		(at 195 153 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2bafb54a-8ad1-4da6-9b09-8ceb8dc40640")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 195 153 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 195 153) (xy 205 153)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "d8d40985-2bd2-40a1-b9d4-aa3332c8afe0")
+	)
+	(symbol
+		(lib_id "Device:Q_NMOS")
+		(at 220 153 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f100f141-4314-41f8-92ca-ccb96d8b4ba1")
+		(property "Reference" "Q21"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2N7000"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ca8c609-c793-4b30-878b-de8476269916")
+		)
+		(pin "2"
+			(uuid "64418969-45aa-4dd7-a699-1fa04edab587")
+		)
+		(pin "3"
+			(uuid "8b7f9c83-cb17-4e7e-96c2-7c6ceedd85fc")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "Q21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Injet:Relay")
+		(at 245 153 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e35eef60-bc37-401c-9abc-95f100bf0c50")
+		(property "Reference" "RL2"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "12V 30A"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a36b933-5eb7-44c4-9a9e-f384abad16d1")
+		)
+		(pin "2"
+			(uuid "e7e4a1f6-45c1-4900-9390-a329fc075bc2")
+		)
+		(pin "3"
+			(uuid "2bc2ea42-d0bd-4039-8b55-296974d7d97a")
+		)
+		(pin "4"
+			(uuid "8b501f38-77f0-4d71-bd27-79557b498c5f")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "RL2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 205 153 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "739af8c8-9685-4051-9976-c507f93ecb87")
+		(property "Reference" "R51"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ecfba3a5-7c95-4c7a-a408-97d7ef67d915")
+		)
+		(pin "2"
+			(uuid "1c019a37-4449-432a-a814-b05b7fe25c2f")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 220 165 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b705f390-d8aa-49f8-9c7d-1465de0e4cf0")
+		(property "Reference" "R56"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "230d4579-a206-4ba0-addd-c84161f65d46")
+		)
+		(pin "2"
+			(uuid "972b54dc-ed2e-4667-94b9-0005e0c53f47")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R56")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 232 147 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e536689-4897-4b08-9a73-6f0500cdc49c")
+		(property "Reference" "D21"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4007"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f917822e-be26-4db7-8f97-2732ced9bb14")
+		)
+		(pin "2"
+			(uuid "22f2631a-84c0-43a2-b9ce-02f1588dded6")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "D21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 207.5 153) (xy 217.5 153)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "eaf1d491-a38b-4d40-9b61-2bf44ac897c0")
+	)
+	(wire
+		(pts
+			(xy 222.5 153) (xy 240 153)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "7f0752a6-768e-44d9-9242-cb2df5f662f5")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 220 167.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bcbba589-339a-4a4d-80a0-7447b6d99a4b")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "592b5591-b88f-4187-8c7a-55ef954fdaf5")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "RL_PUMP"
+		(shape output)
+		(at 258 153 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ee908741-9ef9-4273-8e05-c60b591e10b3")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 258 153 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 252.5 153) (xy 265 153)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "38711715-8d36-40ca-a155-079296358b22")
+	)
+	(global_label "GRL3"
+		(shape input)
+		(at 195 131 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "20b63c56-631d-4504-a8a5-02a219dc96d8")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 195 131 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 195 131) (xy 205 131)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "8b4ff898-a434-43c9-a0b4-76f184028029")
+	)
+	(symbol
+		(lib_id "Device:Q_NMOS")
+		(at 220 131 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9d565b9c-9b50-4963-a3f1-bb4fc0432365")
+		(property "Reference" "Q22"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2N7000"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ab52559a-7634-4163-87b2-03ed3aa11e28")
+		)
+		(pin "2"
+			(uuid "dbb6b596-128c-4fac-a5b6-e2824464044a")
+		)
+		(pin "3"
+			(uuid "426fe543-5b5e-44a3-8a02-653c84df2f54")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "Q22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Injet:Relay")
+		(at 245 131 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bfbc4601-c175-461d-900b-cb78075ad597")
+		(property "Reference" "RL3"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "12V 30A"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "631e1cbd-0a42-4673-b138-af6dd3e2bf1a")
+		)
+		(pin "2"
+			(uuid "48c323a5-554a-47e6-b725-9602917c57e8")
+		)
+		(pin "3"
+			(uuid "03edea91-2c38-43a9-9310-790ef9c549dc")
+		)
+		(pin "4"
+			(uuid "f4835951-3fb9-4035-a34a-2a012b718b89")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "RL3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 205 131 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "89895c16-fbeb-44ef-8c0c-d6ae5793f347")
+		(property "Reference" "R52"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "66493ac9-48e7-4226-a8cc-18ad3c404871")
+		)
+		(pin "2"
+			(uuid "dd7157ed-b7c4-4add-adde-0c758be340ec")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 220 143 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a5ef1a8-a243-49a2-a437-830b1592e3ae")
+		(property "Reference" "R57"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8ab45293-95c9-4423-b8c4-d9d077df7725")
+		)
+		(pin "2"
+			(uuid "ee0c8d33-7791-4232-80a8-e184ca2c68aa")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 232 125 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "153c102a-789f-4325-9e13-8fd81b5c62b9")
+		(property "Reference" "D22"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4007"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e6d7a5b-4e48-4058-9808-49a0b6f3983a")
+		)
+		(pin "2"
+			(uuid "ae09fa13-abb0-44de-b403-6726f174e9bf")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "D22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 207.5 131) (xy 217.5 131)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "92988317-323e-4233-a9cd-82f91d2fdacb")
+	)
+	(wire
+		(pts
+			(xy 222.5 131) (xy 240 131)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "84bfb921-284e-469a-8fd3-8592c723459d")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 220 145.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d09be4f4-ec8a-4ca6-9e37-59ef0c650e6c")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bffcc6ae-feae-4f83-a9bf-98b5560a5420")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "RL_IAC"
+		(shape output)
+		(at 258 131 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "40bf8e0d-16c3-4c4c-a3d0-ca99153fcfbb")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 258 131 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 252.5 131) (xy 265 131)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "90ad9148-4b5b-420c-b29f-a6680dc53d13")
+	)
+	(symbol
+		(lib_id "Injet:SN65HVD230")
+		(at 320 240 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0c390a91-d69b-4d2c-bf7d-d918a4d3c9c6")
+		(property "Reference" "U6"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SN65HVD230"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c241f078-9e54-483b-958e-45c60017e387")
+		)
+		(pin "2"
+			(uuid "cfd4b06b-9389-405d-85c3-3a6a60b70f0c")
+		)
+		(pin "3"
+			(uuid "e74f2d9d-4a5f-4cd1-bbc0-ef94e5549696")
+		)
+		(pin "4"
+			(uuid "4eac8883-3c86-4779-abcc-f7eee7279dc5")
+		)
+		(pin "5"
+			(uuid "d93468f3-9ac7-434c-bccd-fb4c9880309f")
+		)
+		(pin "6"
+			(uuid "2194aa69-f9ed-44b9-9a66-ed5d1f9de891")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 300 248 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2381b993-0893-40a2-85d9-acac3db2e0ea")
+		(property "Reference" "C40"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "db99505d-43b9-4d77-bbcc-a67600c1df3f")
+		)
+		(pin "2"
+			(uuid "74125ffd-2484-46a0-b7ad-78cc36b31863")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "C40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 300 243 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cdbb55eb-8538-42d7-a1ea-c22ea6c0b05b")
+		(property "Reference" "C41"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uF"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e8ed8f00-1c49-4ace-87ae-1656fd983f0f")
+		)
+		(pin "2"
+			(uuid "eb66909f-b862-4253-9f5c-a780b81c0950")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "C41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "CAN_TX"
+		(shape input)
+		(at 292 245 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "73eb837e-8aee-448e-b0c2-a8d8cf6df5c1")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 292 245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 292 245) (xy 307.5 245)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "31faeb7f-9f6e-4d51-a48c-941ea4451cbc")
+	)
+	(global_label "CAN_RX"
+		(shape output)
+		(at 292 238 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0bbb6075-3fba-40f5-a8da-660bcf28febd")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 292 238 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 292 238) (xy 307.5 238)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "bc9d2ea7-da79-467e-b1ef-f4fd147296f8")
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 292 252.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "76cb2711-0b04-4e19-98f4-5beecab2ec01")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e7776b30-8f48-4f5f-a917-42a7e0f121aa")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 292 232.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e415679-61e8-4be2-abca-c32facea5f5c")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f083003d-9480-458d-8e56-e40bc59e9a99")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "CANH"
+		(shape bidirectional)
+		(at 345 245 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ed3d7ed8-a2c0-4d2b-9ef2-8404471fedb8")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 345 245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 332.5 245) (xy 355 245)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "162e388e-0077-4b0c-9857-16fa809f569e")
+	)
+	(global_label "CANL"
+		(shape bidirectional)
+		(at 345 238 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "323df5f2-c443-4eb3-9a39-b1ca4e178a46")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 345 238 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 332.5 238) (xy 355 238)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "52054804-837a-4444-995d-5a150b8e851c")
+	)
+	(symbol
+		(lib_id "Injet:CN_PCIE6")
+		(at 45 285 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f4f9491-c166-4ef5-8e56-a394db3971e5")
+		(property "Reference" "CN2"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PCIe-6 Lambda"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5314d29c-c196-430f-b6db-4c3b50ed9b32")
+		)
+		(pin "2"
+			(uuid "8a9f3317-317f-40e8-9188-176a9e0d796e")
+		)
+		(pin "3"
+			(uuid "354e205c-1c00-4ed7-b605-e06f1029d2a1")
+		)
+		(pin "4"
+			(uuid "a4f678ef-723e-4917-8740-f453229e4269")
+		)
+		(pin "5"
+			(uuid "f2359aee-7109-42f1-ac7e-094f3db9272f")
+		)
+		(pin "6"
+			(uuid "bfebdfea-544d-451c-a6d2-735469cb0cd8")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "CN2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "CN2 — conector GPU PCIe-6 (LSU 4.2 wideband)"
+		(at 40 297 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+			)
+		)
+		(uuid "63ddcb27-fe64-4d4a-9732-2e759abd5d8f")
+	)
+	(wire
+		(pts
+			(xy 39.92 292.62) (xy 78 292.62)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "15f8429e-0d3a-45ce-b3bc-a02b1769bd70")
+	)
+	(label "+12V_PROT"
+		(at 79.27 292.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ede8647e-b285-4c3e-abaf-4ac798531394")
+	)
+	(wire
+		(pts
+			(xy 42.46 292.62) (xy 78 292.62)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "c7d2295c-86a7-49c6-bb42-7695fa02f1f3")
+	)
+	(label "H_MINUS"
+		(at 79.27 292.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "529305f3-6b3c-4dde-b00e-ec144a5fa1dd")
+	)
+	(wire
+		(pts
+			(xy 45 292.62) (xy 78 292.62)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "fc5e28ff-1447-458f-b27f-2d7b2d8789a0")
+	)
+	(label "IP"
+		(at 79.27 292.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a0c5dd68-ce6e-41d9-ac7b-ccc81493ff01")
+	)
+	(wire
+		(pts
+			(xy 39.92 290.08) (xy 78 290.08)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "615f6260-5bf6-436b-80b6-1ea243914b16")
+	)
+	(label "VM"
+		(at 79.27 290.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d28572d7-608e-4850-bf1c-b44bfe6d7f86")
+	)
+	(wire
+		(pts
+			(xy 42.46 290.08) (xy 78 290.08)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "8995c486-80a3-43d8-9aad-ed68bb79306a")
+	)
+	(label "UN"
+		(at 79.27 290.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d81fd204-64f8-42cd-bc47-cb773c0f6950")
+	)
+	(wire
+		(pts
+			(xy 45 290.08) (xy 78 290.08)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "4c30f2e9-1b64-4567-942f-fa8713f50dc7")
+	)
+	(no_connect
+		(at 78 290.08)
+		(uuid "a94a74f7-be41-4581-b8ff-916c7e638a6d")
+	)
+	(symbol
+		(lib_id "Injet:MCP6004")
+		(at 120 270 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d0d62a57-c231-4bc5-bba6-49c3fb49e582")
+		(property "Reference" "U4"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP6004"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "25dd30c6-9389-4dcb-a071-135a13352a60")
+		)
+		(pin "2"
+			(uuid "80b3791c-b582-4a83-ab9f-99e0a0bc6843")
+		)
+		(pin "3"
+			(uuid "8b92c9a7-cf00-4c3a-b3a1-c91fa86114d2")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Injet:AD8628")
+		(at 165 270 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "45072b59-9ab6-4627-a6b8-6a65fc17886f")
+		(property "Reference" "U5"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AD8628"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "16f42456-1630-4f90-a94b-2f99ee107655")
+		)
+		(pin "2"
+			(uuid "0e4d4a1e-bf87-4ab3-ac4a-71e17e5fbb38")
+		)
+		(pin "3"
+			(uuid "68120cae-f0f1-4201-9f9f-63e35dbbf4f7")
+		)
+		(pin "4"
+			(uuid "082222a1-e963-417d-96fc-03a2e8f05d2b")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 195 265 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5af0543d-8cf0-489b-8ff0-e6d06bad0b8d")
+		(property "Reference" "R70"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "61R9 1%"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "710d66c4-4efc-420c-9379-a7a7dfc00ba8")
+		)
+		(pin "2"
+			(uuid "5b2a29c2-8d60-455c-8e56-8b1f1d947025")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R70")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 195 255 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "591a9e25-c875-4af2-b5c9-5152ac418d48")
+		(property "Reference" "R71"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "6k8 1%"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d0ca75ec-decc-4288-aa24-0a98bebdbbaf")
+		)
+		(pin "2"
+			(uuid "ba79ee09-f0ca-4a41-8145-6b141709fcba")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R71")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 105 280 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "88a94376-890c-4da5-a297-66f92acf3d90")
+		(property "Reference" "R76"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a98cc609-0a8c-4801-a916-148601ba5179")
+		)
+		(pin "2"
+			(uuid "40cac280-d6d8-4528-8247-0b2308101d31")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R76")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 105 275 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ea5b400-16f6-4937-a614-bb37163a02eb")
+		(property "Reference" "R77"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2029bee8-9feb-4938-a89d-d9979c97c997")
+		)
+		(pin "2"
+			(uuid "cb76a082-6b8b-40a5-a2ca-8d784404a977")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R77")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 105 265 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "54a6a9f2-a1a9-4d69-93b5-213f2df7b537")
+		(property "Reference" "R78"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2d5e83f4-d3c1-420f-8b8f-b51b6fb5a263")
+		)
+		(pin "2"
+			(uuid "4b8dcff6-f7ee-4bf5-8a97-029157997b0e")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R78")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 210 265 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a23d4c53-96c1-4acb-87eb-710da23c7582")
+		(property "Reference" "C30"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220nF"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e73e0965-6a6f-4dbe-9dff-598d649469d7")
+		)
+		(pin "2"
+			(uuid "199d7cf7-8290-49e9-99a6-6f7ad1a7d8e6")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "C30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 210 255 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "82892684-8831-4c5f-8755-7bc9d45c202b")
+		(property "Reference" "C31"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220nF"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38d36ca7-c673-47d1-90a0-0c1aafc8fee8")
+		)
+		(pin "2"
+			(uuid "9d246c48-0cf1-4825-a0e2-1c088585122d")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "C31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 95 280 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c51e917d-144e-43c3-9755-fa882a6a3399")
+		(property "Reference" "C32"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6837a147-191e-4736-9daa-736425e98a90")
+		)
+		(pin "2"
+			(uuid "806d2757-e4dc-4962-bc1a-29da98403e04")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "C32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 95 275 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "60838e57-d73d-4961-aa64-1ff696d74e56")
+		(property "Reference" "C33"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uF"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b4e4e564-1f3f-4d2d-aad5-240afebba9dc")
+		)
+		(pin "2"
+			(uuid "324a1a9e-9d80-41d5-bb83-96705276332e")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "C33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 95 282.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eeee8aa1-84ca-440b-8952-922163707696")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "44fd36eb-0694-41e3-aac9-39ccd368d331")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 95 257.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b49d6848-b7e1-4712-ba87-26b5279d0277")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "42e152c4-1b4c-4d51-982a-99205af176bc")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VM"
+		(shape passive)
+		(at 135 278 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a903491c-e3ee-4794-8424-f61fc87e9486")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 135 278 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 125 278) (xy 140 278)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "cf0568c1-7f94-48cf-8bf9-816921c6b552")
+	)
+	(global_label "IP"
+		(shape passive)
+		(at 190 265 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7ced1ed3-c19f-4a90-9750-f3528521dafa")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 190 265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 180 265) (xy 200 265)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "cb90e7da-34f6-40d1-899b-b273dfb55f5a")
+	)
+	(global_label "UN"
+		(shape passive)
+		(at 190 255 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "03c48479-2694-4981-a0a8-e4c0232eca1c")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 190 255 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 180 255) (xy 200 255)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "f4166d3b-d4cf-4705-9d61-ab8a439e27d5")
+	)
+	(symbol
+		(lib_id "Device:Q_NMOS")
+		(at 230 270 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f6958207-3cc3-4792-8189-e6f74bcde55c")
+		(property "Reference" "Q30"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IRLZ44N"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d54dfb1f-85b7-41de-afb6-b74429659f1f")
+		)
+		(pin "2"
+			(uuid "ab64e984-f912-4aee-9de3-02ebaebb286f")
+		)
+		(pin "3"
+			(uuid "38675e8e-c0fd-4f17-ad91-02082b6095ab")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "Q30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 215 270 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e0d61aa-a55c-404d-be85-f58a8bab2e07")
+		(property "Reference" "R80"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100R"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8801cffc-fc91-492d-ab11-0bac26b65178")
+		)
+		(pin "2"
+			(uuid "cc23c127-ade3-4d36-9975-4620a6e67145")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R80")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 230 282 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "11b02233-24b6-43c8-ba33-c3e3acfdfa20")
+		(property "Reference" "R81"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f91e1dd9-3b3a-4473-aa08-2e65e0f1d4eb")
+		)
+		(pin "2"
+			(uuid "59f07003-7134-40e2-997d-85fc2c4b608b")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "R81")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 245 262 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3e5644c-dcca-4aaa-9e58-33478ed2fdc6")
+		(property "Reference" "D30"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4007"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "45970c76-ff77-45c8-9459-d06e2cbdbe6a")
+		)
+		(pin "2"
+			(uuid "2ec5aad6-4597-4b50-aff0-bd9af7d04df0")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "D30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "GHEAT"
+		(shape input)
+		(at 208 270 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1b35bf05-538c-4eac-96d7-cc9927af18e9")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 208 270 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 208 270) (xy 212.5 270)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "3ef9eac8-a25e-495c-84b4-f67b439b24a4")
+	)
+	(global_label "H_MINUS"
+		(shape output)
+		(at 255 270 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2440d9a4-29a1-41b1-918f-f6d9a63230d3")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 255 270 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 232.5 270) (xy 265 270)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "1db9c640-e836-490b-b3bf-6ebd2b37d986")
+	)
+	(global_label "+12V_PROT"
+		(shape passive)
+		(at 255 278 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "27cc26c6-ec57-44e0-9f3b-1f71e2b96e5b")
+		(property "Intersheet References" "${INTERSHEET_REFS}"
+			(at 255 278 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 250 278) (xy 265 278)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "222236e2-7713-4c89-9b0a-24945464fb51")
+	)
+	(wire
+		(pts
+			(xy 250 262) (xy 250 278)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "aeeb9b8b-b2a0-47f0-bbb8-2718da2ed63c")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 230 284.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "63edf008-7f5a-445a-b77f-0cdb92cc290c")
+		(property "Reference" "#PWR"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "93163b6b-01e2-4105-8626-b7858cab82a6")
+		)
+		(instances
+			(project "injet-racing-prodv2"
+				(path "/"
+					(reference "#PWR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "CN2: 1=H+ (+12V_PROT)  2=H- (Q30)  3=IP  4=VM (PA4 DAC)  5=UN (PA6)  6=NC"
+		(at 120 245 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+		)
+		(uuid "34db8b13-5ba3-4484-b0f9-c405aa4d7833")
+	)
+	(text "CN1: 1=+12V_IGN 2=+12V_BAT 3-4=GND 5=GND_SIG 6=+5V 7=+3V3 8=IAT 9=CLT 10=MAP 11=TPS 12=RPM"
+		(at 15 330 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+		)
+		(uuid "6a756fd4-9410-4123-819d-0776e41a128d")
+	)
+	(text "13-16=INJ1-4  17=bomba 18=main 19=IAC  20=CANH 21=CANL  22=TACHO 23=START 24=SHIELD"
+		(at 15 336 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+		)
+		(uuid "eb026f19-b727-4250-a12d-39d21b72d6d2")
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
+

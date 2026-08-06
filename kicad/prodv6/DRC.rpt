@@ -1,0 +1,65 @@
+** Drc report for injet-racing-prodv6.kicad_pcb **
+** Created on 2026-08-06T05:20:55 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 14 DRC violations **
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(24.0000 mm, 148.0000 mm): Track [QG] on F.Cu, length 16.0000 mm
+    @(22.0000 mm, 136.0000 mm): Track [+12V_IN] on F.Cu, length 12.8301 mm
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(24.0000 mm, 148.0000 mm): Footprint Q1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(200.0000 mm, 8.0000 mm): Footprint CN2
+[lib_footprint_mismatch]: O footprint 'MountingHole_3.2mm_M3' não corresponde à cópia na biblioteca 'MountingHole'
+    Local override; warning
+    @(234.0000 mm, 154.0000 mm): Footprint H
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(32.0000 mm, 136.0000 mm): Footprint D2
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(42.0000 mm, 146.0000 mm): Footprint C2
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(14.0000 mm, 136.0000 mm): Footprint F1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(12.0000 mm, 8.0000 mm): Footprint CN1
+[lib_footprint_mismatch]: O footprint 'MountingHole_3.2mm_M3' não corresponde à cópia na biblioteca 'MountingHole'
+    Local override; warning
+    @(234.0000 mm, 6.0000 mm): Footprint H
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(40.0000 mm, 126.0000 mm): Footprint D1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(42.0000 mm, 152.0000 mm): Footprint C1
+[lib_footprint_mismatch]: O footprint 'MountingHole_3.2mm_M3' não corresponde à cópia na biblioteca 'MountingHole'
+    Local override; warning
+    @(6.0000 mm, 154.0000 mm): Footprint H
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(22.0000 mm, 126.0000 mm): Footprint R1
+[lib_footprint_mismatch]: O footprint 'MountingHole_3.2mm_M3' não corresponde à cópia na biblioteca 'MountingHole'
+    Local override; warning
+    @(6.0000 mm, 6.0000 mm): Footprint H
+
+** Found 1 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(24.0000 mm, 132.0000 mm): Track [QG] on F.Cu, length 16.0000 mm
+    @(22.0000 mm, 132.0000 mm): PTH pad A [QG] of R1
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

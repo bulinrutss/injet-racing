@@ -1,0 +1,69 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "f1ca6057-5bcf-4309-b927-42a8ddd569f7")
+	(paper "A4")
+	(title_block
+		(title "sheettest")
+	)
+	(lib_symbols)
+	(sheet
+		(at 30 40)
+		(size 40 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "37780463-7ab8-4da7-ad13-97e1414e1c24")
+		(property "Sheetname" "Power"
+			(at 30 39.2884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheets/power.kicad_sch"
+			(at 30 70.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" output
+			(at 70 60 0)
+			(uuid "5345599c-863a-4fe5-8765-fc25b364c231")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project None
+				(path "/f1ca6057-5bcf-4309-b927-42a8ddd569f7"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

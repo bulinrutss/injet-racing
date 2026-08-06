@@ -1,0 +1,61 @@
+---
+description: ProdV6 PCB rebuild — padrões obrigatórios (MOD3+)
+globs: kicad/prodv6/**
+alwaysApply: true
+---
+
+# ProdV6 — regras de layout (sempre aplicar)
+
+## Fluxo de trabalho
+
+- Gerador: `kicad/prodv6/_gen_kicad_prodv6.py` + `prodv6_layout.py`
+- **Nunca regenerar** `.kicad_pcb` por cima de edições KiCad (apaga zones/trilhas) — usar `_append_modN.py` ou patch
+- **DRC 0 erros** no bloco atual antes do próximo módulo
+- Salvar PCB **não** altera esquemático; F8 só esquemático→PCB
+- Black Board STM32: gravação na placa STM, **sem SWD na ECU**
+
+## Módulos e portas I/O
+
+- Zona reservada por bloco (`ZONE_RESERVE`)
+- **Contorno sólido** do módulo (Dwgs.User)
+- Portas externas: **só texto curto** (`+12V_PROT`, `->MOD4`, `->+5V`) — sem caixas tracejadas
+- Trilhas de interligação **alinhadas** (x ou y fixo); potência em **B.Cu**
+- Direcionar saída para o módulo receptor; reservar porta IN no destino
+
+## Componentes — evitar curtos e erros de net
+
+- **Série (fusível):** nets diferentes A/B; **zero cobre** entre pads — o corpo liga
+- **Paralelo (ex. R∥D gate):** trilha até **cada pad**; terminar no centro do pad
+- **Caps / 2 terminais (A–B):**
+  - Trilha **somente até pad A** (rail); pad B = **GND** via zone — **sem trilha** no B
+  - **Proibido** segmento que passe sobre pad B (ex. horizontal no y dos pads entre A e B)
+  - Bus deslocado em **y±2,5 mm** ou **x offset** + stub vertical só no pad A
+- **Não cruzar** sinal×potência na mesma camada; desviar ou usar B.Cu
+- **IC com GND/VIN adjacentes:** barramento offset + stub curto (ex. bus x=46, stub x=48 VIN+)
+
+## Espaçamento (obrigatório verificar antes de fixar)
+
+- **Courtyard vs courtyard:** ≥ **1 mm** livre (além clearance DRC 0,3 mm)
+- **Radial grande** (C1/C3/C5 r≈5,5 mm): ≥ **6 mm** do vizinho na vertical
+- **Axial vs radial:** não sobrepor círculo com cápsula
+- Revisar visualmente F.CrtYd após mover qualquer peça
+
+## Footprints
+
+- Contorno real: cápsula H/V, TO-220, radial, retângulo módulo DCDC
+- **F.CrtYd** 0,05 mm + **F.Fab** 0,1 mm (mesma forma)
+- Patch shapes: `python kicad/prodv6/_patch_fp_shapes.py`
+
+## Larguras de trilha
+
+| Net | mm |
+|-----|-----|
+| +12V / +12V_PROT / +12V_BAT | 1,2 |
+| +5V | 1,0 |
+| +3V3 | 1,0 |
+| GND | 0,8 |
+| Sinal / QG | 0,5–0,65 |
+
+## Ordem dos módulos
+
+MOD3 +12V → MOD4 buck +5V → MOD5 MCU → sensores → RPM → inj → relés → CAN → λ → aquecedor
