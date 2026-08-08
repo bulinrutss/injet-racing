@@ -39,28 +39,28 @@
 
 | Função | Pino STM32 | Direção | Notas |
 |---|---|---|---|
-| IAT | **PA0** | ADC in | pull-up 2K26 → NTC → GND |
-| CLT | **PA1** | ADC in | pull-up 2K26 → NTC → GND |
-| MAP | **PA2** | ADC in | divisor 10k/18k do sinal 0–5 V |
-| TPS | **PA3** | ADC in | cursor do pote (pote alimentado em +3V3) |
+| IAT | **PC9** (L16O) | ADC in | pull-up 2K26 → NTC → GND |
+| CLT | **PC7** (L17O) | ADC in | pull-up 2K26 → NTC → GND |
+| MAP | **PC11** (L12O) | ADC in | divisor 10k/18k do sinal 0–5 V |
+| TPS | **PC8** (L17I) | ADC in | cursor do pote (pote alimentado em +3V3) |
 | **PA4** | **DAC1 Vm** | out | terra virtual ~2,5 V (lambda) — **não usar como ADC** |
 | Ip (lambda) | **PA5** | ADC in | queda no shunt 61R9 |
 | Un (Nernst) | **PA6** | ADC in | célula Nernst |
-| VBat | **PC1** | ADC in | divisor 100k/10k de +12V (dead-time bicos) |
-| RPM | **PB0** | GPIO EXTI | falling edge (saída opto) |
+| VBat | **PC6** (L18I) | ADC in | divisor 100k/10k de +12V (dead-time bicos) |
+| RPM | **PE8** (R17O) | GPIO EXTI | falling edge (saída opto) |
 | CAN1_RX | **PB8** | in | ← SN65HVD230 RXD |
 | CAN1_TX | **PB9** | out | → SN65HVD230 TXD |
 | INJ1 | **PE9** | out | → gate Q1 via 100 Ω |
 | INJ2 | **PE11** | out | → gate Q2 via 100 Ω |
 | INJ3 | **PE13** | out | → gate Q3 via 100 Ω |
-| INJ4 | **PE14** | out | → gate Q4 via 100 Ω |
+| INJ4 | **PE15** (R21I) | out | → gate Q4 via 100 Ω |
 | RL1 main | **PD8** | out | → gate Q7 via 1 kΩ |
 | RL2 bomba | **PD9** | out | → gate Q8 via 1 kΩ |
 | RL3 IAC | **PD10** | out | → gate Q9 via 1 kΩ |
 | Heater PWM | **PD12** | out | → gate Q5 via 100 Ω |
 | SWDIO / SWCLK | PA13 / PA14 | debug | header SWD |
 
-> **Pinagem fixada:** PA4 = DAC Vm · PA5 = Ip · PA6 = Un · PC1 = VBat. λ calculado no firmware a partir de Ip.
+> **Pinagem fixada (prodv6):** sensores J2 esq. PC9/7/11/8/6 · PA4 = DAC Vm · PA5 = Ip · PA6 = Un · λ no firmware a partir de Ip.
 
 ---
 
@@ -166,12 +166,12 @@ U1 Black Board: pin +3V3 ← +3V3 ; pin GND ← GND_S
 
 ```
 IAT:
-  +3V3 ── R40(2K26) ──●── R50(1k) ── PA0
+  +3V3 ── R40(2K26) ──●── R50(1k) ── PC9 (L16O)
                       │
                      J1.8 (IAT sensor)
                       │
                      GND
-                      + C10(100n) PA0→GND
+                      + C10(100n) PC9→GND
 
 CLT: idem R41, C11, R51, PA1, J1.9
 
@@ -187,7 +187,7 @@ MAP:
 TPS:
   +3V3 → J1.7 → term.A pote
   GND  → term.B
-  cursor J1.11 ── R53(1k) ── PA3 + C13(100n)→GND
+  cursor J1.11 ── R53(1k) ── PC8 (L17I) + C13(100n)→GND
 ```
 
 ### 4.3 RPM (opto)
@@ -201,10 +201,10 @@ J1.12 RPM (coil− / trigger bobina) ── R60(10k 2W) ── R61(10k 2W) ─�
 
 PC817 coletor ──●── R62(4k7) ── +3V3
                 │
-                └── PB0  + C20(1nF)→GND
+                └── PE8 (R17O)  + C20(1nF)→GND
 PC817 emissor ── GND
 
-Firmware: EXTI falling edge em PB0
+Firmware: EXTI falling edge em PE8 (R17O)
 ```
 
 ### 4.4 Drivers injetores (×4 iguais)
@@ -319,12 +319,12 @@ NET +5V: U6.VOUT, U7.IN, J1.6, U2.VDD, U3.V+
 NET +3V3: U7.OUT, U1.3V3, J1.7, R40, R41, R62, U5.VCC, J3.1, TPS_A
 NET GND_P: Q1..Q5.S, Q7..Q9.S, C1-, D1.A, J1.3, J1.4
 NET GND_S: U1.GND, sensores_GND, opto_GND, ADC_caps, J1.5, J3.4  [ligar GND_P↔GND_S em 1 ponto]
-NET IAT: J1.8, R40.mid, R50 → PA0
+NET IAT: J1.8, R40.mid, R50 → PC9
 NET CLT: J1.9, R41.mid, R51 → PA1
 NET MAP: J1.10, R42 → div → R52 → PA2
-NET TPS: J1.11, R53 → PA3
+NET TPS: J1.11, R53 → PC8
 NET RPM_IN: J1.12 → R60 → R61 → U4.A
-NET RPM_MCU: U4.C → PB0
+NET RPM_MCU: U4.C → PE8 (R17O)
 NET INJ1..4: Drain Q1..Q4 → J1.13..16
 NET RL1..3: Drain Q7..Q9 → J1.18,17,19
 NET CANH/L: U5 → J1.20/21

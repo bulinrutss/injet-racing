@@ -1,0 +1,26 @@
+---
+description: Regras primárias INJET RACING — ler sempre antes de qualquer tarefa
+alwaysApply: true
+---
+
+# INJET RACING — dependência primária (sempre)
+
+## Comunicação
+- Respostas **diretas e curtas**; sem enrolar, sem repetir o pedido.
+- Preferir veredito + fatos; detalhe só se pedido.
+
+## Antes de qualquer tarefa — ler padrões (ordem)
+1. `.cursor/rules/injet-racing-core.mdc` (este)
+2. `.cursor/rules/prodv6-pcb-rebuild.mdc` (se PCB prodv6)
+3. `modulo/esquema-eletrico.md`
+4. `kicad/prodv6/jl32_pinout.py` + `firmware/include/pins.h`
+5. `kicad/prodv6/CHECKLIST.md` (bloco atual)
+6. `implementacoes-futuras/` — ideias fora da Fase 1; **não** implementar na prodv6 até puxar o item
+
+## Circuito
+1. **Fidelidade** — nunca inventar ligação; conferir esquemático + footprint (`prodv6_layout.py`) + datasheet.
+2. Citar **comp.polo/pad** (ex.: `Q20.G` perna 2 TO-92).
+3. Resistor série: um extremo = origem, outro = nó destino. Pull-down: nó → GND.
+4. Datasheets: **2N7000** S-G-D (1-2-3); **1N4007** K=banda; **SRD** pin1 COIL+ · 2 COIL− · 3 COM · 4 NO.
+5. PCB prodv6: nunca regenerar `.kicad_pcb` por cima de KiCad; `_append_modN.py` / patch.
+6. Tabelas: **Net | De (comp.polo) | Para (comp.polo)**.

@@ -9,20 +9,26 @@ static float rpmFiltered = 0.0f;
 static void IRAM_ATTR onRpmPulse() {
   uint32_t now = micros();
   uint32_t dt = now - lastPulseUs;
-  if (dt < 5000) return;  // debounce ~12000 RPM max (6 cil)
+  if (dt < RPM_DEBOUNCE_US) return;
   periodUs = dt;
   lastPulseUs = now;
 }
 
 void rpmInit() {
-  pinMode(PIN_RPM, INPUT_PULLUP);
+  pinMode(PIN_RPM, INPUT);  // pull-up externo R22 4k7 no coletor do PC817
   attachInterrupt(digitalPinToInterrupt(PIN_RPM), onRpmPulse, FALLING);
 }
 
 void rpmUpdate() {
-  if (periodUs == 0) return;
+  // Snapshot atômico: ISR pode escrever periodUs a qualquer momento
+  noInterrupts();
+  uint32_t period = periodUs;
+  interrupts();
+
+  if (period == 0) return;
   float pulsesPerRev = (float)ENGINE_CYLINDERS / 2.0f;
-  float rpm = 60.0e6f / ((float)periodUs * pulsesPerRev);
+  float rpm = 60.0e6f / ((float)period * pulsesPerRev);
+  if (rpm < RPM_MIN_VALID || rpm > RPM_MAX_VALID) return;
   rpmFiltered = rpmFiltered * 0.75f + rpm * 0.25f;
 }
 

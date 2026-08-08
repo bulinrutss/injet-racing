@@ -1,39 +1,1003 @@
 ** Drc report for injet-racing-prodv6.kicad_pcb **
-** Created on 2026-08-06T05:20:55 **
+** Created on 2026-08-08T05:54:46 **
 ** Report includes: Errors, Warnings, Exclusions **
 
-** Found 14 DRC violations **
-[tracks_crossing]: Tracks crossing
+** Found 359 DRC violations **
+[annular_width]: Largura anular (configuração das restrições da placa largura anular mín 0,1000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+[annular_width]: Largura anular (configuração das restrições da placa largura anular mín 0,1000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+[annular_width]: Largura anular (configuração das restrições da placa largura anular mín 0,1000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+[annular_width]: Largura anular (configuração das restrições da placa largura anular mín 0,1000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+[annular_width]: Largura anular (configuração das restrições da placa largura anular mín 0,1000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(53.5000 mm, 108.0000 mm): Via [GND] on F.Cu - B.Cu
+[annular_width]: Largura anular (configuração das restrições da placa largura anular mín 0,1000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(72.0000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[annular_width]: Largura anular (configuração das restrições da placa largura anular mín 0,1000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(58.5000 mm, 107.0000 mm): Via [GND] on F.Cu - B.Cu
+[annular_width]: Largura anular (configuração das restrições da placa largura anular mín 0,1000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(71.5000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[annular_width]: Largura anular (configuração das restrições da placa largura anular mín 0,1000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(64.0000 mm, 106.0000 mm): Via [GND] on F.Cu - B.Cu
+[annular_width]: Largura anular (configuração das restrições da placa largura anular mín 0,1000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(63.5000 mm, 104.5000 mm): Via [GND] on F.Cu - B.Cu
+[annular_width]: Largura anular (configuração das restrições da placa largura anular mín 0,1000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(71.5000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[annular_width]: Largura anular (configuração das restrições da placa largura anular mín 0,1000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(72.5000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[annular_width]: Largura anular (configuração das restrições da placa largura anular mín 0,1000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(74.5000 mm, 108.5000 mm): Via [GND] on F.Cu - B.Cu
+[annular_width]: Largura anular (configuração das restrições da placa largura anular mín 0,1000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(72.5000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[annular_width]: Largura anular (configuração das restrições da placa largura anular mín 0,1000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(71.5000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[annular_width]: Largura anular (configuração das restrições da placa largura anular mín 0,1000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(53.0000 mm, 107.5000 mm): Via [GND] on F.Cu - B.Cu
+[annular_width]: Largura anular (configuração das restrições da placa largura anular mín 0,1000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(72.0000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
     Local override; error
-    @(24.0000 mm, 148.0000 mm): Track [QG] on F.Cu, length 16.0000 mm
-    @(22.0000 mm, 136.0000 mm): Track [+12V_IN] on F.Cu, length 12.8301 mm
+    @(100.0875 mm, 115.5325 mm): Footprint R51
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(100.0875 mm, 115.5325 mm): Footprint R51
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(100.0875 mm, 115.5325 mm): Footprint R51
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(100.0875 mm, 115.5325 mm): Footprint R51
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(79.5875 mm, 125.0400 mm): Footprint Q20
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(79.5875 mm, 125.0400 mm): Footprint Q20
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(132.0875 mm, 125.0725 mm): Footprint Q22
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(132.0875 mm, 125.0725 mm): Footprint Q22
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(139.1275 mm, 120.0325 mm): Footprint D22
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(139.1275 mm, 120.0325 mm): Footprint D22
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(139.1275 mm, 120.0325 mm): Footprint D22
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(139.1275 mm, 120.0325 mm): Footprint D22
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(126.0875 mm, 115.5325 mm): Footprint R52
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(126.0875 mm, 115.5325 mm): Footprint R52
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(126.0875 mm, 115.5325 mm): Footprint R52
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(126.0875 mm, 115.5325 mm): Footprint R52
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(126.0875 mm, 120.0325 mm): Footprint R57
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(126.0875 mm, 120.0325 mm): Footprint R57
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(126.0875 mm, 120.0325 mm): Footprint R57
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(126.0875 mm, 120.0325 mm): Footprint R57
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(24.0000 mm, 148.0000 mm): Footprint Q1
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(24.0000 mm, 148.0000 mm): Footprint Q1
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(106.0875 mm, 125.0725 mm): Footprint Q21
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(106.0875 mm, 125.0725 mm): Footprint Q21
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(180.5000 mm, 112.0000 mm): Footprint Q11
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(180.5000 mm, 112.0000 mm): Footprint Q11
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(163.5000 mm, 112.0000 mm): Footprint Q10
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(163.5000 mm, 112.0000 mm): Footprint Q10
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(86.6275 mm, 120.0000 mm): Footprint D20
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(86.6275 mm, 120.0000 mm): Footprint D20
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(86.6275 mm, 120.0000 mm): Footprint D20
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(30.0000 mm, 39.0000 mm): Footprint C4
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(30.0000 mm, 39.0000 mm): Footprint C4
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(30.0000 mm, 39.0000 mm): Footprint C4
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(30.0000 mm, 39.0000 mm): Footprint C4
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(73.5875 mm, 115.5000 mm): Footprint R50
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(73.5875 mm, 115.5000 mm): Footprint R50
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(73.5875 mm, 115.5000 mm): Footprint R50
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(73.5875 mm, 115.5000 mm): Footprint R50
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(183.0000 mm, 91.0000 mm): Footprint R31
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(183.0000 mm, 91.0000 mm): Footprint R31
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(183.0000 mm, 91.0000 mm): Footprint R31
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(183.0000 mm, 91.0000 mm): Footprint R31
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(30.0000 mm, 85.0000 mm): Footprint R17
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(30.0000 mm, 85.0000 mm): Footprint R17
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(30.0000 mm, 85.0000 mm): Footprint R17
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(30.0000 mm, 85.0000 mm): Footprint R17
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(218.5000 mm, 23.5000 mm): Footprint CN2
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(218.5000 mm, 23.5000 mm): Footprint CN2
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(197.5000 mm, 112.0000 mm): Footprint Q12
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(197.5000 mm, 112.0000 mm): Footprint Q12
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(77.5000 mm, 20.0000 mm): Footprint R21
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(77.5000 mm, 20.0000 mm): Footprint R21
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(77.5000 mm, 20.0000 mm): Footprint R21
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(77.5000 mm, 20.0000 mm): Footprint R21
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(167.5000 mm, 100.0000 mm): Footprint R40
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(167.5000 mm, 100.0000 mm): Footprint R40
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(167.5000 mm, 100.0000 mm): Footprint R40
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(167.5000 mm, 100.0000 mm): Footprint R40
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(150.5000 mm, 110.5000 mm): Footprint C11
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(150.5000 mm, 110.5000 mm): Footprint C11
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(150.5000 mm, 110.5000 mm): Footprint C11
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(150.5000 mm, 110.5000 mm): Footprint C11
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(32.0000 mm, 136.0000 mm): Footprint D2
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(32.0000 mm, 136.0000 mm): Footprint D2
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(32.0000 mm, 136.0000 mm): Footprint D2
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(208.0000 mm, 106.0000 mm): Footprint D12
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(208.0000 mm, 106.0000 mm): Footprint D12
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(208.0000 mm, 106.0000 mm): Footprint D12
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(42.0000 mm, 138.0000 mm): Footprint C2
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(42.0000 mm, 138.0000 mm): Footprint C2
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(42.0000 mm, 138.0000 mm): Footprint C2
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(42.0000 mm, 138.0000 mm): Footprint C2
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(30.0000 mm, 90.0000 mm): Footprint R13
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(30.0000 mm, 90.0000 mm): Footprint R13
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(30.0000 mm, 90.0000 mm): Footprint R13
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(20.5000 mm, 76.5000 mm): Footprint R14
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(20.5000 mm, 76.5000 mm): Footprint R14
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(20.5000 mm, 76.5000 mm): Footprint R14
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(20.5000 mm, 76.5000 mm): Footprint R14
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(20.5000 mm, 102.5000 mm): Footprint R19
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(20.5000 mm, 102.5000 mm): Footprint R19
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(20.5000 mm, 102.5000 mm): Footprint R19
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(20.5000 mm, 102.5000 mm): Footprint R19
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(214.5000 mm, 112.0000 mm): Footprint Q13
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(214.5000 mm, 112.0000 mm): Footprint Q13
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(218.5000 mm, 100.0000 mm): Footprint R43
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(218.5000 mm, 100.0000 mm): Footprint R43
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(218.5000 mm, 100.0000 mm): Footprint R43
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(218.5000 mm, 100.0000 mm): Footprint R43
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(174.0000 mm, 106.0000 mm): Footprint D10
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(174.0000 mm, 106.0000 mm): Footprint D10
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(174.0000 mm, 106.0000 mm): Footprint D10
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(14.0000 mm, 136.0000 mm): Footprint F1
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(14.0000 mm, 136.0000 mm): Footprint F1
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(14.0000 mm, 136.0000 mm): Footprint F1
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(14.0000 mm, 136.0000 mm): Footprint F1
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(184.5000 mm, 100.0000 mm): Footprint R41
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(184.5000 mm, 100.0000 mm): Footprint R41
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(184.5000 mm, 100.0000 mm): Footprint R41
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(184.5000 mm, 100.0000 mm): Footprint R41
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(37.0000 mm, 98.0000 mm): Footprint C21
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(37.0000 mm, 98.0000 mm): Footprint C21
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(37.0000 mm, 98.0000 mm): Footprint C21
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(37.0000 mm, 98.0000 mm): Footprint C21
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(77.5000 mm, 31.5000 mm): Footprint R20
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(77.5000 mm, 31.5000 mm): Footprint R20
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(77.5000 mm, 31.5000 mm): Footprint R20
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(77.5000 mm, 31.5000 mm): Footprint R20
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(12.0000 mm, 14.0000 mm): Footprint CN1
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(12.0000 mm, 14.0000 mm): Footprint CN1
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(12.0000 mm, 14.0000 mm): Footprint CN1
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(12.0000 mm, 14.0000 mm): Footprint CN1
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(20.0000 mm, 107.5000 mm): Footprint R10
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(20.0000 mm, 107.5000 mm): Footprint R10
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(20.0000 mm, 107.5000 mm): Footprint R10
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(20.0000 mm, 107.5000 mm): Footprint R10
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(217.0000 mm, 91.0000 mm): Footprint R33
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(217.0000 mm, 91.0000 mm): Footprint R33
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(217.0000 mm, 91.0000 mm): Footprint R33
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(217.0000 mm, 91.0000 mm): Footprint R33
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(40.0000 mm, 126.0000 mm): Footprint D1
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(40.0000 mm, 126.0000 mm): Footprint D1
+[malformed_courtyard]: Footprint com pedaço malformado (auto-intersecção)
+    Local override; error
+    @(40.0000 mm, 126.0000 mm): Footprint D1
+[malformed_courtyard]: Footprint com pedaço malformado (auto-intersecção)
+    Local override; error
+    @(40.0000 mm, 126.0000 mm): Footprint D1
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(40.0000 mm, 126.0000 mm): Footprint D1
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(40.0000 mm, 126.0000 mm): Footprint D1
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(30.5000 mm, 112.0000 mm): Footprint C20
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(30.5000 mm, 112.0000 mm): Footprint C20
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(30.5000 mm, 112.0000 mm): Footprint C20
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(30.5000 mm, 112.0000 mm): Footprint C20
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(22.0000 mm, 126.0000 mm): Footprint R1
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(22.0000 mm, 126.0000 mm): Footprint R1
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(22.0000 mm, 126.0000 mm): Footprint R1
+[malformed_courtyard]: Footprint com pedaço malformado (auto-intersecção)
+    Local override; error
+    @(225.0000 mm, 106.0000 mm): Footprint D13
+[malformed_courtyard]: Footprint com pedaço malformado (auto-intersecção)
+    Local override; error
+    @(225.0000 mm, 106.0000 mm): Footprint D13
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(225.0000 mm, 106.0000 mm): Footprint D13
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(225.0000 mm, 106.0000 mm): Footprint D13
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(225.0000 mm, 106.0000 mm): Footprint D13
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(225.0000 mm, 106.0000 mm): Footprint D13
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(73.5875 mm, 120.0000 mm): Footprint R55
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(73.5875 mm, 120.0000 mm): Footprint R55
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(73.5875 mm, 120.0000 mm): Footprint R55
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(73.5875 mm, 120.0000 mm): Footprint R55
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(24.5000 mm, 96.0000 mm): Footprint R12
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(24.5000 mm, 96.0000 mm): Footprint R12
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(24.5000 mm, 96.0000 mm): Footprint R12
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(24.5000 mm, 96.0000 mm): Footprint R12
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(113.1275 mm, 120.0325 mm): Footprint D21
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(113.1275 mm, 120.0325 mm): Footprint D21
+[malformed_courtyard]: Footprint com pedaço malformado (auto-intersecção)
+    Local override; error
+    @(113.1275 mm, 120.0325 mm): Footprint D21
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(113.1275 mm, 120.0325 mm): Footprint D21
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(30.5000 mm, 68.0000 mm): Footprint R15
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(30.5000 mm, 68.0000 mm): Footprint R15
+[malformed_courtyard]: Footprint com pedaço malformado (auto-intersecção)
+    Local override; error
+    @(30.5000 mm, 68.0000 mm): Footprint R15
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(30.5000 mm, 68.0000 mm): Footprint R15
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(20.0000 mm, 121.0000 mm): Footprint R18
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(20.0000 mm, 121.0000 mm): Footprint R18
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(20.0000 mm, 121.0000 mm): Footprint R18
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(20.0000 mm, 121.0000 mm): Footprint R18
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(39.0000 mm, 92.0000 mm): Footprint C22
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(39.0000 mm, 92.0000 mm): Footprint C22
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(39.0000 mm, 92.0000 mm): Footprint C22
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(39.0000 mm, 92.0000 mm): Footprint C22
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(83.5000 mm, 25.5000 mm): Footprint D3
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(83.5000 mm, 25.5000 mm): Footprint D3
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(83.5000 mm, 25.5000 mm): Footprint D3
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(32.0000 mm, 105.5000 mm): Footprint R11
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(32.0000 mm, 105.5000 mm): Footprint R11
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(32.0000 mm, 105.5000 mm): Footprint R11
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(32.0000 mm, 105.5000 mm): Footprint R11
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(201.5000 mm, 100.0000 mm): Footprint R42
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(201.5000 mm, 100.0000 mm): Footprint R42
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(201.5000 mm, 100.0000 mm): Footprint R42
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(201.5000 mm, 100.0000 mm): Footprint R42
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(166.0000 mm, 91.0000 mm): Footprint R30
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(166.0000 mm, 91.0000 mm): Footprint R30
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(166.0000 mm, 91.0000 mm): Footprint R30
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(166.0000 mm, 91.0000 mm): Footprint R30
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(191.0000 mm, 106.0000 mm): Footprint D11
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(191.0000 mm, 106.0000 mm): Footprint D11
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(191.0000 mm, 106.0000 mm): Footprint D11
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(147.0000 mm, 94.5000 mm): Footprint C12
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(147.0000 mm, 94.5000 mm): Footprint C12
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(147.0000 mm, 94.5000 mm): Footprint C12
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(147.0000 mm, 94.5000 mm): Footprint C12
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(200.0000 mm, 91.0000 mm): Footprint R32
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(200.0000 mm, 91.0000 mm): Footprint R32
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(200.0000 mm, 91.0000 mm): Footprint R32
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(200.0000 mm, 91.0000 mm): Footprint R32
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(19.5000 mm, 90.0000 mm): Footprint R16
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(19.5000 mm, 90.0000 mm): Footprint R16
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(19.5000 mm, 90.0000 mm): Footprint R16
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(19.5000 mm, 90.0000 mm): Footprint R16
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(150.5000 mm, 102.5000 mm): Footprint C10
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(150.5000 mm, 102.5000 mm): Footprint C10
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(150.5000 mm, 102.5000 mm): Footprint C10
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(150.5000 mm, 102.5000 mm): Footprint C10
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(104.0000 mm, 26.5000 mm): Footprint R22
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(104.0000 mm, 26.5000 mm): Footprint R22
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(104.0000 mm, 26.5000 mm): Footprint R22
+[malformed_courtyard]: Footprint com pedaço malformado (não é uma forma fechada)
+    Local override; error
+    @(104.0000 mm, 26.5000 mm): Footprint R22
+[drill_out_of_range]: Tamanho do furo além do limite (configuração das restrições da placa furo mín 0,3000 mm; atual -1,000e-06 mm)
+    Rule: configuração das restrições da placa; error
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+[drill_out_of_range]: Tamanho do furo além do limite (configuração das restrições da placa furo mín 0,3000 mm; atual -1,000e-06 mm)
+    Rule: configuração das restrições da placa; error
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+[drill_out_of_range]: Tamanho do furo além do limite (configuração das restrições da placa furo mín 0,3000 mm; atual -1,000e-06 mm)
+    Rule: configuração das restrições da placa; error
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+[drill_out_of_range]: Tamanho do furo além do limite (configuração das restrições da placa furo mín 0,3000 mm; atual -1,000e-06 mm)
+    Rule: configuração das restrições da placa; error
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+[drill_out_of_range]: Tamanho do furo além do limite (configuração das restrições da placa furo mín 0,3000 mm; atual -1,000e-06 mm)
+    Rule: configuração das restrições da placa; error
+    @(53.5000 mm, 108.0000 mm): Via [GND] on F.Cu - B.Cu
+[drill_out_of_range]: Tamanho do furo além do limite (configuração das restrições da placa furo mín 0,3000 mm; atual -1,000e-06 mm)
+    Rule: configuração das restrições da placa; error
+    @(72.0000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[drill_out_of_range]: Tamanho do furo além do limite (configuração das restrições da placa furo mín 0,3000 mm; atual -1,000e-06 mm)
+    Rule: configuração das restrições da placa; error
+    @(58.5000 mm, 107.0000 mm): Via [GND] on F.Cu - B.Cu
+[drill_out_of_range]: Tamanho do furo além do limite (configuração das restrições da placa furo mín 0,3000 mm; atual -1,000e-06 mm)
+    Rule: configuração das restrições da placa; error
+    @(71.5000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[drill_out_of_range]: Tamanho do furo além do limite (configuração das restrições da placa furo mín 0,3000 mm; atual -1,000e-06 mm)
+    Rule: configuração das restrições da placa; error
+    @(64.0000 mm, 106.0000 mm): Via [GND] on F.Cu - B.Cu
+[drill_out_of_range]: Tamanho do furo além do limite (configuração das restrições da placa furo mín 0,3000 mm; atual -1,000e-06 mm)
+    Rule: configuração das restrições da placa; error
+    @(63.5000 mm, 104.5000 mm): Via [GND] on F.Cu - B.Cu
+[drill_out_of_range]: Tamanho do furo além do limite (configuração das restrições da placa furo mín 0,3000 mm; atual -1,000e-06 mm)
+    Rule: configuração das restrições da placa; error
+    @(71.5000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[drill_out_of_range]: Tamanho do furo além do limite (configuração das restrições da placa furo mín 0,3000 mm; atual -1,000e-06 mm)
+    Rule: configuração das restrições da placa; error
+    @(72.5000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[drill_out_of_range]: Tamanho do furo além do limite (configuração das restrições da placa furo mín 0,3000 mm; atual -1,000e-06 mm)
+    Rule: configuração das restrições da placa; error
+    @(74.5000 mm, 108.5000 mm): Via [GND] on F.Cu - B.Cu
+[drill_out_of_range]: Tamanho do furo além do limite (configuração das restrições da placa furo mín 0,3000 mm; atual -1,000e-06 mm)
+    Rule: configuração das restrições da placa; error
+    @(72.5000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[drill_out_of_range]: Tamanho do furo além do limite (configuração das restrições da placa furo mín 0,3000 mm; atual -1,000e-06 mm)
+    Rule: configuração das restrições da placa; error
+    @(71.5000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[drill_out_of_range]: Tamanho do furo além do limite (configuração das restrições da placa furo mín 0,3000 mm; atual -1,000e-06 mm)
+    Rule: configuração das restrições da placa; error
+    @(53.0000 mm, 107.5000 mm): Via [GND] on F.Cu - B.Cu
+[drill_out_of_range]: Tamanho do furo além do limite (configuração das restrições da placa furo mín 0,3000 mm; atual -1,000e-06 mm)
+    Rule: configuração das restrições da placa; error
+    @(72.0000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[invalid_outline]: A placa tem um contorno malformado (nenhuma aresta foi encontrada na camada Edge.Cuts)
+    Local override; error
+    @(0.0000 mm, 0.0000 mm): PCB
+[via_diameter]: Diâmetro da via (configuração das restrições da placa diâmetro min 0,5000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+[via_diameter]: Diâmetro da via (configuração das restrições da placa diâmetro min 0,5000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+[via_diameter]: Diâmetro da via (configuração das restrições da placa diâmetro min 0,5000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+[via_diameter]: Diâmetro da via (configuração das restrições da placa diâmetro min 0,5000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+[via_diameter]: Diâmetro da via (configuração das restrições da placa diâmetro min 0,5000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(53.5000 mm, 108.0000 mm): Via [GND] on F.Cu - B.Cu
+[via_diameter]: Diâmetro da via (configuração das restrições da placa diâmetro min 0,5000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(72.0000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[via_diameter]: Diâmetro da via (configuração das restrições da placa diâmetro min 0,5000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(58.5000 mm, 107.0000 mm): Via [GND] on F.Cu - B.Cu
+[via_diameter]: Diâmetro da via (configuração das restrições da placa diâmetro min 0,5000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(71.5000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[via_diameter]: Diâmetro da via (configuração das restrições da placa diâmetro min 0,5000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(64.0000 mm, 106.0000 mm): Via [GND] on F.Cu - B.Cu
+[via_diameter]: Diâmetro da via (configuração das restrições da placa diâmetro min 0,5000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(63.5000 mm, 104.5000 mm): Via [GND] on F.Cu - B.Cu
+[via_diameter]: Diâmetro da via (configuração das restrições da placa diâmetro min 0,5000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(71.5000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[via_diameter]: Diâmetro da via (configuração das restrições da placa diâmetro min 0,5000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(72.5000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[via_diameter]: Diâmetro da via (configuração das restrições da placa diâmetro min 0,5000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(74.5000 mm, 108.5000 mm): Via [GND] on F.Cu - B.Cu
+[via_diameter]: Diâmetro da via (configuração das restrições da placa diâmetro min 0,5000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(72.5000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[via_diameter]: Diâmetro da via (configuração das restrições da placa diâmetro min 0,5000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(71.5000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[via_diameter]: Diâmetro da via (configuração das restrições da placa diâmetro min 0,5000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(53.0000 mm, 107.5000 mm): Via [GND] on F.Cu - B.Cu
+[via_diameter]: Diâmetro da via (configuração das restrições da placa diâmetro min 0,5000 mm; atual 0,0000 mm)
+    Rule: configuração das restrições da placa; error
+    @(72.0000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(121.5325 mm, 115.5325 mm): Track [GRL3] on B.Cu, length 0.0460 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(73.5875 mm, 115.5000 mm): Track [GRL1] on B.Cu, length 4.0875 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(100.0875 mm, 115.5325 mm): Track [GRL2] on B.Cu, length 4.5550 mm
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(53.5000 mm, 108.0000 mm): Via [GND] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(64.0000 mm, 106.0000 mm): Via [GND] on F.Cu - B.Cu
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(231.5000 mm, 120.0000 mm): Track [INJ2] on B.Cu, length 23.2000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(233.5000 mm, 122.0000 mm): Track [INJ1] on B.Cu, length 35.0000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(166.0400 mm, 115.9600 mm): Track [INJ1] on B.Cu, length 0.0566 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(36.0000 mm, 85.0000 mm): Track [TPS] on B.Cu, length 6.0000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(229.5000 mm, 118.0000 mm): Track [INJ3] on B.Cu, length 31.5000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(39.0000 mm, 92.0000 mm): Track [MAP] on B.Cu, length 3.0000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(30.5000 mm, 68.0000 mm): Track [VBAT] on B.Cu, length 11.5000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(37.0000 mm, 101.5000 mm): Track [CLT] on B.Cu, length 6.0000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(32.0000 mm, 99.5000 mm): Track [CLT] on B.Cu, length 1.5000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(227.5000 mm, 112.0000 mm): Track [INJ4] on B.Cu, length 26.0000 mm
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+    @(231.5000 mm, 96.0000 mm): Via [+12V_PROT] on F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(72.0000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+    @(72.0000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(71.5000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+    @(71.5000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(71.5000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+    @(71.5000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(71.5000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+    @(71.5000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(72.5000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+    @(72.5000 mm, 105.5000 mm): Via [GND] on F.Cu - B.Cu
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(100.0875 mm, 115.5325 mm): Footprint R51
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(79.5875 mm, 125.0400 mm): Footprint Q20
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(132.0875 mm, 125.0725 mm): Footprint Q22
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(124.0875 mm, 129.9925 mm): Footprint RL3
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(139.1275 mm, 120.0325 mm): Footprint D22
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(126.0875 mm, 115.5325 mm): Footprint R52
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(126.0875 mm, 120.0325 mm): Footprint R57
 [lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
     Local override; warning
     @(24.0000 mm, 148.0000 mm): Footprint Q1
 [lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
     Local override; warning
-    @(200.0000 mm, 8.0000 mm): Footprint CN2
+    @(68.0000 mm, 50.0000 mm): Footprint C5
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(106.0875 mm, 125.0725 mm): Footprint Q21
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(180.5000 mm, 112.0000 mm): Footprint Q11
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(163.5000 mm, 112.0000 mm): Footprint Q10
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(86.6275 mm, 120.0000 mm): Footprint D20
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(30.0000 mm, 50.0000 mm): Footprint C3
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(30.0000 mm, 39.0000 mm): Footprint C4
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(73.5875 mm, 115.5000 mm): Footprint R50
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(183.0000 mm, 91.0000 mm): Footprint R31
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(30.0000 mm, 85.0000 mm): Footprint R17
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(218.5000 mm, 23.5000 mm): Footprint CN2
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(197.5000 mm, 112.0000 mm): Footprint Q12
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(77.5000 mm, 20.0000 mm): Footprint R21
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(167.5000 mm, 100.0000 mm): Footprint R40
 [lib_footprint_mismatch]: O footprint 'MountingHole_3.2mm_M3' não corresponde à cópia na biblioteca 'MountingHole'
     Local override; warning
     @(234.0000 mm, 154.0000 mm): Footprint H
 [lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
     Local override; warning
+    @(150.5000 mm, 110.5000 mm): Footprint C11
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
     @(32.0000 mm, 136.0000 mm): Footprint D2
 [lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
     Local override; warning
-    @(42.0000 mm, 146.0000 mm): Footprint C2
+    @(208.0000 mm, 106.0000 mm): Footprint D12
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(42.0000 mm, 138.0000 mm): Footprint C2
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(30.0000 mm, 90.0000 mm): Footprint R13
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(20.5000 mm, 76.5000 mm): Footprint R14
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(89.1900 mm, 26.7300 mm): Footprint U7
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(20.5000 mm, 102.5000 mm): Footprint R19
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(214.5000 mm, 112.0000 mm): Footprint Q13
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(218.5000 mm, 100.0000 mm): Footprint R43
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(174.0000 mm, 106.0000 mm): Footprint D10
 [lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
     Local override; warning
     @(14.0000 mm, 136.0000 mm): Footprint F1
 [lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
     Local override; warning
-    @(12.0000 mm, 8.0000 mm): Footprint CN1
+    @(184.5000 mm, 100.0000 mm): Footprint R41
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(37.0000 mm, 98.0000 mm): Footprint C21
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(77.5000 mm, 31.5000 mm): Footprint R20
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(12.0000 mm, 14.0000 mm): Footprint CN1
 [lib_footprint_mismatch]: O footprint 'MountingHole_3.2mm_M3' não corresponde à cópia na biblioteca 'MountingHole'
     Local override; warning
     @(234.0000 mm, 6.0000 mm): Footprint H
 [lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
     Local override; warning
+    @(20.0000 mm, 107.5000 mm): Footprint R10
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(217.0000 mm, 91.0000 mm): Footprint R33
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
     @(40.0000 mm, 126.0000 mm): Footprint D1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(48.0000 mm, 52.0000 mm): Footprint U2
 [lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
     Local override; warning
     @(42.0000 mm, 152.0000 mm): Footprint C1
@@ -42,16 +1006,229 @@
     @(6.0000 mm, 154.0000 mm): Footprint H
 [lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
     Local override; warning
+    @(30.5000 mm, 112.0000 mm): Footprint C20
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
     @(22.0000 mm, 126.0000 mm): Footprint R1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(225.0000 mm, 106.0000 mm): Footprint D13
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(73.5875 mm, 120.0000 mm): Footprint R55
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(24.5000 mm, 96.0000 mm): Footprint R12
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(113.1275 mm, 120.0325 mm): Footprint D21
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(30.5000 mm, 68.0000 mm): Footprint R15
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(20.0000 mm, 121.0000 mm): Footprint R18
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(39.0000 mm, 92.0000 mm): Footprint C22
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(83.5000 mm, 25.5000 mm): Footprint D3
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(32.0000 mm, 105.5000 mm): Footprint R11
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(201.5000 mm, 100.0000 mm): Footprint R42
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(166.0000 mm, 91.0000 mm): Footprint R30
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(191.0000 mm, 106.0000 mm): Footprint D11
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(147.0000 mm, 94.5000 mm): Footprint C12
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(200.0000 mm, 91.0000 mm): Footprint R32
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(98.0875 mm, 129.9925 mm): Footprint RL2
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(19.5000 mm, 90.0000 mm): Footprint R16
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(150.5000 mm, 102.5000 mm): Footprint C10
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(104.0000 mm, 26.5000 mm): Footprint R22
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(24.5000 mm, 85.0000 mm): Footprint C23
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(86.0000 mm, 108.0000 mm): Footprint U1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(100.0875 mm, 120.0325 mm): Footprint R56
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(37.0000 mm, 76.0000 mm): Footprint C24
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(68.0000 mm, 38.0000 mm): Footprint C6
 [lib_footprint_mismatch]: O footprint 'MountingHole_3.2mm_M3' não corresponde à cópia na biblioteca 'MountingHole'
     Local override; warning
     @(6.0000 mm, 6.0000 mm): Footprint H
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(71.5875 mm, 129.9600 mm): Footprint RL1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(104.0000 mm, 21.0000 mm): Footprint C25
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Injet'
+    Local override; warning
+    @(150.5000 mm, 88.0000 mm): Footprint U8
 
-** Found 1 unconnected pads **
+** Found 34 unconnected pads **
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(24.0000 mm, 132.0000 mm): Track [QG] on F.Cu, length 16.0000 mm
-    @(22.0000 mm, 132.0000 mm): PTH pad A [QG] of R1
+    @(86.0000 mm, 52.1200 mm): PTH pad L22O [RL2] of U1
+    @(28.0000 mm, 14.0000 mm): PTH pad 17 [RL2] of CN1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(108.6275 mm, 125.0725 mm): PTH pad D [RL2] of Q21
+    @(86.0000 mm, 52.1200 mm): PTH pad L22O [RL2] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(100.0875 mm, 115.5325 mm): Track [GRL2] on B.Cu, length 4.5550 mm
+    @(104.5875 mm, 115.5325 mm): Track [GRL2] on B.Cu, length 6.3640 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(16.0000 mm, 14.0000 mm): PTH pad 14 [INJ2] of CN1
+    @(183.0400 mm, 112.0000 mm): Track [INJ2] on B.Cu, length 3.9600 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(177.0000 mm, 91.0000 mm): Track [GINJ2] on B.Cu, length 9.0000 mm
+    @(170.5000 mm, 86.5000 mm): Track [GINJ2] on B.Cu, length 8.0000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(12.0000 mm, 14.0000 mm): PTH pad 13 [INJ1] of CN1
+    @(166.0400 mm, 112.0000 mm): Track [INJ1] on B.Cu, length 3.9600 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(160.0000 mm, 91.0000 mm): Track [GINJ1] on B.Cu, length 9.0000 mm
+    @(166.0000 mm, 85.0000 mm): Track [GINJ1] on B.Cu, length 6.0000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(88.5400 mm, 52.1200 mm): PTH pad L22I [RL3] of U1
+    @(36.0000 mm, 14.0000 mm): PTH pad 19 [RL3] of CN1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(134.6275 mm, 125.0725 mm): Track [RL3] on B.Cu, length 1.8725 mm
+    @(88.5400 mm, 52.1200 mm): PTH pad L22I [RL3] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(130.5875 mm, 115.5325 mm): Track [GRL3] on B.Cu, length 6.3640 mm
+    @(126.0875 mm, 115.5325 mm): PTH pad A [GRL3] of R52
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(88.5400 mm, 49.5800 mm): PTH pad L23I [RL1] of U1
+    @(32.0000 mm, 14.0000 mm): PTH pad 18 [RL1] of CN1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(88.5400 mm, 49.5800 mm): PTH pad L23I [RL1] of U1
+    @(85.6675 mm, 125.0400 mm): Track [RL1] on B.Cu, length 1.3576 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(78.0875 mm, 115.5000 mm): Track [GRL1] on B.Cu, length 6.3640 mm
+    @(73.5875 mm, 115.5000 mm): PTH pad A [GRL1] of R50
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(24.5000 mm, 85.0000 mm): Track [TPS] on B.Cu, length 5.5000 mm
+    @(36.0000 mm, 85.0000 mm): Track [TPS] on B.Cu, length 6.0000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(36.0000 mm, 85.0000 mm): Track [TPS] on B.Cu, length 6.0000 mm
+    @(88.5400 mm, 64.8200 mm): PTH pad L17I [TPS] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(88.5400 mm, 54.6600 mm): PTH pad L21I [H-] of U1
+    @(224.5000 mm, 19.5000 mm): PTH pad 2 [H-] of CN2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(136.0000 mm, 74.9800 mm): PTH pad R13O [IP] of U1
+    @(224.5000 mm, 15.5000 mm): PTH pad 3 [IP] of CN2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(138.5400 mm, 74.9800 mm): PTH pad R13I [VM] of U1
+    @(218.5000 mm, 23.5000 mm): PTH pad 4 [VM] of CN2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(138.5400 mm, 72.4400 mm): PTH pad R14I [UN] of U1
+    @(218.5000 mm, 19.5000 mm): PTH pad 5 [UN] of CN2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(20.0000 mm, 14.0000 mm): PTH pad 15 [INJ3] of CN1
+    @(200.0400 mm, 112.0000 mm): Track [INJ3] on B.Cu, length 3.9600 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(193.0000 mm, 84.0000 mm): Track [GINJ3] on B.Cu, length 9.8995 mm
+    @(194.0000 mm, 91.0000 mm): Track [GINJ3] on B.Cu, length 9.0000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(77.5000 mm, 25.5000 mm): Track [RPM_IN] on B.Cu, length 5.5000 mm
+    @(83.5000 mm, 25.5000 mm): Track [RPM_IN] on B.Cu, length 5.5000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(77.5000 mm, 31.5000 mm): Track [RPM_IN] on B.Cu, length 10.0000 mm
+    @(77.5000 mm, 25.5000 mm): Track [RPM_IN] on B.Cu, length 5.5000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(96.8100 mm, 26.7300 mm): Track [RPM_IN] on B.Cu, length 6.9600 mm
+    @(87.9600 mm, 25.5000 mm): Track [RPM_IN] on B.Cu, length 1.7395 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(14.0000 mm, 84.5000 mm): Track [MAP] on F.Cu, length 7.7782 mm
+    @(24.5000 mm, 90.0000 mm): Track [MAP] on B.Cu, length 5.5000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(19.5000 mm, 96.0000 mm): Track [MAP] on B.Cu, length 5.0000 mm
+    @(14.0000 mm, 84.5000 mm): Track [MAP] on F.Cu, length 7.7782 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(39.0000 mm, 92.0000 mm): Track [MAP] on B.Cu, length 3.0000 mm
+    @(86.0000 mm, 77.5200 mm): PTH pad L12O [MAP] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(88.5400 mm, 62.2800 mm): PTH pad L18I [VBAT] of U1
+    @(30.5000 mm, 68.0000 mm): Track [VBAT] on B.Cu, length 11.5000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(11.0000 mm, 93.0000 mm): Track [CLT] on F.Cu, length 13.4350 mm
+    @(26.5000 mm, 102.5000 mm): Track [CLT] on B.Cu, length 2.5000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(37.0000 mm, 101.5000 mm): Track [CLT] on B.Cu, length 6.0000 mm
+    @(86.0000 mm, 64.8200 mm): PTH pad L17O [CLT] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(227.5000 mm, 112.0000 mm): Track [INJ4] on B.Cu, length 26.0000 mm
+    @(24.0000 mm, 14.0000 mm): PTH pad 16 [INJ4] of CN1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(199.5000 mm, 86.5000 mm): Track [GINJ4] on B.Cu, length 13.0000 mm
+    @(211.0000 mm, 91.0000 mm): Track [GINJ4] on B.Cu, length 9.0000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(8.0000 mm, 109.0000 mm): Track [IAT] on F.Cu, length 16.9706 mm
+    @(26.0000 mm, 121.0000 mm): Track [IAT] on B.Cu, length 4.5000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(86.0000 mm, 67.3600 mm): PTH pad L16O [IAT] of U1
+    @(40.0000 mm, 20.0000 mm): Track [IAT] on F.Cu, length 12.0208 mm
 
 ** Found 0 Footprint errors **
 

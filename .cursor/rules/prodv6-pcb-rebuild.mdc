@@ -56,6 +56,172 @@ alwaysApply: true
 | GND | 0,8 |
 | Sinal / QG | 0,5–0,65 |
 
+## Padrão de excelência (todos os módulos)
+
+Aplicar **em cada bloco** antes de avançar:
+
+1. **Esquema § + foto/referência física** — polaridade, pinos, origem do footprint
+2. **Contorno sólido** MODn + **portas I/O** (texto curto) + **rótulos nos pinos** críticos
+3. **Footprint real** (forma física) · courtyards ≥1 mm
+4. **Rotas:** tronco + stubs · caps só pad A · sem cobre A↔B em série
+5. **`python _review_routes.py`** → highlight nets → **B** zones → **DRC** → `DRC.rpt`
+6. **Gravar** lições aprendidas nesta regra (`.mdc`) se houver exceção nova
+
+Scripts: `_append_modN.py` · `_patch_dwgs_user.py` · `_patch_fp_shapes.py`
+
+## Revisão obrigatória após cada alteração de rota
+
+Antes de considerar o bloco feito, **sempre** conferir (highlight net no KiCad + olho):
+
+1. **Conectividade:** toda net forma **um grafo contínuo** — tronco vertical/horizontal + stubs; sem ilhas (ex. C4 e U2 na mesma net precisam do mesmo tronco)
+2. **Caps 2p:** cobre **só no pad A**; pad B só GND zone; nenhum segmento atravessa A→B
+3. **Série (fusível):** sem cobre A↔B
+4. **Courtyard:** ≥1 mm entre contornos
+5. **DRC** do bloco = **0 erros**; salvar `prodv6/DRC.rpt`
+6. **Script:** `python kicad/prodv6/_review_routes.py` — conectividade das nets críticas
+
+## MOD4 — módulo MP1584 (plaquinha 4 pinos, esquema §1.1)
+
+**Polaridade (conferir sempre com a foto da plaquinha):**
+- **Topo** esq/dir = **IN− / OUT−** → GND (zone)
+- **Base** esq/dir = **IN+ / OUT+** → +12V_PROT / +5V
+- Origem footprint U2 = **canto topo-esq**; pads da base em **Y negativo**
+
+| Pino | Posição | Net | Caps externos |
+|------|---------|-----|---------------|
+| IN+ | base-esq | +12V_PROT | C3 + C4 |
+| IN− | topo-esq | GND | zone |
+| OUT+ | base-dir | +5V | C5 + C6 |
+| OUT− | topo-dir | GND | zone |
+
+Marcar Dwgs.User: contorno MOD + rótulos IN± OUT± (`mod_io_markers()`).
+
+Patch: `_patch_mod4_mp1584.py` · markers: `_patch_dwgs_user.py`
+
+## Rotas — corredores e agrupamento de polos
+
+- **Proibido** trilha de potência passando **verticalmente** pelo campo de pinos do socket (entre fileiras GPIO)
+- **Corredor oeste** (x≈78 +5V, x≈82 +3V3) **fora** do J2/J3; stubs **curtos** só até o pad correto
+- **Portas I/O** por módulo: texto curto na borda (`+5V IN`, `->+3V3`) — tronco alinhado; destino reserva porta IN
+- **Polos agrupados:** alimentação num canto/bloco dedicado; sinais GPIO só nos headers J2/J3
+- **+3V3 ECU** = **saída** do pin 3V3 J2 (fileiras 0–1) — **não** confundir com +5V do bloco P5V
+
+## MOD5 — STM32F4VE (silk V33, só headers laterais 2×24)
+
+**J2 esquerdo:** 3V3 2×2 · BT · GND 2×2 · GPIO  
+**J3 direito:** 5V 2×2 · 3V3 2×2 · GND · GPIO · UR+ row10 → VREF+
+
+**Layout manual KiCad (v6) — não reaplicar `_patch_mod5_jl32.py` sobre edições:**
+- **+5V:** tronco sul **y=111** (x=68→146) + porta MOD4 **(78, 44.5)** → x=68
+- **+3V3:** J2 esq. → **y≈105,5** (x=88.54→128.46) → cluster **C10/C11/U8** @ (150.5, 88–110.5)
+- **VREF+:** **F.Cu** externo (UR+ → C12 → U8 pad3)
+- Trilha +3V3 em y=105,46 entre headers: **aceito** se DRC OK (não é curto GPIO)
+
+Patch fechamento (só trechos em falta): `_patch_mod5_close.py`
+
+## MOD6 — sensores → J2 esquerda (prodv6 2026-08-07)
+
+**U1 @ (86, 108)** — 1 net/sensor; **sem** barramento vertical na coluna L*O:
+
+| Net | Pad U1 | MCU |
+|-----|--------|-----|
+| IAT | L16O | PC9 |
+| CLT | L17O | PC7 |
+| MAP | L12O | PC11 |
+| TPS | L17I | PC8 |
+| VBAT | L18I | PC6 |
+
+Ref: `jl32_pinout.py` · `prodv6_layout.py` U1_SENS · `esquema-eletrico.md` §3.5
+
+## MOD7 — RPM → R17O (prodv6 2026-08-07) — FEITO
+
+- **OUT MCU:** coletor → **R17O** = **PE8** @ (136, 64.82)
+- **Cluster:** R20/R21 @ (77.5,31.5)/(77.5,20) · U7 (89.19,26.73) · D3 (83.5,25.5) A=GND K=RPM_IN
+- **IN:** CN1-12 · stub `(150.5,65.5)` opcional/apagar
+
+## MOD8 — injetores IRLZ44N ×4 (prodv6 2026-08-07) — bloco OK
+
+**Zona** (148–218, 82–128) · PCB manual — `prodv6_layout.py` POS_INJ
+
+| Canal | Q | R_gate | R_gs | D | MCU pad |
+|-------|---|--------|------|---|---------|
+| INJ1 | Q10 (163.5,112) | R30 (166,91) | R40 (167.5,100) | D10 (174,106) | R18I PE9 |
+| INJ2 | Q11 (180.5,112) | R31 (183,91) | R41 (184.5,100) | D11 (191,106) | R19I PE11 |
+| INJ3 | Q12 (197.5,112) | R32 (200,91) | R42 (201.5,100) | D12 (208,106) | R20I PE13 |
+| INJ4 | Q13 (214.5,112) | R33 (217,91) | R43 (218.5,100) | D13 (225,106) | R21I PE15 |
+
+Portas: **->U1** GINJ · **CN1 13–16** INJ dreno (pendente) · **+12V_PROT** flyback K
+
+Checagem: `_check_mod8_now.py` · CN1 bicos = rotear depois
+
+## MOD9 — relés 2N7000 ×3 + SRD (prodv6 2026-08-07) — footprints only
+
+**Zona** (118–188, 118–148) · sul MCU · oeste MOD8 — `prodv6_layout.py` POS_REL
+
+| Canal | Q | R_gate | R_pd | D | RL | MCU | CN1 NO |
+|-------|---|--------|------|---|-----|-----|--------|
+| RL1 main | Q20 (122,128) | R50 (122,120) | R55 (122,124) | D20 (130,126) | RL1 (120,132) | L23I PD8 GRL1 | RL_MAIN pad18 |
+| RL2 bomba | Q21 (142,128) | R51 (142,120) | R56 (142,124) | D21 (150,126) | RL2 (140,132) | L22O PD9 GRL2 | RL_PUMP pad17 |
+| RL3 IAC | Q22 (162,128) | R52 (162,120) | R57 (162,124) | D22 (170,126) | RL3 (160,132) | L22I PD10 GRL3 | RL_IAC pad19 |
+
+- **2N7000 TO-92** (Microchip DS 20005695): perna **1=S**, **2=G**, **3=D** (topo, face plana) · footprint `S`(0,0) `G`(1.27,1.8) `D`(2.54,0)
+- **Gate:** MCU → **R50 A** — **R50 B** = **nó gate** = **R55 A** = **Q20 G** (perna 2) · **R55 B** → GND · **Q20 S** (perna 1) → GND · **Q20 D** (perna 3) → net **RL1** + **D20 A** + **RL1 pin2**
+- **Flyback D20:** **K** → +12V_PROT · **A** → net RL1
+- **SRD RL1:** pin1 COIL+ · pin2 COIL− · pin3 COM → +12V_PROT · pin4 NO → RL_MAIN
+- **U1 pads** ainda net RL1–3 no PCB — rotear como **GRL*** (F8 ou renomear)
+- **CN1** pads 17–19 podem precisar sync RL_PUMP/RL_MAIN/RL_IAC vs RL2/RL1/RL3
+
+Append: `_append_mod9.py` · checagem: `_check_mod9_now.py` · **sem trilhas** (usuário roteia)
+
+## MOD10 — CAN SN65HVD230 (prodv6 2026-08-08) — footprints only
+
+**Zona** (118–158, 18–38) — `prodv6_layout.py` POS_CAN
+
+| Ref | @ | Pads U6 |
+|-----|---|---------|
+| U6 | (126, 20) | TX/RX → CAN_TX/CAN_RX · VCC +3V3 · GND · H/L → CANH/CANL |
+| C40 | (120, 26) | 100nF — A=+3V3 B=GND |
+| C41 | (120, 18) | 10µF — A=+3V3 B=GND |
+
+**MCU:** L6O PB8 CAN_RX · L6I PB9 CAN_TX · **CN1** 20=CANH 21=CANL
+
+Append: `_append_mod10.py` · checagem: `_check_mod10_now.py` · **sem trilhas**
+
+## MOD11 — Lambda MCP6004 + AD8628 (prodv6 2026-08-08) — footprints only
+
+**Zona** (158–218, 24–78) — `prodv6_layout.py` POS_LAMBDA · **CN2** @ (218.5, 23.5) rot 90° já no PCB
+
+| Ref | @ | Função |
+|-----|---|--------|
+| U4 | (162, 28) | MCP6004 DIP-14 — pads 1/2/5=VM · 4=GND · 14=+5V |
+| U5 | (196, 32) | AD8628 SOIC-8 **B.Cu** — 2/3/5/6=VM · 4=GND |
+| C32/C33 | (160, 26) / (152, 26) | decoupling +5V — só pad A |
+| R76/R77 | (164, 44) / (164, 48) | bias Vm (+3V3→VM · VM→GND) |
+| R70/R71 | (188, 52) / (188, 58) | shunt 61R9 Ip · R_ESR 6k8 → RI_PULSE |
+| R78 | (200, 38) | série UN↔RI_PULSE |
+| C30/C31 | (202, 44) / (206, 50) | filtros 220n Ip / Un — só pad A |
+
+**MCU:** R13I PA4 VM · R13O PA5 IP · R14I PA6 UN · **U8 REF3033 no MOD5**
+
+**CN2:** 1=+12V_PROT · 2=H− · 3=IP · 4=VM · 5=UN · 6=NC
+
+Append: `_append_mod11.py` · checagem: `_check_mod11_now.py` · **sem trilhas**
+
+## MOD12 — Aquecedor λ IRLZ44N (prodv6 2026-08-08) — footprints only
+
+**Zona** (162–212, 24–38) — `prodv6_layout.py` POS_HEAT · norte do MOD11 · **CN2** pads 1–2
+
+| Ref | @ | Ligação |
+|-----|---|---------|
+| R80 | (174, 30) | GHEAT série gate 100Ω |
+| Q30 | (188, 30) | IRLZ44N — G=GHEAT · D=H− · S=GND |
+| R81 | (188, 24) | pull-down 10k GHEAT→GND |
+| D30 | (198, 28) | flyback A=H− K=+12V_PROT |
+
+**MCU:** L21I PD12 **GHEAT** · **CN2** 1=+12V_PROT · 2=H−
+
+Append: `_append_mod12.py` · checagem: `_check_mod12_now.py` · **sem trilhas**
+
 ## Ordem dos módulos
 
 MOD3 +12V → MOD4 buck +5V → MOD5 MCU → sensores → RPM → inj → relés → CAN → λ → aquecedor
