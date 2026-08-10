@@ -11,6 +11,15 @@ BOARD_W, BOARD_H = 240.0, 160.0
 
 CN1_AT = (12.0, 8.0)
 CN2_AT = (200.0, 8.0)
+# CN3 — relés NO (PCIe-6 mecânico, igual CN2) · leste MOD8 / fileira bicos
+CN3_AT = (215.7375, 121.1025)
+CN3_ROT = 0
+CN3_PAD_NETS: dict[int, str] = {
+    1: "RL_IAC",   # pinagem física PCB (troca intencional vs doc original)
+    2: "RL_PUMP",
+    3: "RL_MAIN",
+    4: "GND",
+}
 
 # Reserva de área (x1,y1,x2,y2) — outros módulos
 ZONE_RESERVE = {
@@ -129,11 +138,11 @@ CN1_SENS = {
 U1_AT_PCB = (86.0, 108.0)  # origem footprint BLACK_BOARD no .kicad_pcb
 # Destinos J2 esquerda — ver jl32_pinout.U1_SENS_PAD
 U1_SENS = {
-    "IAT": (86.0, 67.36),    # L16O PC9
-    "CLT": (86.0, 64.82),    # L17O PC7
-    "MAP": (86.0, 77.52),    # L12O PC11
-    "TPS": (88.54, 64.82),   # L17I PC8
-    "VBAT": (88.54, 62.28),  # L18I PC6
+    "IAT": (86.0, 77.52),    # L12O PC11
+    "CLT": (86.0, 67.36),    # L16O PC9
+    "MAP": (86.0, 64.82),    # L17O PC7
+    "TPS": (88.54, 62.28),   # L18I PC6
+    "VBAT": (88.54, 64.82),  # L17I PC8
 }
 MOD6_CORRIDOR = {
     "IAT": 86.0,
@@ -262,6 +271,41 @@ def _pad(num: str, x: float, y: float, net: str, od: float = 1.55, drill: float 
     return el
 
 
+def _pad_pcie(num: str, x: float, y: float, net: str, pad_rot: float = 90) -> list:
+    """PCIe-6 / GPU 6p — furo 1,1 mm (igual CN2)."""
+    el = [
+        S("pad"), num, S("thru_hole"), S("circle"),
+        [S("at"), x, y, pad_rot],
+        [S("size"), 2.15, 2.15],
+        [S("drill"), 1.1],
+        [S("layers"), "*.Cu", "*.Mask"],
+        [S("remove_unused_layers"), S("no")],
+        [S("uuid"), _uid()],
+    ]
+    if net:
+        el.insert(-1, [S("net"), net])
+    return el
+
+
+def _fp_pcie6_shell(layers: tuple[str, ...] = ("F.CrtYd", "F.Fab")) -> list:
+    """Contorno PCIe-6 (sync footprint CN2 no PCB)."""
+    out: list = []
+    segs = [
+        (5.5, -13.23, -5.5, -13.23),
+        (-5.5, -13.23, -5.5, 1.27),
+        (5.5, 1.27, 5.5, -13.23),
+        (-2.5, 1.27, -2.5, 4.27),
+        (-5.5, 1.27, 5.5, 1.27),
+        (2.5, 4.27, 2.5, 1.27),
+        (-2.5, 4.27, 2.5, 4.27),
+    ]
+    for layer in layers:
+        w = 0.1 if layer == "F.Fab" else 0.05
+        for x1, y1, x2, y2 in segs:
+            out.append(_fp_line(x1, y1, x2, y2, layer, w))
+    return out
+
+
 def _fp_line(x1, y1, x2, y2, layer="F.CrtYd", w=0.05) -> list:
     return [
         S("fp_line"),
@@ -338,12 +382,23 @@ def _fp_rect(x1, y1, x2, y2, layer="F.CrtYd") -> list:
     ]
 
 
-def _footprint(name: str, ref: str, val: str, ox: float, oy: float, extras: list) -> list:
+def _footprint(
+    name: str,
+    ref: str,
+    val: str,
+    ox: float,
+    oy: float,
+    extras: list,
+    rot: float | None = None,
+) -> list:
+    at: list = [S("at"), ox, oy]
+    if rot is not None:
+        at.append(rot)
     return [
         S("footprint"), name,
         [S("layer"), "F.Cu"],
         [S("uuid"), _uid()],
-        [S("at"), ox, oy],
+        at,
         _prop("Reference", ref),
         _prop("Value", val, "F.Fab"),
         _prop("Datasheet", "", hide=True),
@@ -352,6 +407,17 @@ def _footprint(name: str, ref: str, val: str, ox: float, oy: float, extras: list
         *extras,
         [S("embedded_fonts"), S("no")],
     ]
+
+
+def cn3_footprint() -> list:
+    """CN3 PCIe-6 — contatos NO dos relés (SRD pin4). COM = +12V_PROT onboard."""
+    layout = [(1, 0, 6), (2, 4, 6), (3, 8, 6), (4, 0, 0), (5, 4, 0), (6, 8, 0)]
+    extras = _fp_pcie6_shell()
+    for pin, x, y in layout:
+        extras.append(_pad_pcie(str(pin), x, y, CN3_PAD_NETS.get(pin, "")))
+    return _footprint(
+        "Injet:CN2", "CN3", "PCIe-6 REL", *CN3_AT, extras, rot=CN3_ROT
+    )
 
 
 def _xy(v) -> float:
@@ -886,6 +952,8 @@ MOD8_IO = {
     "port_n_y": 82.0,
     "port_e_x": 218.0,
     "port_e_y": 105.0,
+    "port_cn3_x": CN3_AT[0] - 6.0,
+    "port_cn3_y": CN3_AT[1],
 }
 CN1_INJ = {
     "INJ1": (CN1_AT_PCB[0] + 0, CN1_AT_PCB[1] + 0),
@@ -954,27 +1022,24 @@ MOD9_IO = {
     "port_e_x": 188.0,
     "port_e_y": 133.0,
 }
-CN1_REL = {
-    "RL_PUMP": (CN1_AT_PCB[0] + 16, CN1_AT_PCB[1]),
-    "RL_MAIN": (CN1_AT_PCB[0] + 20, CN1_AT_PCB[1]),
-    "RL_IAC": (CN1_AT_PCB[0] + 24, CN1_AT_PCB[1]),
-}
+# Relés — saída NO via **CN3** (PCIe-6); CN1 pads 17–19 = NC no chicote
+CN3_REL = {k: CN3_AT for k in ("RL_MAIN", "RL_PUMP", "RL_IAC")}
 
 # 3 colunas — zona MOD9_RELAY (118–188, 118–148); RL base ≤ y≈147
 POS_REL: dict[str, tuple[float, float]] = {
-    # RL1 main — PD8 / GRL1
+    # RL1 main — PD10 / GRL1 → L22I
     "Q20": (122.0, 128.0),
     "R50": (122.0, 120.0),
     "R55": (122.0, 124.0),
     "D20": (130.0, 126.0),
     "RL1": (120.0, 132.0),
-    # RL2 bomba — PD9 / GRL2
+    # RL2 bomba — PD8 / GRL2 → L23I
     "Q21": (142.0, 128.0),
     "R51": (142.0, 120.0),
     "R56": (142.0, 124.0),
     "D21": (150.0, 126.0),
     "RL2": (140.0, 132.0),
-    # RL3 IAC — PD10 / GRL3
+    # RL3 IAC — PD9 / GRL3 → L22O
     "Q22": (162.0, 128.0),
     "R52": (162.0, 120.0),
     "R57": (162.0, 124.0),
@@ -1106,26 +1171,26 @@ def can_footprints() -> list:
 # Passo 11 — lambda MCP6004 + AD8628 (esquema §7)
 # Posições = PCB manual KiCad 2026-08-08 (usuário moveu peças)
 MOD11_IO = {
-    "body": (158.62, 22.62, 218.62, 76.62),
-    "port_w_x": 158.0,
-    "port_w_y": 50.0,
-    "port_n_y": 24.0,
-    "port_e_x": 218.0,
+    "body": (184.0, 25.5, 231.0, 87.0),
+    "port_w_x": 184.0,
+    "port_w_y": 74.0,
+    "port_n_y": 25.5,
+    "port_e_x": 231.0,
     "port_e_y": 50.0,
 }
 
 POS_LAMBDA: dict[str, tuple[float, float]] = {
-    "U4": (183.19, 45.88),
-    "C32": (180.12, 38.62),
-    "C33": (164.50, 41.00),
-    "R76": (171.12, 59.50),
-    "R77": (171.50, 68.50),
-    "U5": (200.50, 47.00),
-    "R78": (204.50, 53.00),
-    "C30": (206.50, 59.00),
-    "R70": (192.50, 67.00),
-    "R71": (192.50, 73.00),
-    "C31": (210.50, 65.00),
+    "U4": (217.62, 73.69),
+    "C32": (217.70, 86.99),
+    "C33": (228.0, 81.5),
+    "R76": (222.5, 65.5),
+    "R77": (218.5, 60.5),
+    "U5": (225.3, 41.095),
+    "R78": (199.5, 65.0),
+    "C30": (228.0, 51.0),
+    "R70": (211.5, 36.75),
+    "R71": (199.5, 56.0),
+    "C31": (209.0, 48.0),
 }
 
 
@@ -1151,7 +1216,7 @@ def _mcp6004(ox: float, oy: float) -> list:
     pitch = 2.54
     left = [(str(i + 1), 0.0, i * pitch) for i in range(7)]
     right = [(str(i + 8), 7.62, (6 - i) * pitch) for i in range(7)]
-    nets = {"1": "VM", "2": "VM", "4": "GND", "5": "VM", "14": "+5V"}
+    nets = {"1": "VM", "2": "VM", "3": "VM", "4": "GND", "5": "UN", "6": "UN", "7": "UN", "14": "+5V"}
     pads = [_pad(num, x, y, nets.get(num, "")) for num, x, y in left + right]
     return _footprint(
         "Injet:U6004", "U4", "MCP6004", ox, oy,
@@ -1204,7 +1269,7 @@ def _ad8628(ox: float, oy: float) -> list:
     pitch = 1.27
     left = [(str(i + 1), 0.0, i * pitch) for i in range(4)]
     right = [(str(8 - i), 5.4, i * pitch) for i in range(4)]
-    nets = {"2": "VM", "3": "VM", "4": "GND", "5": "VM", "6": "VM"}
+    nets = {"2": "IP", "3": "VM", "4": "GND", "6": "IP", "7": "+5V"}
     pads = [_pad_smd(num, x, y, nets.get(num, "")) for num, x, y in left + right]
     return _footprint_b(
         "Injet:U8628", "U5", "AD8628", ox, oy,
@@ -1242,18 +1307,18 @@ def lambda_footprints() -> list:
 
 # Passo 12 — aquecedor λ IRLZ44N (esquema §7 · CN2 H+/H−)
 MOD12_IO = {
-    "body": (162, 24, 212, 38),
-    "port_w_x": 162.0,
+    "body": (184.0, 25.5, 231.0, 32.0),
+    "port_w_x": 184.0,
     "port_w_y": 31.0,
-    "port_e_x": 212.0,
-    "port_e_y": 31.0,
+    "port_e_x": 231.0,
+    "port_e_y": 25.5,
 }
 
 POS_HEAT: dict[str, tuple[float, float]] = {
-    "R80": (174.0, 30.0),
-    "Q30": (188.0, 30.0),
-    "R81": (188.0, 24.0),
-    "D30": (198.0, 28.0),
+    "R80": (184.0, 31.0),
+    "Q30": (203.1975, 30.98),
+    "R81": (195.0, 31.0),
+    "D30": (231.0, 25.5),
 }
 
 
@@ -1351,11 +1416,12 @@ def mod_io_markers() -> list:
         _gr_rect(*MOD8_IO["body"], width=0.2),
         _gr_text("MOD8", MOD8_IO["body"][0] + 1, MOD8_IO["body"][1] + 1, 0.7),
         _gr_text("CN1 13-16", 168, MOD8_IO["port_n_y"] - 1, 0.55),
+        _gr_text("CN3", MOD8_IO["port_cn3_x"], MOD8_IO["port_cn3_y"], 0.55),
         _gr_text("->U1", MOD8_IO["port_w_x"] + 1, MOD8_IO["port_w_y"], 0.55),
         _gr_text("+12V_PROT", MOD8_IO["port_e_x"] - 14, MOD8_IO["port_e_y"], 0.55),
         _gr_rect(*MOD9_IO["body"], width=0.2),
         _gr_text("MOD9", MOD9_IO["body"][0] + 1, MOD9_IO["body"][1] + 1, 0.7),
-        _gr_text("CN1 17-19", 128, MOD9_IO["port_n_y"] - 1, 0.55),
+        _gr_text("->CN3", MOD9_IO["port_e_x"] - 2, MOD9_IO["port_e_y"], 0.55),
         _gr_text("->U1", MOD9_IO["port_w_x"] + 1, MOD9_IO["port_w_y"], 0.55),
         _gr_text("+12V_PROT", MOD9_IO["port_e_x"] - 14, MOD9_IO["port_e_y"], 0.55),
         _gr_rect(*MOD10_IO["body"], width=0.2),

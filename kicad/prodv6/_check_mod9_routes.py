@@ -124,8 +124,8 @@ def main() -> int:
                 ok = False
 
     print("\n=== Pendente (nao exigido agora) ===")
-    print("  U1 L23I/L22O/L22I -> GRL1/2/3")
-    print("  CN1 pads 17-19 -> RL_MAIN/RL_PUMP/RL_IAC")
+    print("  U1 L22I/L23I/L22O -> GRL1/2/3")
+    print("  CN3 pads 1-3 -> RL_MAIN/RL_PUMP/RL_IAC")
 
     print("\n=== Resultado ===")
     if ok:

@@ -3,12 +3,12 @@
 // INJET RACING — pinagem fixada STM32F407 Fase 1
 // Ver esquema-eletrico.md §3.5 e ecu-pcb-1layer-netlist.md
 
-// --- Sensores ADC (J2 esquerda — L16O/L17O/L12O/L17I/L18I) ---
-#define PIN_IAT   PC9   // L16O ADC1_IN9
-#define PIN_CLT   PC7   // L17O ADC1_IN7
-#define PIN_MAP   PC11  // L12O ADC1_IN11
-#define PIN_TPS   PC8   // L17I ADC1_IN8
-#define PIN_VBAT  PC6   // L18I ADC1_IN6
+// --- Sensores ADC (J2 esquerda — L12O/L16O/L17O/L17I/L18I) ---
+#define PIN_IAT   PC11  // L12O ADC1_IN11
+#define PIN_CLT   PC9   // L16O ADC1_IN9
+#define PIN_MAP   PC7   // L17O ADC1_IN7
+#define PIN_TPS   PC6   // L18I ADC1_IN6
+#define PIN_VBAT  PC8   // L17I ADC1_IN8
 
 // --- Lambda wideband DIY ---
 #define PIN_DAC_VM    PA4   // DAC1 — terra virtual Vm (~2,5 V)
@@ -31,9 +31,9 @@
 #define PIN_INJ4  PE15
 
 // --- Relés ---
-#define PIN_RL_MAIN  PD8
-#define PIN_RL_PUMP  PD9
-#define PIN_RL_IAC   PD10
+#define PIN_RL_MAIN  PD10  // L22I GRL1
+#define PIN_RL_PUMP  PD8   // L23I GRL2
+#define PIN_RL_IAC   PD9   // L22O GRL3
 
 // --- ADC ---
 #define ADC_VREF_V       3.3f

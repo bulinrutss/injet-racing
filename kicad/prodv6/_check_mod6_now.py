@@ -179,19 +179,19 @@ def main() -> None:
     print(f"8. CN1-6 +5V: {'OK' if ok_5v else 'FALHA'}")
 
     cn7 = cn1_pad(7)
-    r10a = fp_pad(text, "R10", "A")
-    ok_33 = r10a and g.connected("+3V3", _pt_key(*cn7), _pt_key(*r10a))
-    print(f"9. CN1-7 +3V3: {'OK' if ok_33 else 'FALHA'}")
+    u6v = fp_pad(text, "U6", "VCC")
+    ok_33 = u6v and g.connected("+3V3", _pt_key(*cn7), _pt_key(*u6v))
+    print(f"9. CN1-7 +3V3 (tronco CAN/U6): {'OK' if ok_33 else 'FALHA'}")
 
     print("10. Caps pad B=GND: verificar visual/DRC zone (automatico se zone preenchida)")
 
     print("\n=== Depois (STM J2 esquerda) ===")
     u1_pad = {
-        "IAT": ("L16O", (86.0, 67.36)),
-        "CLT": ("L17O", (86.0, 64.82)),
-        "MAP": ("L12O", (86.0, 77.52)),
-        "TPS": ("L17I", (88.54, 64.82)),
-        "VBAT": ("L18I", (88.54, 62.28)),
+        "IAT": ("L12O", (86.0, 77.52)),
+        "CLT": ("L16O", (86.0, 67.36)),
+        "MAP": ("L17O", (86.0, 64.82)),
+        "TPS": ("L18I", (88.54, 62.28)),
+        "VBAT": ("L17I", (88.54, 64.82)),
     }
     src_ref = {"IAT": "R18", "CLT": "R19", "MAP": "R12", "TPS": "R17", "VBAT": "R14"}
     src_pad = {"IAT": "B", "CLT": "B", "MAP": "B", "TPS": "B", "VBAT": "B"}

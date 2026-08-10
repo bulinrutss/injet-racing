@@ -125,13 +125,15 @@ Patch fechamento (só trechos em falta): `_patch_mod5_close.py`
 
 | Net | Pad U1 | MCU |
 |-----|--------|-----|
-| IAT | L16O | PC9 |
-| CLT | L17O | PC7 |
-| MAP | L12O | PC11 |
-| TPS | L17I | PC8 |
-| VBAT | L18I | PC6 |
+| IAT | L12O | PC11 |
+| CLT | L16O | PC9 |
+| MAP | L17O | PC7 |
+| TPS | L18I | PC6 |
+| VBAT | L17I | PC8 |
 
 Ref: `jl32_pinout.py` · `prodv6_layout.py` U1_SENS · `esquema-eletrico.md` §3.5
+
+**PCB 2026-08-10:** rotas CN1 + condicionamento → U1 **FEITO** · `_check_mod6_now.py` · CN1-7 +3V3 via tronco CAN (U6/C40)
 
 ## MOD7 — RPM → R17O (prodv6 2026-08-07) — FEITO
 
@@ -150,77 +152,91 @@ Ref: `jl32_pinout.py` · `prodv6_layout.py` U1_SENS · `esquema-eletrico.md` §3
 | INJ3 | Q12 (197.5,112) | R32 (200,91) | R42 (201.5,100) | D12 (208,106) | R20I PE13 |
 | INJ4 | Q13 (214.5,112) | R33 (217,91) | R43 (218.5,100) | D13 (225,106) | R21I PE15 |
 
-Portas: **->U1** GINJ · **CN1 13–16** INJ dreno (pendente) · **+12V_PROT** flyback K
+Portas: **->U1** GINJ · **CN1 13–16** INJ dreno · **+12V_PROT** flyback K
 
-Checagem: `_check_mod8_now.py` · CN1 bicos = rotear depois
+Checagem: `_check_mod8_now.py` · **MOD8 bloco OK** (2026-08-10)
 
 ## MOD9 — relés 2N7000 ×3 + SRD (prodv6 2026-08-07) — footprints only
 
 **Zona** (118–188, 118–148) · sul MCU · oeste MOD8 — `prodv6_layout.py` POS_REL
 
-| Canal | Q | R_gate | R_pd | D | RL | MCU | CN1 NO |
+| Canal | Q | R_gate | R_pd | D | RL | MCU | CN3 NO |
 |-------|---|--------|------|---|-----|-----|--------|
-| RL1 main | Q20 (122,128) | R50 (122,120) | R55 (122,124) | D20 (130,126) | RL1 (120,132) | L23I PD8 GRL1 | RL_MAIN pad18 |
-| RL2 bomba | Q21 (142,128) | R51 (142,120) | R56 (142,124) | D21 (150,126) | RL2 (140,132) | L22O PD9 GRL2 | RL_PUMP pad17 |
-| RL3 IAC | Q22 (162,128) | R52 (162,120) | R57 (162,124) | D22 (170,126) | RL3 (160,132) | L22I PD10 GRL3 | RL_IAC pad19 |
+| RL1 main | Q20 (122,128) | R50 (122,120) | R55 (122,124) | D20 (130,126) | RL1 (120,132) | L22I PD10 GRL1 | **CN3 pad3** RL_MAIN |
+| RL2 bomba | Q21 (142,128) | R51 (142,120) | R56 (142,124) | D21 (150,126) | RL2 (140,132) | L23I PD8 GRL2 | **CN3 pad2** RL_PUMP |
+| RL3 IAC | Q22 (162,128) | R52 (162,120) | R57 (162,124) | D22 (170,126) | RL3 (160,132) | L22O PD9 GRL3 | **CN3 pad1** RL_IAC |
+
+- **CN3** PCIe-6 @ **(215.74, 121.10)** · pads 1–3 NO · pad 4 GND · `_append_cn3.py`
 
 - **2N7000 TO-92** (Microchip DS 20005695): perna **1=S**, **2=G**, **3=D** (topo, face plana) · footprint `S`(0,0) `G`(1.27,1.8) `D`(2.54,0)
 - **Gate:** MCU → **R50 A** — **R50 B** = **nó gate** = **R55 A** = **Q20 G** (perna 2) · **R55 B** → GND · **Q20 S** (perna 1) → GND · **Q20 D** (perna 3) → net **RL1** + **D20 A** + **RL1 pin2**
 - **Flyback D20:** **K** → +12V_PROT · **A** → net RL1
 - **SRD RL1:** pin1 COIL+ · pin2 COIL− · pin3 COM → +12V_PROT · pin4 NO → RL_MAIN
-- **U1 pads** ainda net RL1–3 no PCB — rotear como **GRL*** (F8 ou renomear)
-- **CN1** pads 17–19 podem precisar sync RL_PUMP/RL_MAIN/RL_IAC vs RL2/RL1/RL3
+- **CN1** pads 17–19 = **NC** (relés saem por CN3)
 
-Append: `_append_mod9.py` · checagem: `_check_mod9_now.py` · **sem trilhas** (usuário roteia)
+Append: `_append_mod9.py` · checagem: `_check_mod9_routes.py` · **rotas FEITO** (2026-08-10)
 
-## MOD10 — CAN SN65HVD230 (prodv6 2026-08-08) — footprints only
+## MOD10 — CAN SN65HVD230 (prodv6 2026-08-08) — **FEITO**
 
-**Zona** (118–158, 18–38) — `prodv6_layout.py` POS_CAN
+**Zona** (118–158, 18–38) — PCB manual
 
 | Ref | @ | Pads U6 |
 |-----|---|---------|
-| U6 | (126, 20) | TX/RX → CAN_TX/CAN_RX · VCC +3V3 · GND · H/L → CANH/CANL |
-| C40 | (120, 26) | 100nF — A=+3V3 B=GND |
-| C41 | (120, 18) | 10µF — A=+3V3 B=GND |
+| U6 | **(134.5, 35)** rot 180° | TX/RX → CAN_TX/CAN_RX · VCC +3V3 · GND · H/L → CANH/CANL |
+| C40 | (128.5, 22) | 100nF — A=+3V3 B=GND |
+| C41 | ver PCB | 10µF — A=+3V3 B=GND |
 
 **MCU:** L6O PB8 CAN_RX · L6I PB9 CAN_TX · **CN1** 20=CANH 21=CANL
 
-Append: `_append_mod10.py` · checagem: `_check_mod10_now.py` · **sem trilhas**
+**+3V3:** tronco y≈34,5 liga U6 VCC · C40/C41 · **CN1 pino 7** (TPS chicote)
 
-## MOD11 — Lambda MCP6004 + AD8628 (prodv6 2026-08-08) — footprints only
+Append: `_append_mod10.py` · checagem: `_check_mod10_now.py`
 
-**Zona** (158–218, 24–78) — `prodv6_layout.py` POS_LAMBDA · **CN2** @ (218.5, 23.5) rot 90° já no PCB
+## MOD11 — Lambda MCP6004 + AD8628 (prodv6 2026-08-08)
+
+**Zona** (184–231 × 26–87) — `POS_LAMBDA` sync PCB manual · **CN2** @ (218.5, 23.5) rot 90°
 
 | Ref | @ | Função |
 |-----|---|--------|
-| U4 | (162, 28) | MCP6004 DIP-14 — pads 1/2/5=VM · 4=GND · 14=+5V |
-| U5 | (196, 32) | AD8628 SOIC-8 **B.Cu** — 2/3/5/6=VM · 4=GND |
-| C32/C33 | (160, 26) / (152, 26) | decoupling +5V — só pad A |
-| R76/R77 | (164, 44) / (164, 48) | bias Vm (+3V3→VM · VM→GND) |
-| R70/R71 | (188, 52) / (188, 58) | shunt 61R9 Ip · R_ESR 6k8 → RI_PULSE |
-| R78 | (200, 38) | série UN↔RI_PULSE |
-| C30/C31 | (202, 44) / (206, 50) | filtros 220n Ip / Un — só pad A |
+| U4 | (217.62, 73.69) rot −90° | MCP6004 — ch.A 1-3 **VM** · ch.B 5-7 **UN** · 4 GND · 14 +5V |
+| U5 | (225.3, 41.1) **B.Cu** | AD8628 — pin2 −IN **IP** · pin3 +IN **VM** · pin6 OUT **IP** |
+| C32/C33 | (217.7, 87) / (228, 81.5) | decoupling +5V — só pad A |
+| R76/R77 | (222.5, 65.5) / (218.5, 59.5) | bias Vm (+3V3→VM · VM→GND) |
+| R70 | (211.5, 36.75) | shunt 61R9 **IP↔VM** (A=IP B=VM) |
+| R71 | (215, 51.5) | R_ESR 6k8 UN↔RI_PULSE |
+| R78 | (202, 68) | série UN→RI_PULSE (nó Ri + ADC) |
+| C30/C31 | (228, 51) / (209, 46.5) | filtros 220n Ip / Un — só pad A |
 
-**MCU:** R13I PA4 VM · R13O PA5 IP · R14I PA6 UN · **U8 REF3033 no MOD5**
+**MCU:** R13I PA4 **VM** · R13O PA5 **IP** · R14I PA6 **UN** · R5I PC0 **RI_PULSE** · **U8 REF3033 MOD5**
 
 **CN2:** 1=+12V_PROT · 2=H− · 3=IP · 4=VM · 5=UN · 6=NC
 
-Append: `_append_mod11.py` · checagem: `_check_mod11_now.py` · **sem trilhas**
+**Ordem sinal:** PA4→Vm(U4-A)→CN2-4 · AD8628+shunt R70→Ip→CN2-3/PA5 · CN2-5→Un→C31→U4-B→PA6 · PC0→R71→Un (Ri)
 
-## MOD12 — Aquecedor λ IRLZ44N (prodv6 2026-08-08) — footprints only
+**PCB 2026-08-10:** rotas + U5 IP fechado · DRC: 6× clearance U5 B.Cu (aceitar ou mover antes Gerber)
 
-**Zona** (162–212, 24–38) — `prodv6_layout.py` POS_HEAT · norte do MOD11 · **CN2** pads 1–2
+Append: `_append_mod11.py` · `_patch_mod11_u5_ip.py` · checagem: `_check_mod11_now.py`
+
+## MOD12 — Aquecedor λ IRLZ44N (prodv6 2026-08-08)
+
+**Zona** (184–231 × 25.5–32) — `POS_HEAT` · compartilha CN2 pads 1–2
 
 | Ref | @ | Ligação |
 |-----|---|---------|
-| R80 | (174, 30) | GHEAT série gate 100Ω |
-| Q30 | (188, 30) | IRLZ44N — G=GHEAT · D=H− · S=GND |
-| R81 | (188, 24) | pull-down 10k GHEAT→GND |
-| D30 | (198, 28) | flyback A=H− K=+12V_PROT |
+| R80 | (184, 31) | GHEAT série gate 100Ω |
+| R81 | (195, 31) | pull-down 10k GHEAT→GND |
+| Q30 | (203.2, 31) | IRLZ44N — G=GHEAT · D=H− · S=GND |
+| D30 | (231, 25.5) | flyback A=H− K=+12V_PROT |
 
-**MCU:** L21I PD12 **GHEAT** · **CN2** 1=+12V_PROT · 2=H−
+**MCU:** L21I PD12 **GHEAT** ✓ · **CN2** 1=+12V_PROT ✓ · 2=H− ✓
 
-Append: `_append_mod12.py` · checagem: `_check_mod12_now.py` · **sem trilhas**
+Append: `_append_mod12.py` · checagem: `_check_mod12_now.py` · **FEITO** (2026-08-10)
+
+## DRC / bancada (2026-08-10)
+
+- **Unconnected 16:** cosmético PTH / F↔B / R A↔B — highlight net OK
+- **Clearance 6:** U5 AD8628 B.Cu · **Edge.Cuts 1:** contorno antes Gerber
+- **Bancada:** `kicad/prodv6/BENCH-CHECKLIST.md`
 
 ## Ordem dos módulos
 

@@ -14,9 +14,9 @@ from prodv6_layout import POS_REL  # noqa: E402
 PCB = ROOT / "injet-racing-prodv6.kicad_pcb"
 
 U1_GRL = {
-    "GRL1": ("L23I", (88.54, 49.58)),
-    "GRL2": ("L22O", (86.00, 52.12)),
-    "GRL3": ("L22I", (88.54, 52.12)),
+    "GRL1": ("L22I", (88.54, 52.12)),
+    "GRL2": ("L23I", (88.54, 49.58)),
+    "GRL3": ("L22O", (86.00, 52.12)),
 }
 
 CN1_AT = (12.0, 14.0)

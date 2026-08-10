@@ -46,18 +46,18 @@ JL32_RIGHT: list[tuple[str, str]] = [
 U1_RPM_PAD = "R17O"  # PE8 @ (136, 64.82)
 
 U1_SENS_PAD: dict[str, str] = {
-    "IAT": "L16O",   # PC9  ADC1_IN9
-    "CLT": "L17O",   # PC7  ADC1_IN7
-    "MAP": "L12O",   # PC11 ADC1_IN11
-    "TPS": "L17I",   # PC8  ADC1_IN8
-    "VBAT": "L18I",  # PC6  ADC1_IN6
+    "IAT": "L12O",   # PC11 ADC1_IN11
+    "CLT": "L16O",   # PC9  ADC1_IN9
+    "MAP": "L17O",   # PC7  ADC1_IN7
+    "TPS": "L18I",   # PC6  ADC1_IN6
+    "VBAT": "L17I",  # PC8  ADC1_IN8
 }
 
 # Gate relés — J2 esquerda (U1 @ 86,108) — nets GRL* no MCU, RL* bobina
 U1_REL_PAD: dict[str, str] = {
-    "GRL1": "L23I",  # PD8  RL_MAIN @ (88.54, 49.58)
-    "GRL2": "L22O",  # PD9  RL_PUMP  @ (86.00, 52.12)
-    "GRL3": "L22I",  # PD10 RL_IAC   @ (88.54, 52.12)
+    "GRL1": "L22I",  # PD10 RL_MAIN @ (88.54, 52.12)
+    "GRL2": "L23I",  # PD8  RL_PUMP  @ (88.54, 49.58)
+    "GRL3": "L22O",  # PD9  RL_IAC   @ (86.00, 52.12)
 }
 
 # CAN — J2 esquerda row6 (U1 @ 86,108)
@@ -91,11 +91,11 @@ ECU_GPIO_NET: dict[str, str] = {
     "3V3": "+3V3",
     "GND": "GND",
     "UR+": "VREF+",
-    "PC9": "IAT",
-    "PC7": "CLT",
-    "PC11": "MAP",
-    "PC8": "TPS",
-    "PC6": "VBAT",
+    "PC11": "IAT",
+    "PC9": "CLT",
+    "PC7": "MAP",
+    "PC8": "VBAT",
+    "PC6": "TPS",
     "PA4": "VM",
     "PA5": "IP",
     "PA6": "UN",
@@ -106,9 +106,9 @@ ECU_GPIO_NET: dict[str, str] = {
     "PE11": "GINJ2",
     "PE13": "GINJ3",
     "PE15": "GINJ4",
-    "PD8": "GRL1",
-    "PD9": "GRL2",
-    "PD10": "GRL3",
+    "PD10": "GRL1",
+    "PD8": "GRL2",
+    "PD9": "GRL3",
     "PD12": "GHEAT",
 }
 
