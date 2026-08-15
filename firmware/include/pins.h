@@ -4,18 +4,18 @@
 // Ver esquema-eletrico.md §3.5 e ecu-pcb-1layer-netlist.md
 
 // --- Sensores ADC (J2 esquerda — L12O/L16O/L17O/L17I/L18I) ---
-#define PIN_IAT   PC11  // L12O ADC1_IN11
-#define PIN_CLT   PC9   // L16O ADC1_IN9
-#define PIN_MAP   PC7   // L17O ADC1_IN7
-#define PIN_TPS   PC6   // L18I ADC1_IN6
-#define PIN_VBAT  PC8   // L17I ADC1_IN8
+#define PIN_IAT   PD0   // L12O ADC123_IN0
+#define PIN_CLT   PA9   // L16O ADC123_IN1
+#define PIN_MAP   PC9   // L17O ADC123_IN9
+#define PIN_TPS   PC8   // L18I ADC123_IN8  (L18O=PC7 trilha bypass)
+#define PIN_VBAT  PA8   // L17I ADC123_IN8  (L20I/O trilha bypass)
 
 // --- Lambda wideband DIY ---
 #define PIN_DAC_VM    PA4   // DAC1 — terra virtual Vm (~2,5 V)
 #define PIN_ADC_IP    PA5   // corrente bomba (shunt 61,9 Ω)
 #define PIN_ADC_UN    PA6   // célula Nernst
-#define PIN_HEATER    PD12  // PWM aquecedor MOSFET
-#define PIN_RI_PULSE  PC0   // pulso Ri (mede resistência Nernst)
+#define PIN_HEATER    PB0   // R16I PWM aquecedor MOSFET
+#define PIN_RI_PULSE  PE2   // R5I pulso Ri (mede resistência Nernst)
 
 // --- RPM ---
 #define PIN_RPM   PE8       // R17O — EXTI falling edge (opto PC817)

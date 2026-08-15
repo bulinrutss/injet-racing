@@ -6,7 +6,7 @@ ECU TBI speed-density / batch-fire para STM32F407 (Black Board).
 
 | Arquivo | Função |
 |---|---|
-| `include/pins.h` | Pinagem fixada (sensores PC11/9/7/6/8 · PA4=DAC Vm · PA5=Ip · PA6=Un) |
+| `include/pins.h` | Pinagem fixada (sensores PD0/PA9/PC9/PC8/PA8 · PA4=DAC Vm · PA5=Ip · PA6=Un) |
 | `src/wideband.cpp` | Wideband DIY (topologia rusEFI / mck1117/wideband) |
 | `src/sensors.cpp` | IAT, CLT, MAP, TPS, VBat |
 | `src/fuel.cpp` | Speed-density, VE, dead-time |

@@ -135,14 +135,14 @@ CN1_SENS = {
     10: (48.0, 14.0),
     11: (52.0, 14.0),
 }
-U1_AT_PCB = (86.0, 108.0)  # origem footprint BLACK_BOARD no .kicad_pcb
-# Destinos J2 esquerda — ver jl32_pinout.U1_SENS_PAD
+U1_AT_PCB = (60.46, 107.94)  # origem footprint BLACK_BOARD no .kicad_pcb
+# Destinos J2 esquerda — ver jl32_pinout.U1_SENS_PAD + u1_pad_xy()
 U1_SENS = {
-    "IAT": (86.0, 77.52),    # L12O PC11
-    "CLT": (86.0, 67.36),    # L16O PC9
-    "MAP": (86.0, 64.82),    # L17O PC7
-    "TPS": (88.54, 62.28),   # L18I PC6
-    "VBAT": (88.54, 64.82),  # L17I PC8
+    "IAT": (60.46, 77.46),    # L12O PD0
+    "CLT": (60.46, 67.30),    # L16O PA9
+    "MAP": (60.46, 64.76),    # L17O PC9
+    "TPS": (63.00, 62.22),    # L18I PC8
+    "VBAT": (63.00, 64.76),   # L17I PA8
 }
 MOD6_CORRIDOR = {
     "IAT": 86.0,
@@ -886,7 +886,7 @@ MOD7_IO = {
     "port_e_x": 150.5,      # stub B.Cu existente → U1 R17O
     "port_e_y": 65.5,
 }
-CN1_AT_PCB = (12.0, 14.0)  # origem CN1 no .kicad_pcb (≠ CN1_AT gerador 12,8)
+CN1_AT_PCB = (12.0, 29.0)  # origem CN1 no .kicad_pcb
 CN1_RPM = (CN1_AT_PCB[0] + 44, CN1_AT_PCB[1] + 6)  # pad 12 → (56, 20)
 U1_RPM = (136.0, 64.82)    # R17O = PE8 (jl32_pinout)
 

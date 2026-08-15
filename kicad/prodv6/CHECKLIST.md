@@ -122,168 +122,119 @@ python "e:\injet racing\kicad\prodv6\_gen_kicad_prodv6.py"
 - [x] **CN1-6 +5V** · **CN1-7 +3V3**
 - [x] Caps pad B = GND (zone)
 
-Sensores no **J2** (coluna exterior quando possível) — prodv6 2026-08-07:
+Sensores no **J2** (coluna exterior quando possível) — prodv6 2026-08-11:
 
-| Sensor | Pad U1 | MCU | mm @ U1(86,108) |
-|--------|--------|-----|-----------------|
-| IAT | **L12O** | PC11 | 86, 77.52 |
-| CLT | **L16O** | PC9 | 86, 67.36 |
-| MAP | **L17O** | PC7 | 86, 64.82 |
-| TPS | **L18I** | PC6 | 88.54, 62.28 |
-| VBAT | **L17I** | PC8 | 88.54, 64.82 |
+| Sensor | Pad U1 | MCU | mm @ U1(60.46,107.94) |
+|--------|--------|-----|------------------------|
+| IAT | **L12O** | PD0 | 60.46, 77.46 |
+| CLT | **L16O** | PA9 | 60.46, 67.30 |
+| MAP | **L17O** | PC9 | 60.46, 64.76 |
+| TPS | **L18I** | PC8 | 63.00, 62.22 |
+| VBAT | **L17I** | PA8 | 63.00, 64.76 |
 
 - [x] Nets U1 J2 atribuídas · rotas condicionamento → pads (**`_check_mod6_now.py` OK**)
-- [x] **CN1-7 +3V3** → tronco CAN (U6/C40) — não usar R10.A como teste de CN1-7
-- [x] Firmware `pins.h` PC11/PC9/PC7/PC6/PC8
+- [x] **CN1-4 +3V3** pull-ups R10/R11 · **CN1-3 +5V** MAP
+- [x] Firmware `pins.h` PD0/PA9/PC9/PC8/PA8
 
 **DRC cosmético MOD6:** TPS/MAP/CLT/IAT splits F↔B — highlight net OK
 
 **Checagem:** `python _check_mod6_now.py`
 
-## MOD7 — RPM PC817 (DRC 2026-08-07 07:29)
+## MOD7 — RPM PC817 (prodv6 2026-08-11)
 
-**Posições PCB** (origem footprint @ KiCad):
+**Posições PCB:**
 
 | Ref | mm (at) | rot | Função |
 |-----|---------|-----|--------|
-| R20 | 77.5, 31.5 | 90° | série bobina 10k 2W |
-| R21 | 77.5, 20 | 0° | série bobina 10k 2W |
-| U7 | 89.19, 26.73 | 0° | PC817 |
-| D3 | 83.5, 25.5 | 0° | 1N4148 — **A=GND, K=RPM_IN OK** |
-| R22 | 104, 26.5 | −90° | pull-up 4k7 |
-| C25 | 104, 21 | 180° | filtro 1nF |
+| R20 | 93.5, 21.5 | 180° | série bobina 10k |
+| R21 | 80.5, 21.5 | 180° | série bobina 10k |
+| U7 | 67.19, 26.73 | 0° | PC817 |
+| D3 | 67.14, 21.5 | −90° | 1N4148 — **A=GND, K=RPM_IN** |
+| R22 | 81.65, 26.69 | −90° | pull-up 4k7 |
+| C25 | 88, 32 | −90° | filtro 1nF |
 
 **Feito**
-- [x] CN1-12 → R20 → R21 → U7 pin1 (bobina)
-- [x] D3 anti-paralelo LED
-- [x] U7 pin4 → R22/C25 → corredor B.Cu → **R17O** (PE8) @ (136, 64.82)
+- [x] CN1-22 → R20 → R21 → U7 pin1 (LED bobina)
+- [x] D3 anti-paralelo LED (A=GND · K=RPM_IN)
+- [x] U7 pin4 → R22/C25 → **R17O** @ (110.46, 64.76)
 - [x] Opto isolado (pin1 ⊥ pin4)
 
-**DRC MOD7:** R20/R21 série (unconnected A↔B = normal KiCad) · stub `(150.5,65.5)` pode ficar sem uso ou apagar
+**Checagem:** `python _check_mod7_now.py` → **MOD7 completo**
 
-**Checagem:** `python _check_mod7_now.py` → MOD7 completo
-
-## MOD8 — injetores IRLZ44N ×4 (DRC 2026-08-07 08:39)
+## MOD8 — injetores IRLZ44N ×4 (prodv6 2026-08-11)
 
 **Esquema:** `modulo/esquema-eletrico.md` §5 · Q10–Q13 + R30–R33 (100R) + R40–R43 (10k) + D10–D13 (1N4007)
 
-**Posições PCB** (origem @ KiCad; R30–33 rot 180° · R40–43 rot −90°):
+**Posições PCB:**
 
-| Canal | Q @ y=112 | R_gate @ 91 | R_gs @ 100 | D @ 106 | col x |
-|-------|-----------|-------------|------------|---------|-------|
-| INJ1 | Q10 (163.5) | R30 (166) | R40 (167.5) | D10 (174) | 163–174 |
-| INJ2 | Q11 (180.5) | R31 (183) | R41 (184.5) | D11 (191) | 180–191 |
-| INJ3 | Q12 (197.5) | R32 (200) | R42 (201.5) | D12 (208) | 197–208 |
-| INJ4 | Q13 (214.5) | R33 (217) | R43 (218.5) | D13 (225) | 214–225 |
+| Canal | Q | R_gate | R_gs | D |
+|-------|---|--------|------|---|
+| INJ1 | Q10 (174.04, 8) | R30 (142.70, 41.80) | R40 (174.5, 15) | D10 (162.5, 14) |
+| INJ2 | Q11 (153.80, 11.02) | R31 (144.61, 31.39) | R41 (154, 18.5) | D11 (142.5, 17) |
+| INJ3 | Q12 (132.80, 14.52) | R32 (125.5, 44) | R42 (133, 22) | D12 (120, 20.5) |
+| INJ4 | Q13 (111.80, 17.52) | R33 (112, 44) | R43 (112, 24.5) | D13 (100, 23.5) |
 
 **Feito**
-- [x] U1 GINJ1–4 → R18I/R19I/R20I/R21I (PE9/11/13/15)
+- [x] **R18I–R21I** → R30–R33 (GINJ1–4)
 - [x] Gate · GND · dreno · flyback K→+12V_PROT
 - [x] **CN1 13–16** → drenos INJ1–4
 
-**DRC cosmético:** GINJ R_gate pad A↔B (PTH) — highlight OK
+**Checagem:** `python _check_mod8_now.py` → **MOD8 completo**
 
-**Checagem:** `python _check_mod8_now.py` → **MOD8 bloco OK**
+## MOD9 — relés driver 2N7000 ×3 (relé SRD **externo**)
 
-## MOD9 — relés 2N7000 ×3 + SRD 12V (footprints only)
+**Esquema:** §6 · Q20–Q22 + R50–R52 + R55–R57 + D20–D22 · **RL1–3 @ y≈227 NÃO montar** · **CN3 @ y≈236** chicote cargas
 
-**Esquema:** `modulo/esquema-eletrico.md` §6 · Q20–Q22 + R50–R52 (1k) + R55–R57 (10k) + D20–D22 (1N4007) + RL1–RL3
+| Canal | Pad U1 | Driver | Net bobina | CN3 NO |
+|-------|--------|--------|------------|--------|
+| RL1 main | **L22I** | Q20 | RL1 | pad **3** RL_MAIN |
+| RL2 bomba | **L23I** | Q21 | RL2 | pad **2** RL_PUMP |
+| RL3 IAC | **L22O** | Q22 | RL3 | pad **1** RL_IAC |
 
-**Posições PCB** (`POS_REL` — 3 colunas na zona 118–188 × 118–148):
-
-| Canal | Q @ 128 | R_gate @ 120 | R_pd @ 124 | D @ 126 | RL @ 132 | saída NO |
-|-------|---------|--------------|------------|---------|----------|----------|
-| RL1 main | Q20 (122) | R50 | R55 | D20 (130) | RL1 (120) | RL_MAIN → **CN3-3** |
-| RL2 bomba | Q21 (142) | R51 | R56 | D21 (150) | RL2 (140) | RL_PUMP → **CN3-2** |
-| RL3 IAC | Q22 (162) | R52 | R57 | D22 (170) | RL3 (160) | RL_IAC → **CN3-1** |
+Bobina externa: **+12V_PROT** + net **RLx** no **Q.D** · flyback **D.K→+12V_PROT**
 
 **Feito**
-- [x] 15 peças + rotas gate/bobina/flyback/+12V
-- [x] **GRL1–3** → U1 L22I/L23I/L22O (PD10/PD8/PD9)
-- [x] **RLx NO** → **CN3** pads 1–3 · pad 4 GND
+- [x] RL1/RL2/RL3 driver + U1 + CN3 nets OK
 
-**CN3** — PCIe-6 @ `(215.74, 121.10)` · `python _check_cn3_now.py`
+**Checagem:** `python _check_mod9_now.py` → **completo**
 
-**Nota:** CN1 pads **17–19 = NC** (relés só por CN3).
+**Checagem:** `python _check_mod9_now.py`
 
-**Checagem:** `python _check_mod9_routes.py` · DRC GRL pad A↔B = cosmético
+## MOD10 — CAN SN65HVD230 — **DESATIVADO** (2026-08-11)
 
-## MOD10 — CAN SN65HVD230 (footprints only)
+U6/C40/C41 fora do build atual · sem checagem.
 
-**Esquema:** `modulo/esquema-eletrico.md` §8 · U6 + C40 (100nF) + C41 (10µF)
+## MOD11 — Lambda MCP6004 + AD8628 (prodv6 2026-08-11)
 
-**Posições PCB** (`POS_CAN` — zona 118–158 × 18–38):
+| Ref | @ PCB | Função |
+|-----|-------|--------|
+| U4 | (174.62, 63) | MCP6004 — ch.A VM · ch.B UN |
+| U5 | (159.8, 88) B.Cu | AD8628 Ip |
+| CN2 | (171, 45.5) | PCIe-6 sonda |
 
-| Ref | Posição | Função |
-|-----|---------|--------|
-| U6 | **(134.5, 35)** rot 180° | SN65HVD230 |
-| C40 | (128.5, 22) | 100nF decoupling |
-| C41 | (134.5, 22) | 10µF bulk |
+**U1:** **R13I** VM · **R13O** IP (+ **R12O** trilha) · **R14I** UN · **R5I** RI_PULSE
 
-**Pads U6 (Injet:CAN):** TX→CAN_TX · RX→CAN_RX · VCC→+3V3 · GND · H→CANH · L→CANL
-
-**MCU:** L6O PB8 CAN_RX · L6I PB9 CAN_TX · **CN1** pads **20–21** CANH/CANL
+**CN2 real:** 1=+12V_PROT · 2=H− · **3=NC** · **4=IP** · **5=VM** · **6=UN**
 
 **Feito**
-- [x] U6 + C40/C41 · decoupling pad A=+3V3 pad B=GND
-- [x] CAN_TX/RX → U1 L6I/L6O (PB9/PB8)
-- [x] CANH/CANL → CN1 20–21
-- [x] +3V3 tronco y≈34,5 (cluster CAN + CN1-7)
+- [x] VM/IP/UN → U1 + CN2-4/5/6
+- [x] R5I → R71 RI_PULSE
+- [x] R70 shunt IP-VM · R78↔R71 RI_PULSE
 
-**Checagem:** `python _check_mod10_now.py`
+**Checagem:** `python _check_mod11_now.py` → **completo**
 
-## MOD11 — Lambda MCP6004 + AD8628
+## MOD12 — aquecedor λ IRLZ44N (prodv6 2026-08-11) — FEITO
 
-**Esquema:** `modulo/esquema-eletrico.md` §7 · `06-sonda-lambda.md`
+| Ref | @ | Função |
+|-----|---|--------|
+| R80 | (121.1, 67.3) | gate série GHEAT |
+| R81 | (132.4, 67.1) | pull-down 10k |
+| Q30 | (140.2, 67.0) | IRLZ44N |
+| D30 | (182.5, 47.5) | flyback 1N4007 |
 
-**Posições PCB** (sync 2026-08-08 — layout manual KiCad):
+**U1 R16I** GHEAT · **CN2** 1=+12V_PROT · 2=H−
 
-| Ref | Posição | Função |
-|-----|---------|--------|
-| U4 | (217.62, 73.69) rot −90° | MCP6004 — ch.A **VM** · ch.B **UN** |
-| U5 | (225.3, 41.1) B.Cu | AD8628 malha **Ip** (2−/3+/6out) |
-| C32/C33 | (217.7, 87) / (228, 81.5) | decoupling +5V |
-| R76/R77 | (222.5, 65.5) / (218.5, 59.5) | bias Vm |
-| R70 | (211.5, 36.75) | shunt 61R9 IP↔VM |
-| R71/R78 | (215, 51.5) / (202, 68) | R_ESR + série Un/Ri |
-| C30/C31 | (228, 51) / (209, 46.5) | filtros Ip / Un |
-
-**MCU:** R13I PA4 VM ✓ · R13O PA5 IP ✓ · R14I PA6 UN ✓ · R5I PC0 RI_PULSE ✓
-
-**Feito**
-- [x] 11 peças + rotas internas op-amp/shunt/filtros
-- [x] VM + IP + UN → U1 R13I/R13O/R14I
-
-**DRC 2026-08-08 13:31** — bloco λ: ver abaixo (placa global **378** erros, −5 vs 13:06)
-
-**DRC MOD11 (aceito para montagem)**
-- [x] U5 pad 2 IP fechado · VM/UN stubs
-- [ ] U5 clearance B.Cu 0,12 mm (6 erros) — footprint SMD · não elétrico
-- [ ] Courtyard R70/R71/R78/C31 — opcional `_patch_fp_shapes.py`
-
-**Checagem:** `python _check_mod11_now.py` → **OK**
-
-## MOD12 — Aquecedor λ IRLZ44N
-
-**Posições PCB** (sync 2026-08-08):
-
-| Ref | Posição | Função |
-|-----|---------|--------|
-| R80 | (184, 31) | R_gate 100Ω |
-| R81 | (195, 31) | R_gs 10k |
-| Q30 | (203.2, 31) | IRLZ44N |
-| D30 | (231, 25.5) | flyback |
-
-**Feito**
-- [x] 4 peças + nets Q30/R80/R81/D30
-- [x] GHEAT → U1 **L21I** ✓ · CN2-1/2 ✓
-
-**Feito**
-- [x] GHEAT → U1 L21I · CN2-1/2 · Q30/D30
-
-**DRC cosmético:** GHEAT split B.Cu — highlight OK
-
-**Checagem:** `python _check_mod12_now.py` → **OK**
+**Checagem:** `python _check_mod12_now.py` → **completo**
 
 ## DRC — snapshot 2026-08-10
 

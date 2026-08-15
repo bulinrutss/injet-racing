@@ -42,6 +42,9 @@
 
 **Parar imediatamente se:** cheiro, aquecimento em Q1/U2/Q10+, tensão fora da tabela abaixo, fusível abrir.
 
+> **Potência bicos vs +5 V:** bicos = **+12 V** (chicote); placa só chaveia o **−** (CN1-13…16).
+> +5 V = MAP/MCU/op-amps (~150–300 mA) — **não** sobe com INJ. Detalhe: `modulo/esquema-eletrico.md` §1.7.
+
 ---
 
 ## 1. Pré-voo — multímetro **desligado** (Ω)
@@ -84,7 +87,7 @@ Simular entradas com trimpot ou resistores:
 
 | Pino | Net | Simulação | MCU (`pins.h`) | Esperado ADC |
 |------|-----|-----------|----------------|--------------|
-| 8 | IAT | NTC 2,2 kΩ → GND | PC11 | valor estável |
+| 6 | IAT | NTC 2,2 kΩ → GND | PD0 | valor estável |
 | 9 | CLT | idem | PC9 | idem |
 | 10 | MAP | 0–5 V (pot 10 k) | PC7 | segue pot |
 | 11 | TPS | 0–3,3 V (pot 10 k) | PC6 | segue pot |
@@ -131,6 +134,9 @@ Por canal:
 - [ ] Flyback: sem pico > 20 V no dreno (osciloscópio, se tiver)
 
 Teste rápido firmware: toggle PE9–PE15.
+
+**4 bicos juntos (opcional):** fonte bancada **≥5 A** (limite 2 A da §0 só serve p/ 1 canal).
+Medir queda em CN1-1/2 durante pulso — se **>1 V**, chicote/fonte fraco (não trilha INJ).
 
 ---
 
