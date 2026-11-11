@@ -80,7 +80,7 @@ zones = [
     (4, 4, 55, 42, "CN1\nAMPSEAL 23", (70, 55, 40)),
     (64, 4, 36, 28, "RPM\nPC817", (80, 60, 50)),
     (104, 4, 36, 28, "CAN\nSN65HVD230", (50, 65, 85)),
-    (144, 4, 52, 42, "LAMBDA DIY\nMCP6004 AD8628\nCN2 LSU4.2", (90, 55, 45)),
+    (144, 4, 52, 42, "LAMBDA DIY\nMCP6004 OPA388IDR\nCN2 LSU4.2", (90, 55, 45)),
 ]
 
 # --- POWER pads ---
@@ -162,9 +162,9 @@ labels.append((122, 24, "CAN MOD", 2.0))
 add_dip(152, 12, 14, pitch=2.54, row_gap=7.62)
 labels.append((156, 34, "MCP6004", 2.0))
 
-# --- AD8628 SOIC-DIP adapter 8 pin ---
+# --- OPA388IDR SOIC-DIP adapter 8 pin ---
 add_dip(172, 12, 8, pitch=2.54, row_gap=7.62)
-labels.append((176, 28, "AD8628", 1.8))
+labels.append((176, 28, "OPA388IDR", 1.8))
 
 # --- CN2 lambda 6 pin ---
 add_header_row(148, 38, 6, 2.54)

@@ -19,7 +19,7 @@ Projeto esquemático hierárquico gerado a partir de `modulo/esquema-eletrico.md
 | 5 | `sheets/rpm.kicad_sch` | PC817 opto (negativo bobina) |
 | 6 | `sheets/injectors.kicad_sch` | 4× IRLZ44N low-side |
 | 7 | `sheets/relays.kicad_sch` | 3× relé (principal/bomba/IAC) |
-| 8 | `sheets/lambda.kicad_sch` | MCP6004 + AD8628 + heater + CN2 PCIe-6 |
+| 8 | `sheets/lambda.kicad_sch` | MCP6002 + OPA388IDR + heater + CN2 PCIe-6 |
 | 9 | `sheets/can.kicad_sch` | SN65HVD230 transceiver |
 
 ## Regenerar

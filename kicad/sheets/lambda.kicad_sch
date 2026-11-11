@@ -5,7 +5,7 @@
 	(uuid "28b9ba41-7d68-41de-8635-db40cec7d208")
 	(paper "A3")
 	(title_block
-		(title "Lambda LSU 4.2 — MCP6004 + AD8628")
+		(title "Lambda LSU 4.2 — MCP6002 + OPA388IDR")
 		(date "2026-08-05")
 		(rev "Fase1")
 		(company "INJET RACING")
@@ -1484,7 +1484,7 @@
 					)
 				)
 			)
-			(property "Value" "AD8628"
+			(property "Value" "OPA388IDR"
 				(at 0 -5.08 0)
 				(effects
 					(font
@@ -2867,7 +2867,7 @@
 				)
 			)
 		)
-		(property "Value" "AD8628"
+		(property "Value" "OPA388IDR"
 			(at 0 -5.08 0)
 			(effects
 				(font

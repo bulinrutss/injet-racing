@@ -204,12 +204,12 @@ Bobina externa: **+12V_PROT** + net **RLx** no **Q.D** · flyback **D.K→+12V_P
 
 U6/C40/C41 fora do build atual · sem checagem.
 
-## MOD11 — Lambda MCP6004 + AD8628 (prodv6 2026-08-11)
+## MOD11 — Lambda MCP6002 + OPA388IDR (prodv6 2026-08-11)
 
 | Ref | @ PCB | Função |
 |-----|-------|--------|
-| U4 | (174.62, 63) | MCP6004 — ch.A VM · ch.B UN |
-| U5 | (159.8, 88) B.Cu | AD8628 Ip |
+| U4 | (174.62, 63) | MCP6002 — ch.A VM · ch.B UN |
+| U5 | (159.8, 88) B.Cu | OPA388IDR Ip |
 | CN2 | (171, 45.5) | PCIe-6 sonda |
 
 **U1:** **R13I** VM · **R13O** IP (+ **R12O** trilha) · **R14I** UN · **R5I** RI_PULSE
@@ -240,7 +240,7 @@ U6/C40/C41 fora do build atual · sem checagem.
 
 | Tipo | Qtd | Ação |
 |------|-----|------|
-| Clearance U5 | 6 | Aceitar ou mover AD8628 B.Cu antes Gerber |
+| Clearance U5 | 6 | Aceitar ou mover OPA388IDR B.Cu antes Gerber |
 | Edge.Cuts | 1 | Fechar contorno placa |
 | Unconnected | 16 | Cosmético — GRL/GINJ/TPS/MAP/CLT/IAT/RPM/GHEAT |
 | Footprint | 0 | — |

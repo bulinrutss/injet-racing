@@ -196,7 +196,7 @@ Checagem: `_check_mod12_now.py` OK
 ## DRC / bancada (2026-08-10)
 
 - **Unconnected 16:** cosmético PTH / F↔B / R A↔B — highlight net OK
-- **Clearance 6:** U5 AD8628 B.Cu · **Edge.Cuts 1:** contorno antes Gerber
+- **Clearance 6:** U5 OPA388IDR B.Cu · **Edge.Cuts 1:** contorno antes Gerber
 - **Bancada:** `kicad/prodv6/BENCH-CHECKLIST.md`
 
 ## Ordem dos módulos

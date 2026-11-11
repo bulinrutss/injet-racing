@@ -27,11 +27,21 @@ ZONE_RESERVE = {
     "MOD5_MCU": (74, 56, 154, 112),
     "MOD6_SENS": (14, 48, 58, 98),
     "MOD7_RPM": (52, 16, 108, 38),  # PCB real: cluster y≈20–34, stub leste
+    "MOD7B_VR": (168, 118, 230, 156),  # pick-up / distr. 2 fios — FUT-05
     "MOD10_CAN": (118, 18, 158, 38),
     "MOD11_LAMBDA": (158, 24, 218, 78),
     "MOD12_HEATER": (162, 24, 212, 38),
     "MOD8_INJ": (148, 82, 218, 128),
     "MOD9_RELAY": (118, 118, 188, 148),
+}
+
+# CN4 — VR pick-up / distribuidor 2 fios (PCIe-6 mecânico = CN2/CN3)
+CN4_AT = (215.7375, 145.0)
+CN4_ROT = 0
+CN4_PAD_NETS: dict[int, str] = {
+    1: "VR+",
+    2: "VR-",
+    3: "GND",
 }
 
 # Passo 3 — proteção (canto inf-esq, abaixo dos sensores reservados)
@@ -944,6 +954,89 @@ def rpm_footprints() -> list:
     ]
 
 
+# Passo 7b — condicionador VR (FUT-05) · footprints only · 2×1N4148 clamp
+MOD7B_IO = {
+    "body": (168, 118, 230, 156),
+    "port_cn4_x": CN4_AT[0] - 6.0,
+    "port_cn4_y": CN4_AT[1],
+    "port_e_x": 230.0,
+    "port_e_y": 130.0,
+}
+POS_VR: dict[str, tuple[float, float]] = {
+    "U9": (180.0, 122.0),
+    "R90": (168.0, 120.0),   # 47k série VR+ → VR_LIM
+    "R91": (168.0, 132.0),   # 100k histerese
+    "R92": (195.0, 132.0),   # 4k7 pull-up +3V3
+    "D40": (186.0, 134.0),   # 1N4148 clamp → +3V3 (A=VR_LIM K=+3V3)
+    "D41": (193.5, 134.0),   # 1N4148 clamp → GND (A=GND K=VR_LIM)
+    "C40": (168.0, 142.0),   # 10nF filtro entrada
+    "C41": (195.0, 142.0),   # 1nF filtro GPIO
+}
+
+
+def _crt_dip8(layers: tuple[str, ...] = ("F.CrtYd", "F.Fab")) -> list:
+    """DIP-8 — origem pin1 topo-esq; pin4 base-esq · pin8 topo-dir."""
+    w, h = 7.62, 7.62
+    pad_r = 1.0
+    out: list = []
+    for layer in layers:
+        lw = 0.1 if layer == "F.Fab" else 0.05
+        out.append(_fp_line(0, -pad_r, w, -pad_r, layer, lw))
+        out.append(_fp_line(w, -pad_r, w, h + pad_r, layer, lw))
+        out.append(_fp_line(w, h + pad_r, 0, h + pad_r, layer, lw))
+        out.append(_fp_line(0, h + pad_r, 0, -pad_r, layer, lw))
+        for y in (0.0, h):
+            out.append(_fp_circle(0, y, pad_r, layer))
+            out.append(_fp_circle(w, y, pad_r, layer))
+    return out
+
+
+def _lm393(ox: float, oy: float) -> list:
+    """LM393 DIP-8 — canal 1: OUT/IN−/IN+ ; pin4 GND · pin8 +3V3."""
+    pitch = 2.54
+    left = [(str(i + 1), 0.0, i * pitch) for i in range(4)]
+    right = [(str(8 - i), 7.62, i * pitch) for i in range(4)]
+    nets = {
+        "1": "RPM_VR",
+        "2": "VR_LIM",
+        "3": "VR_REF",
+        "4": "GND",
+        "8": "+3V3",
+    }
+    pads = [_pad(num, x, y, nets.get(num, "")) for num, x, y in left + right]
+    return _footprint(
+        "Injet:LM393", "U9", "LM393", ox, oy,
+        [*_crt_dip8(), *pads],
+    )
+
+
+def cn4_footprint() -> list:
+    """CN4 PCIe-6 — entrada VR+/VR− (pick-up / distr. eletrônico)."""
+    layout = [(1, 0, 6), (2, 4, 6), (3, 8, 6), (4, 0, 0), (5, 4, 0), (6, 8, 0)]
+    extras = _fp_pcie6_shell()
+    for pin, x, y in layout:
+        extras.append(_pad_pcie(str(pin), x, y, CN4_PAD_NETS.get(pin, "")))
+    return _footprint(
+        "Injet:CN2", "CN4", "PCIe-6 VR", *CN4_AT, extras, rot=CN4_ROT
+    )
+
+
+def vr_footprints() -> list:
+    """MOD7b — condicionador VR · só footprints (sem trilhas)."""
+    p = POS_VR
+    return [
+        cn4_footprint(),
+        _lm393(*p["U9"]),
+        _axial("R90", "47k", "R", "VR+", "VR_LIM", *p["R90"], span=6.0),
+        _axial("R91", "100k", "R", "RPM_VR", "VR_LIM", *p["R91"], span=6.0),
+        _axial("R92", "4k7", "R", "+3V3", "RPM_VR", *p["R92"], span=6.0),
+        _diode("D40", "1N4148", *p["D40"], "VR_LIM", "+3V3"),
+        _diode("D41", "1N4148", *p["D41"], "GND", "VR_LIM"),
+        _cap("C40", "10nF", *p["C40"], "VR_LIM", wide=False),
+        _cap("C41", "1nF", *p["C41"], "RPM_VR", wide=False),
+    ]
+
+
 # Passo 8 — drivers injetores IRLZ44N ×4 (esquema §5)
 MOD8_IO = {
     "body": (148, 82, 218, 128),
@@ -1168,7 +1261,7 @@ def can_footprints() -> list:
     ]
 
 
-# Passo 11 — lambda MCP6004 + AD8628 (esquema §7)
+# Passo 11 — lambda MCP6004 + OPA388IDR (esquema §7)
 # Posições = PCB manual KiCad 2026-08-08 (usuário moveu peças)
 MOD11_IO = {
     "body": (184.0, 25.5, 231.0, 87.0),
@@ -1265,14 +1358,14 @@ def _crt_soic8(layers=("B.CrtYd", "B.Fab")) -> list:
 
 
 def _ad8628(ox: float, oy: float) -> list:
-    """AD8628 SOIC-8 — montagem B.Cu (pads só em B.Cu)."""
+    """OPA388IDR SOIC-8 — montagem B.Cu (pads só em B.Cu)."""
     pitch = 1.27
     left = [(str(i + 1), 0.0, i * pitch) for i in range(4)]
     right = [(str(8 - i), 5.4, i * pitch) for i in range(4)]
     nets = {"2": "IP", "3": "VM", "4": "GND", "6": "IP", "7": "+5V"}
     pads = [_pad_smd(num, x, y, nets.get(num, "")) for num, x, y in left + right]
     return _footprint_b(
-        "Injet:U8628", "U5", "AD8628", ox, oy,
+        "Injet:U8628", "U5", "OPA388IDR", ox, oy,
         [*_crt_soic8(), *pads],
     )
 

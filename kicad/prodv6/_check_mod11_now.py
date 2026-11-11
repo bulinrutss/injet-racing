@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Checagem MOD11 — lambda MCP6004 + AD8628 (PCB 2026-08-11)."""
+"""Checagem MOD11 — lambda MCP6004 + OPA388IDR (PCB 2026-08-11)."""
 from __future__ import annotations
 
 import re
@@ -96,7 +96,7 @@ def main() -> int:
             if net != want:
                 ok = False
 
-    print("\n=== U5 AD8628 B.Cu ===")
+    print("\n=== U5 OPA388IDR B.Cu ===")
     u5 = fp_block(text, "U5")
     if not u5:
         ok = False

@@ -54,7 +54,7 @@
 6. SENSORS — pull-ups / divisores IAT CLT MAP TPS
 7. RPM — PC817 + 2×10k 2W
 8. CAN — módulo SN65HVD230
-9. LAMBDA — MCP6004 (topo) + **AD8628 SMD embaixo** + shunt 61R9 + R_ESR 6k8
+9. LAMBDA — MCP6002 (topo) + **OPA388IDR SMD embaixo** + shunt 61R9 + R_ESR 6k8
 10. CN1 ATX-24 + CN2 PCIe-6
 
 ## Contagem

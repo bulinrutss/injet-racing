@@ -8,7 +8,7 @@
 
 ## 0. Objetivo do projeto (1 parágrafo)
 
-**INJET RACING Fase 1** — ECU de injeção eletrônica speed-density / batch-fire baseada em **STM32F407VET6 Black Board** (módulo pronto 3,3 V). Lê sensores (IAT, CLT, MAP, TPS), RPM pelo negativo/trigger da bobina (opto PC817), aciona **4 bicos** e **3 relés** via MOSFET low-side, condiciona **sonda lambda LSU 4.2** com op-amps (MCP6004 + AD8628), comunica por **CAN** (SN65HVD230). Alimentação: +12 V bateria → proteção → buck **+5 V** → LDO **+3,3 V**.
+**INJET RACING Fase 1** — ECU de injeção eletrônica speed-density / batch-fire baseada em **STM32F407VET6 Black Board** (módulo pronto 3,3 V). Lê sensores (IAT, CLT, MAP, TPS), RPM pelo negativo/trigger da bobina (opto PC817), aciona **4 bicos** e **3 relés** via MOSFET low-side, condiciona **sonda lambda LSU 4.2** com op-amps (MCP6002 + OPA388IDR), comunica por **CAN** (SN65HVD230). Alimentação: +12 V bateria → proteção → buck **+5 V** → LDO **+3,3 V**.
 
 **Escopo desta protoboard:** eletrônica da ECU (não inclui bomba, flange, bung, mangueiras). Relés automotivos ficam **fora** da proto (só drivers na placa).
 
@@ -24,11 +24,11 @@
    - **Z3 SENSORS** (pull-ups IAT/CLT, divisores MAP/O2, filtros 100 nF)
    - **Z4 RPM** (2×10k 2W + PC817 + 4k7 + 1nF) — **longe** dos MOSFET de potência
    - **Z5 CAN** (SN65HVD230)
-   - **Z6 LAMBDA** (MCP6004 DIP + AD8628 + shunt 61R9 + R_ESR 6k8)
+   - **Z6 LAMBDA** (MCP6002 DIP + OPA388IDR + shunt 61R9 + R_ESR 6k8)
    - **Z7 INJ** (4× IRLZ44N + gates + flybacks) — **borda**, dissipação
    - **Z8 HEAT + RELAY** (1× IRLZ44N aquecedor + 3× 2N7000/AO3400 drivers)
 4. **Corrente alta** (INJ drain, HEAT drain, +12V_PROT): fios **≥ 0,5–1,0 mm²** / jumpers grossos; NÃO usar trilhas finas da breadboard para drains dos bicos.
-5. **AD8628** é SMD: usar **adaptador SOP-8 → DIP** se montar em protoboard.
+5. **OPA388IDR** é SMD: usar **adaptador SOP-8 → DIP** se montar em protoboard.
 6. **SN65HVD230** é SOIC-8: usar **adaptador SOIC→DIP** ou módulo CAN pronto 3,3 V.
 7. Nunca ligar sinal 0–5 V direto no STM32 sem divisor (MAP/O2).
 8. Flyback **1N4007** obrigatório em cada carga indutiva (bico / relé / aquecedor).
@@ -71,8 +71,8 @@
 | Ref | Componente | Encaps. | Qtd | Função |
 |---|---|---|---:|---|
 | U1 | STM32F407VET6 **Black Board** | módulo headers | 1 | MCU |
-| U2 | MCP6004 | **DIP-14** | 1 | op-amps wideband |
-| U3 | AD8628 + adaptador SOIC→DIP | SOP-8→DIP | 1 | chopper Ip |
+| U2 | MCP6002-I/P | **DIP-8** | 1 | buffer Vm + Un |
+| U3 | OPA388IDR + adaptador SOIC→DIP | SOP-8→DIP | 1 | zero-drift Ip |
 | U8 | REF3033 + breakout SOT-23 | SOT-23 | 1 | referência ADC 3,3 V |
 | U4 | PC817 | DIP-4 | 1 | opto RPM |
 | U5 | SN65HVD230 + adaptador **ou** módulo CAN 3V3 | SOIC→DIP | 1 | CAN |
@@ -104,7 +104,7 @@
 | R74 | 100 kΩ **1%** | 1/4 W | 1 | divisor VBat (cima) |
 | R75 | 10 kΩ **1%** | 1/4 W | 1 | divisor VBat (baixo) |
 | R76, R77 | 10 kΩ | 1/4 W | 2 | bias buffer Vm |
-| R78 | 1 kΩ | 1/4 W | 1 | série AD8628 |
+| R78 | 1 kΩ | 1/4 W | 1 | série OPA388IDR |
 | R50–R53 | 1 kΩ | 1/4 W | 4 | série proteção ADC |
 | R10–R13, R15 | 100 Ω | 1/4 W | 5 | gate INJ + HEAT |
 | R20–R23, R25 | 10 kΩ | 1/4 W | 5 | pull-down gate MOSFET N |
@@ -252,19 +252,19 @@ J2.2 H−  ← Drain Q5(IRLZ44N)
 
 J2.3 IP ──●── R70(61R9) ── J2.4 VM
            │
-           └── medida → (via U3 AD8628) → PA5  + C30(220n)
+           └── medida → (via U3 OPA388IDR) → PA5  + C30(220n)
 
-J2.4 VM ← buffer MCP6004 a partir de DAC (~2,5 V)
+J2.4 VM ← buffer MCP6002 a partir de DAC (~2,5 V)
 
 J2.5 UN ── R71(6k8) ── (pulso Ri / filtro) → PA6  + C31(220n)
 
 J2.6 NC
 
-U2 MCP6004: VDD=+5V ; VSS=GND ; decoupling C32
-U3 AD8628: +5V / GND ; adaptador DIP
+U2 MCP6002: VDD pino 8 = +5V ; VSS pino 4 = GND ; decoupling C32
+U3 OPA388IDR: +5V / GND ; adaptador DIP
 ```
 
-> Detalhe fino dos pinos do MCP6004 (Vm buffer, filtros): seguir `modulo/06-sonda-lambda.md`. Na proto, agrupar U2+U3+R70+R71 juntos e fios curtos.
+> Detalhe fino dos pinos do MCP6002 (DIP-8: 1–3 VM · 4 GND · 5–7 UN · 8 +5 V): seguir `modulo/06-sonda-lambda.md`. Na proto, agrupar U2+U3+R70+R71 juntos e fios curtos.
 
 ---
 

@@ -1484,7 +1484,7 @@
 					)
 				)
 			)
-			(property "Value" "AD8628"
+			(property "Value" "OPA388IDR"
 				(at 0 -5.08 0)
 				(effects
 					(font
@@ -10829,7 +10829,7 @@
 				)
 			)
 		)
-		(property "Value" "AD8628"
+		(property "Value" "OPA388IDR"
 			(at 0 -5.08 0)
 			(effects
 				(font
