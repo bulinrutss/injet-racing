@@ -1,0 +1,10 @@
+Fazer sua própria ECU do zero envolve 3 frentes: 
+(1) hardware/PCB, 
+(2) firmware de injeção, 
+(3) validação automotiva 
+(proteção contra load dump 12V, EMC, calor, vibração). 
+O hardware abaixo é sólido e replicável. O firmware é a parte mais difícil (cálculo speed-density, 
+VE table, enriquecimento de partida/aquecimento/aceleração, dead-time do bico). Sem Speeduino, 
+você escreve isso. Posso te ajudar com o firmware depois — me avise.
+
+
